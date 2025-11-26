@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+#wrap{display: flex; flex-direction: column;}
+#mainWrap{flex: 1;}
+
 /* 가운데영역 */
 .container{max-width: 1520px; padding: 0 20px; margin: 0 auto;}
 
