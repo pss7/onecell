@@ -202,7 +202,17 @@ $(function () {
     centerMode: true,
   });
 
-
+  /* 푸터 */
+  $('#footerWrap .consulting').click(function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(this).next().slideUp();
+    } else {
+      $(this).addClass('active');
+      $(this).next().slideDown();
+    }
+    return false;
+  });
 
 
 

@@ -167,3 +167,57 @@
 .titleBox .title .tit{font-size: 93px; color: #151515; font-family: 'Constantia';
     font-weight: 400;}
 .titleBox .title p{font-size: 20px; color: #131313; line-height: 1.8;}
+
+/* 푸터 */
+#footerWrap{position: relative;}
+#footerWrap .title{display: block; margin-bottom: 20px; color: #c0b396; font-size: 23px; font-weight: 300; font-family: 'Noto Serif KR', serif;}
+#footerWrap{position: relative; padding: 0 0 218px; background: url(../images/landing/bg.jpg)no-repeat center; background-size: cover;}
+#footerWrap .footerTopBox .infoBox01{display: flex; gap: 0 84px; padding: 90px 0 57px;  border-bottom: 2px solid #575a60;}
+#footerWrap .footerTopBox .leftBox .box{margin-bottom: 40px;}
+#footerWrap .footerTopBox .leftBox .box p{font-size: 20px; color: #fff;}
+#footerWrap .footerTopBox .leftBox .box em{margin-top: -50px; display: block; color: #fff; font-family: 'Constantia'; font-size: 72px;}
+#footerWrap .footerTopBox .leftBox .btnBox{display: flex; gap: 0 12px; margin-top: -10px;}
+#footerWrap .footerTopBox .leftBox .btnBox .btn{width: 198px; height: 55px; line-height: 55px; border-radius: 7px; text-align: center; font-weight: 700; letter-spacing: -1px;}
+#footerWrap .footerTopBox .leftBox .btnBox .btn.kakao{background-color: #ffd800; color: #27272c;}
+#footerWrap .footerTopBox .leftBox .btnBox .btn.naverMap{background-color: #c0b396 ; color: #27272c;}
+#footerWrap .footerCenterBox .timeInfoBox{padding: 63px 0 56px; border-bottom: 2px solid #575a60;}
+#footerWrap .footerCenterBox .timeInfoBox .text{display: block; margin-bottom: 20px; color: #d8d8d8; font-size: 23px; font-weight: 500;}
+#footerWrap .footerCenterBox .timeInfoBox .box{margin-bottom: 5px; display: flex; gap: 0 38px;}
+#footerWrap .footerCenterBox .timeInfoBox .box .text01{width: 85px; font-weight: 500; color: #fff; font-size:22px; color: #fff;}
+#footerWrap .footerCenterBox .timeInfoBox .box .text02{font-weight: 500; color: #fff; font-size:22px; color: #fff;}
+#footerWrap .footerCenterBox .timeInfoBox .box .text02 em{font-size: 16px;}
+#footerWrap .footerCenterBox .timeInfoBox .infoText{display: block; margin-top: 10px; color: #fff; font-weight: 500; color: #d8d8d8;}
+#footerWrap .footerBottomBox{padding-top: 40px;}
+#footerWrap .footerBottomBox .infoBox02{position: relative; display: flex; align-items: center ;}
+#footerWrap .footerBottomBox .logoBox{padding-left: 18px; margin-right: 37px;}
+#footerWrap .footerBottomBox .logoBox h1 img{display: block;}
+#footerWrap .footerBottomBox address{font-size: 14px; color: #7c7c7c; line-height: 2;}
+#footerWrap .footerBottomBox .footerLink{display: flex; gap: 0 30px; position: absolute; top:0; right:0;}
+#footerWrap .footerBottomBox .footerLink li a{display: block; font-weight: 300; font-size: 14px; color: #7c7c7c;}
+#footerWrap .footerBottomBox .footerLink li a:hover{color: #fff;}
+
+/* 검색창 */
+.consultingBox{position: absolute; bottom: 0; left:0; right:0; line-height: 1;}
+.consultingBox .box{display: none; padding: 50px 0 0 130px; height: 245px; background-color: #ae9373;}
+.consultingBox .box .infoText{display: block; margin-bottom: 30px; font-size: 18px; font-weight: 400; color: #fff; font-family: 'Noto Serif KR', serif;}
+.consultingBox .searchBox{ display: flex; align-items: center; gap: 0 15px;}
+.consultingBox .searchBox select,
+.consultingBox .searchBox input
+{padding-left: 22px; width: 258px; height: 55px;  background-color: #fff; font-size: 18px; color: #646464; border: 0;}
+.consultingBox .searchBox input::placeholder{color: #646464;}
+.consultingBox .searchBox select{-webkit-appearance:none; -moz-appearance:none; 
+appearance:none; background: #fff url(../images/common/arrow2.png)no-repeat 230px center;}
+.consultingBox .searchAgreeBox label{position: relative; padding-left: 30px; font-size: 15px; color: #fff; font-family: 'Noto Serif KR', serif; cursor: pointer;}
+.consultingBox .searchAgreeBox label::before{content: ''; position: absolute; left:0; top: 50%; transform: translateY(-50%); width: 17px; height: 17px; background-color: #fff;}
+.consultingBox .searchAgreeBox input:checked + label::before{content: '\2713';text-align: center; color: #000;}
+.consultingBox .searchBox a{width: 152px; height: 55px; line-height: 54px; background-color: #000; display: block; text-align: center; color: #fff; border-radius: 7px; font-weight: 700; font-size: 19px;}
+.consultingBox .consulting{height: 83px; padding: 0 54px; display: flex; align-items: center; position: absolute; left: 50%; transform: translateX(-50%); top:-83px; border-radius: 20px 20px 0 0; background-color: #ae9373; font-family: 'Noto Serif KR', serif; color: #fff; font-size: 22px; transition: all .3s;}
+.consultingBox .consulting span{position: relative; padding-right: 35px;}
+.consultingBox .consulting span::after{content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:0; padding: 26px 24px 0 0; background: url(../images/landing/consulting.png)no-repeat; animation: icon_effect .8s infinite alternate;}
+
+@keyframes icon_effect{
+
+    0%{transform: translateY(-50%) rotate(0);}
+    100%{transform: translateY(-50%) rotate(30deg);}
+
+}
