@@ -56,28 +56,34 @@ $(function () {
     }
   });
 
-
-// nav 공용 스크롤 처리
-$('[data-scroll-link]').click(function(e){
+  $('[data-scroll-link]').click(function (e) {
     e.preventDefault();
     locoScroll.scrollTo($(this).attr('href'));
-});
-
+  });
 
   //비주얼영역 
   $(window).load(function () {
     $('#visualWrap .visualBox').addClass('active');
+    $('#visualWrap .progressbarBox .dots').addClass('active');
   });
 
   $('#visualWrap .slickWrap .slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     $('#visualWrap .visualBox').removeClass('active');
+    $('#visualWrap .progressbarBox .dots').removeClass('active');
   });
   $('#visualWrap .slickWrap .slick').on('afterChange', function (event, slick, currentSlide, nextSlide) {
     $('#visualWrap .visualBox').addClass('active');
+    $('#visualWrap .progressbarBox .dots').addClass('active');
+  });
+
+  $('#visualWrap .slickWrap .slick').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    let i = (currentSlide ? currentSlide : 0) + 1;
+    $('#visualWrap .progressbarBox .count').html('<em class="current">' + i + '</em> <em class="total">' + slick.slideCount + '</em>');
+    $('#mainTitleWrap .progressbarBox .dots').addClass('active');
   });
 
   $('#visualWrap .slickWrap .slick').slick({
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     dots: false,
     accessibility: false,
