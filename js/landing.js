@@ -47,6 +47,12 @@ $(function () {
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   ScrollTrigger.refresh();
 
+  //상단으로 이동
+  $('aside .top').click(function (e) {
+    e.preventDefault();
+    locoScroll.scrollTo(0);
+  });
+
   //헤더
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {

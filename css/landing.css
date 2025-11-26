@@ -239,3 +239,22 @@ appearance:none; background: #fff url(../images/common/arrow2.png)no-repeat 230p
     100%{transform: translateY(-50%) rotate(30deg);}
 
 }
+
+/* 퀵메뉴 */
+aside .quickWrap{position: fixed; bottom: 50px; z-index: 99999;}
+aside{position: fixed; top:288px; right:38px; width: 106px; height: 533px; line-height: 1; z-index: 9999; }
+aside .quickBtnList li{margin-bottom: 12px;}
+aside .quickBtnList li:last-child{margin-bottom: 0;}
+aside .quickBtnList li a{position: relative; display: block; width: 60px; height: 60px; background-color: #ae9373; border-radius: 50%;}
+aside .quickBtnList li a::after{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+aside .quickBtnList li a.icon01::after{width: 21px; height: 23px; background: url(../images/landing/icon01.png)no-repeat center;}
+aside .quickBtnList li a.icon02::after{width: 23px; height: 23px; background: url(../images/landing/icon02.png)no-repeat center;}
+aside .quickBtnList li a.icon03::after{width: 25px; height: 23px; background: url(../images/landing/icon03.png)no-repeat center;}
+aside .quickBtnList li a.icon04::after{width: 23px; height: 23px; background: url(../images/landing/icon04.png)no-repeat center;}
+aside .quickBtnList li a.top::after{width: 8px; height: 15px; background: url(../images/landing/top.png)no-repeat center;}
+
+
+
+
+
+
