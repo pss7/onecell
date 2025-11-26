@@ -1,6 +1,6 @@
 
 $(function () {
-  
+
   gsap.registerPlugin(ScrollTrigger);
 
   const locoScroll = new LocomotiveScroll({
@@ -85,7 +85,8 @@ $(function () {
 
   //센터 영역
   $('.centerBox01 .slickWrap .slick').slick({
-    autoplay: false,
+    variableWidth: true,
+    autoplay: true,
     arrows: false,
     dots: true,
     accessibility: false,
@@ -100,7 +101,7 @@ $(function () {
   });
 
   $('.centerBox02 .slickWrap .slick').slick({
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     dots: true,
     accessibility: false,
@@ -115,7 +116,7 @@ $(function () {
   });
 
   $('.centerBox03 .slickWrap .slick').slick({
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     dots: true,
     accessibility: false,
@@ -130,7 +131,7 @@ $(function () {
   });
 
   $('.centerBox04 .slickWrap .slick').slick({
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     dots: true,
     accessibility: false,
@@ -144,6 +145,62 @@ $(function () {
     speed: 1300,
   });
 
+  $('.doctorsBox .doctorsSlideWrap .slick').slick({
+    variableWidth: true,
+    autoplay: true,
+    arrows: true,
+    dots: false,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1300,
+    centerMode: true,
+    prevArrow: $('.doctorsBox .control .prev'),
+    nextArrow: $('.doctorsBox .control .next'),
+  });
+
+  //공간 영역 
+  $('#spaceWrap .slick').slick({
+    variableWidth: true,
+    autoplay: true,
+    arrows: true,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1300,
+    centerMode: true,
+    prevArrow: $('#spaceWrap .control .prev'),
+    nextArrow: $('#spaceWrap .control .next'),
+  });
+
+  //프로모션 영역 
+  $('#promotionWrap .slick').slick({
+    variableWidth: true,
+    autoplay: true,
+    arrows: false,
+    dots: false,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1300,
+    centerMode: true,
+  });
 
 
 

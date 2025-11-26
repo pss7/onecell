@@ -61,7 +61,7 @@
 #visualWrap .visualBox.active .textBox p{animation: fadeEffect 1.5s .3s both;}
 
 /* 병원센터 영역 */
-#centerWrap{padding: 128px 0 90px; background: url(../images/landing/bg.png) no-repeat center bottom;}
+#centerWrap{padding: 128px 0 0; background: url(../images/landing/bg.png) no-repeat center bottom;}
 #centerWrap .topInfoBox{margin-bottom: 153px;}
 #centerWrap .topInfoBox .title{margin-bottom: 60px; text-align: center; font-size:35px; color: #1f1f1f; font-family: 'Noto Serif KR', serif; letter-spacing: -1px;}
 #centerWrap .topInfoBox .topCenterList{max-width: 583px; margin: 0 auto; display: flex;}
@@ -74,6 +74,7 @@
 #centerWrap .topInfoBox .topCenterList li .iconBox.icon04{background: url(../images/landing/info_icon04.png)no-repeat center 6px;}
 #centerWrap .topInfoBox .topCenterList li h3{font-size: 20px; font-weight: 700; color: #131313; text-align: center;}
 #centerWrap .centerBox .layouyBox{display: flex; justify-content: center; gap: 0 116px;}
+#centerWrap .centerBox .slick{width: 608px;}
 #centerWrap .centerBox .imgBox{flex-shrink: 0;}
 #centerWrap .centerBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 #centerWrap .centerBox .textBox{padding-top: 56px;}
@@ -82,14 +83,18 @@
 #centerWrap .centerBox .textBox p{margin-bottom: 37px; font-size: 20px; color: #131313; line-height: 1.8;}
 #centerWrap .centerBox .centerInfoList{ display: flex; flex-wrap: wrap; gap: 13px 8px;}
 #centerWrap .centerBox .centerInfoList li{display: flex; align-items: center; justify-content: center; height: 60px; line-height: 58px; min-width: 193px; border-radius: 50px; color: #fff; font-weight: 400; font-size: 17px; background-color: #ae9373; text-align: center;}
-#centerWrap .centerBox01{position: relative; padding-bottom: 150px; z-index: 1;}
+#centerWrap .centerBox01{position: relative; padding-bottom: 943px; z-index: 1;}
 #centerWrap .centerBox01 .slick-dots{justify-content: flex-start; margin-left: 555px;}
-#centerWrap .centerBox01 .scrollText{position: absolute; right: 0; bottom: 84px; z-index: -1;}
+#centerWrap .centerBox01 .scrollText{position: absolute; right: 0; bottom: 858px; z-index: -1;}
 #centerWrap .centerBox01 .scrollText p{font-family: 'Constantia'; font-size: 174px; color: #f3f0ef; white-space: nowrap; line-height: 1;}
+#centerWrap .centerBox01 .centerInfoBox{position: absolute; left:-248px; right:0; bottom: 150px; display: flex; gap: 0 82px;}
+#centerWrap .centerBox01 .centerInfoBox .box.layoutBox{display: flex; align-items: center; gap: 0 70px;}
+#centerWrap .centerBox01 .centerInfoBox .box p{flex-shrink: 0; font-size: 33px; color: #1f1f1f; font-weight: 500; font-family: 'Noto Serif KR', serif;}
+#centerWrap .centerBox01 .centerInfoBox .box img{display: block; width: 100%;}
 
 /* 병원센터(피부, 성형) 영역 */
 #centerWrap .centerBox02{margin-bottom: 197px;}
-#centerWrap .centerBox04{margin-bottom: 230px ;}
+#centerWrap .centerBox04{padding-bottom: 230px ;}
 #centerWrap .centerBox04 .layouyBox,
 #centerWrap .centerBox02 .layouyBox{flex-direction: row-reverse;}
 #centerWrap .centerBox04 .textBox,
@@ -115,7 +120,47 @@
   }
 
 /* 의료진영역 */
+.doctorsBox{position: relative; z-index: 1;}
+.doctorsBox::after{content: ''; width: 779px; height: 859px; position: absolute; bottom: 0; right: 0; background: url(../images/landing/bg03.png)no-repeat center; z-index: -1;}
 .doctorsBox .title{padding-left: 100px;}
 .doctorsBox .titleBox{margin-bottom: 92px;}
 .doctorsBox .titleBox h3{font-size: 93px; color: #151515; font-family: 'Constantia'; font-weight: 400;}
 .doctorsBox .titleBox p{font-size: 20px; color: #131313; line-height: 1.8;}
+.doctorsBox .doctorsSlideWrap a img{display: block;}
+.doctorsBox .topBox{display: inline-block; position: relative;}
+.doctorsBox .topBox .control{position: absolute; top:29px; right:159px;}
+.doctorsBox .topBox .control button{background-color: #d1c6bd;}
+
+/* 공간영역 */
+#spaceWrap{padding: 343px 0 254px; background: url(../images/landing/bg.jpg)no-repeat center; background-attachment: fixed;}
+#spaceWrap .topBox{display: inline-block; position: relative;}
+#spaceWrap .topBox .control{position: absolute; top:38px; right:284px;}
+#spaceWrap .topBox .control button{background-color: #ae9373;}
+#spaceWrap .titleBox{margin-bottom: 133px;}
+#spaceWrap .titleBox .title .tit{margin-bottom: 7px; color: #fff;}
+#spaceWrap .titleBox .title p{color: #fff;}
+#spaceWrap .spaceImgList .slide{width: 724px; height: 620px; margin: 0 33px; overflow: hidden; border-radius:40px;}
+#spaceWrap .spaceImgList .imgBox{width: 100%; height: 100%;}
+#spaceWrap .spaceImgList .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#spaceWrap .slick-dots{margin-top: 77px;}
+
+/* 프로모션 영역 */
+#promotionWrap{position: relative; padding: 143px 0 128px; background-color: #fff;}
+#promotionWrap::after{content: ''; width: 464px; height: 375px; position: absolute; top:0; left:0; background: url(../images/landing/bg02.png)no-repeat center;}
+#promotionWrap .titleBox{margin-bottom: 57px;}
+#promotionWrap .promotionImgList .slide{width: 724px; height: 620px; margin: 0 43px; overflow: hidden; border-radius:40px;}
+#promotionWrap .promotionImgList .imgBox{width: 100%; height: 100%;}
+#promotionWrap .promotionImgList .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+
+/* 슬라이드 버튼 */
+.control{display: flex; gap: 0 12px;}
+.control button{position: relative; width: 83px; height: 83px; border-radius: 80%;}
+.control button::after{content: ''; width: 18px; height: 9px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.control button.prev::after{background: url(../images/landing/prev_icon01.png)no-repeat center;}
+.control button.next::after{background: url(../images/landing/next_icon01.png)no-repeat center;}
+
+/* 제목 */
+.titleBox .title{padding-left: 100px;}
+.titleBox .title .tit{font-size: 93px; color: #151515; font-family: 'Constantia';
+    font-weight: 400;}
+.titleBox .title p{font-size: 20px; color: #131313; line-height: 1.8;}
