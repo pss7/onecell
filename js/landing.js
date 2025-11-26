@@ -56,6 +56,14 @@ $(function () {
     }
   });
 
+
+// nav 공용 스크롤 처리
+$('[data-scroll-link]').click(function(e){
+    e.preventDefault();
+    locoScroll.scrollTo($(this).attr('href'));
+});
+
+
   //비주얼영역 
   $(window).load(function () {
     $('#visualWrap .visualBox').addClass('active');

@@ -65,7 +65,7 @@
 
 /* 병원센터 영역 */
 #centerWrap{padding: 128px 0 0; background: url(../images/landing/bg.png) no-repeat center bottom;}
-#centerWrap .topInfoBox{margin-bottom: 153px;}
+#centerWrap .topInfoBox{margin-bottom: 80px;}
 #centerWrap .topInfoBox .title{margin-bottom: 60px; text-align: center; font-size:35px; color: #1f1f1f; font-family: 'Noto Serif KR', serif; letter-spacing: -1px;}
 #centerWrap .topInfoBox .topCenterList{max-width: 583px; margin: 0 auto; display: flex;}
 #centerWrap .topInfoBox .topCenterList li{flex: 1; border-right: 1px solid #e8e8e8;}
@@ -86,18 +86,16 @@
 #centerWrap .centerBox .textBox p{margin-bottom: 37px; font-size: 20px; color: #131313; line-height: 1.8;}
 #centerWrap .centerBox .centerInfoList{ display: flex; flex-wrap: wrap; gap: 13px 8px;}
 #centerWrap .centerBox .centerInfoList li{display: flex; align-items: center; justify-content: center; height: 60px; line-height: 58px; min-width: 193px; border-radius: 50px; color: #fff; font-weight: 400; font-size: 17px; background-color: #ae9373; text-align: center;}
-#centerWrap .centerBox01{position: relative; padding-bottom: 943px; z-index: 1;}
+#centerWrap .centerBox01{position: relative; padding: 80px 0 843px; z-index: 1;}
 #centerWrap .centerBox01 .slick-dots{justify-content: flex-start; margin-left: 555px;}
-#centerWrap .centerBox01 .scrollText{position: absolute; right: 0; bottom: 858px; z-index: -1;}
+#centerWrap .centerBox01 .scrollText{position: absolute; right: 0; bottom: 770px; z-index: -1;}
 #centerWrap .centerBox01 .scrollText p{font-family: 'Constantia'; font-size: 174px; color: #f3f0ef; white-space: nowrap; line-height: 1;}
-#centerWrap .centerBox01 .centerInfoBox{position: absolute; left:-248px; right:0; bottom: 150px; display: flex; gap: 0 82px;}
+#centerWrap .centerBox01 .centerInfoBox{position: absolute; left:-248px; right:0; bottom: 46px; display: flex; gap: 0 82px;}
 #centerWrap .centerBox01 .centerInfoBox .box.layoutBox{display: flex; align-items: center; gap: 0 70px;}
 #centerWrap .centerBox01 .centerInfoBox .box p{flex-shrink: 0; font-size: 33px; color: #1f1f1f; font-weight: 500; font-family: 'Noto Serif KR', serif;}
 #centerWrap .centerBox01 .centerInfoBox .box img{display: block; width: 100%;}
 
-/* 병원센터(피부, 성형) 영역 */
-#centerWrap .centerBox02{margin-bottom: 197px;}
-#centerWrap .centerBox04{padding-bottom: 230px ;}
+/* 병원센터(피부, 통증) 영역 */
 #centerWrap .centerBox04 .layouyBox,
 #centerWrap .centerBox02 .layouyBox{flex-direction: row-reverse;}
 #centerWrap .centerBox04 .textBox,
@@ -107,8 +105,11 @@
 #centerWrap .centerBox04 .slick-dots,
 #centerWrap .centerBox02 .slick-dots{justify-content: flex-end;}
 
+/* 병원센터(피부) 영역 */
+#centerWrap .centerBox02{padding: 100px 0;}
+
 /* 병원센터(성형) 영역 */
-#centerWrap .centerBox03{position: relative; padding-bottom: 345px; z-index: 1;}
+#centerWrap .centerBox03{position: relative; padding: 100px 0 245px; z-index: 1;}
 #centerWrap .centerBox03 .slick-dots{justify-content: flex-start; margin-left: 555px;}
 #centerWrap .centerBox03 .marqueeTextBox{position: absolute; bottom: 246px; display: flex; animation: textEffect 23s linear infinite; z-index: -1;}
 #centerWrap .centerBox03 .marqueeTextBox p{width: 2700px; font-size: 175px; font-weight: 400; color: #f0eae8; font-family: 'Constantia'; text-align: center; line-height: 1;}
@@ -121,6 +122,9 @@
       left: -2700px;
     }
   }
+
+/* 병원센터(통증) 영역 */
+#centerWrap .centerBox04{padding:100px 0 230px;}
 
 /* 의료진영역 */
 .doctorsBox{position: relative; z-index: 1;}
