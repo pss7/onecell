@@ -40,13 +40,14 @@
 .slick-dots li button{display: block; width: 15px; height: 15px; text-indent: -9999px; border-radius: 50px; background-color:#dedede; cursor: pointer;}
 
 /* 헤더 */
-#headerWrap{position: fixed; top:0; left:0; right:0; padding: 0 60px; display: flex; align-items: center; justify-content: space-between; background-color: #fff; z-index: 999;}
+#headerWrap{min-width: 1920px; position: fixed; top:0; left:0; right:0; padding: 0 60px; display: flex; align-items: center; justify-content: space-between; background-color: #fff; z-index: 999;}
 #headerWrap .link{display: flex; align-items: center;}
 #headerWrap .link li h2 a{display: block; padding: 47px 18px; font-size: 20px; color: #121212; font-weight: 500;} 
 #headerWrap .link li h2 a img{display: block;}
 #headerWrap .logoBox{position: absolute; left: 50%; transform: translateX(-50%);}
 #headerWrap .logoBox h1 a,
 #headerWrap .logoBox h1 a img{display: block;}
+#headerWrap.scroll{background-color: rgba(0,0,0,.5); box-shadow: 0 10px 20px rgba(0,0,0,.2);}
 
 /* 비주얼 영역 */
 #visualWrap .visualBox{position: relative; height: 100vh; overflow: hidden;}
@@ -84,7 +85,7 @@
 #centerWrap .centerBox01{position: relative; padding-bottom: 150px; z-index: 1;}
 #centerWrap .centerBox01 .slick-dots{justify-content: flex-start; margin-left: 555px;}
 #centerWrap .centerBox01 .scrollText{position: absolute; right: 0; bottom: 84px; z-index: -1;}
- #centerWrap .centerBox01 .scrollText p{font-family: 'Constantia'; font-size: 174px; color: #f3f0ef; white-space: nowrap; line-height: 1;}
+#centerWrap .centerBox01 .scrollText p{font-family: 'Constantia'; font-size: 174px; color: #f3f0ef; white-space: nowrap; line-height: 1;}
 
 /* 병원센터(피부, 성형) 영역 */
 #centerWrap .centerBox02{margin-bottom: 197px;}
@@ -98,9 +99,22 @@
 #centerWrap .centerBox04 .slick-dots,
 #centerWrap .centerBox02 .slick-dots{justify-content: flex-end;}
 
+
+
 /* 병원센터(성형) 영역 */
-#centerWrap .centerBox03{margin-bottom: 345px;}
+#centerWrap .centerBox03{position: relative; padding-bottom: 345px; z-index: 1;}
 #centerWrap .centerBox03 .slick-dots{justify-content: flex-start; margin-left: 555px;}
+#centerWrap .centerBox03 .marqueeTextBox{position: absolute; bottom: 246px; display: flex; animation: textEffect 23s linear infinite; z-index: -1;}
+#centerWrap .centerBox03 .marqueeTextBox p{width: 2700px; font-size: 175px; font-weight: 400; color: #f0eae8; font-family: 'Constantia'; text-align: center; line-height: 1;}
+
+@keyframes textEffect {
+    0%{
+      left: 0;
+    }
+    100%{
+      left: -2700px;
+    }
+  }
 
 /* 의료진영역 */
 .doctorsBox .title{padding-left: 100px;}
