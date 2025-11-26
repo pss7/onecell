@@ -99,8 +99,6 @@
 #centerWrap .centerBox04 .slick-dots,
 #centerWrap .centerBox02 .slick-dots{justify-content: flex-end;}
 
-
-
 /* 병원센터(성형) 영역 */
 #centerWrap .centerBox03{position: relative; padding-bottom: 345px; z-index: 1;}
 #centerWrap .centerBox03 .slick-dots{justify-content: flex-start; margin-left: 555px;}
