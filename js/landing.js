@@ -93,7 +93,7 @@ $(function () {
     slidesToScroll: 1,
     zIndex: 1000,
     pauseOnHover: false,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 5500,
     speed: 1300,
   });
 
