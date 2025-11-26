@@ -170,9 +170,12 @@
 
 /* 푸터 */
 #footerWrap{position: relative;}
+#footerWrap .container{max-width: 1360px;}
 #footerWrap .title{display: block; margin-bottom: 20px; color: #c0b396; font-size: 23px; font-weight: 300; font-family: 'Noto Serif KR', serif;}
-#footerWrap{position: relative; padding: 0 0 218px; background: url(../images/landing/bg.jpg)no-repeat center; background-size: cover;}
-#footerWrap .footerTopBox .infoBox01{display: flex; gap: 0 84px; padding: 90px 0 57px;  border-bottom: 2px solid #575a60;}
+#footerWrap{position: relative; padding: 0 0 218px; background-color:#27272c; z-index: 1;}
+/* #footerWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/landing/bg04.png)no-repeat center; background-size: cover; z-index: -1;} */
+#footerWrap .footerTopBox .infoBox01{display: flex; gap: 0 25px; border-bottom: 2px solid #575a60;}
+#footerWrap .footerTopBox .leftBox{padding-top: 90px;}
 #footerWrap .footerTopBox .leftBox .box{margin-bottom: 40px;}
 #footerWrap .footerTopBox .leftBox .box p{font-size: 20px; color: #fff;}
 #footerWrap .footerTopBox .leftBox .box em{margin-top: -50px; display: block; color: #fff; font-family: 'Constantia'; font-size: 72px;}
@@ -180,6 +183,7 @@
 #footerWrap .footerTopBox .leftBox .btnBox .btn{width: 198px; height: 55px; line-height: 55px; border-radius: 7px; text-align: center; font-weight: 700; letter-spacing: -1px;}
 #footerWrap .footerTopBox .leftBox .btnBox .btn.kakao{background-color: #ffd800; color: #27272c;}
 #footerWrap .footerTopBox .leftBox .btnBox .btn.naverMap{background-color: #c0b396 ; color: #27272c;}
+#footerWrap .footerTopBox .mapBox img{display: block;}
 #footerWrap .footerCenterBox .timeInfoBox{padding: 63px 0 56px; border-bottom: 2px solid #575a60;}
 #footerWrap .footerCenterBox .timeInfoBox .text{display: block; margin-bottom: 20px; color: #d8d8d8; font-size: 23px; font-weight: 500;}
 #footerWrap .footerCenterBox .timeInfoBox .box{margin-bottom: 5px; display: flex; gap: 0 38px;}
@@ -213,9 +217,9 @@ appearance:none; background: #fff url(../images/common/arrow2.png)no-repeat 230p
 .consultingBox .searchBox a{width: 152px; height: 55px; line-height: 54px; background-color: #000; display: block; text-align: center; color: #fff; border-radius: 7px; font-weight: 700; font-size: 19px;}
 .consultingBox .consulting{height: 83px; padding: 0 54px; display: flex; align-items: center; position: absolute; left: 50%; transform: translateX(-50%); top:-83px; border-radius: 20px 20px 0 0; background-color: #ae9373; font-family: 'Noto Serif KR', serif; color: #fff; font-size: 22px; transition: all .3s;}
 .consultingBox .consulting span{position: relative; padding-right: 35px;}
-.consultingBox .consulting span::after{content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:0; padding: 26px 24px 0 0; background: url(../images/landing/consulting.png)no-repeat; animation: icon_effect .8s infinite alternate;}
+.consultingBox .consulting span::after{content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:0; padding: 26px 24px 0 0; background: url(../images/landing/consulting.png)no-repeat; animation: iconEffect .8s infinite alternate;}
 
-@keyframes icon_effect{
+@keyframes iconEffect{
 
     0%{transform: translateY(-50%) rotate(0);}
     100%{transform: translateY(-50%) rotate(30deg);}
