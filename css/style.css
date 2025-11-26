@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* 헤더 */
+#headerWrap{position: fixed; top:0; left:0; right:0; padding: 0 60px; display: flex; align-items: center; justify-content: space-between;}
+#headerWrap .link{display: flex; align-items: center;}
+#headerWrap .link li h2 a{display: block; padding: 47px 18px; font-size: 20px; color: #121212; font-weight: 500;} 
+#headerWrap .link li h2 a img{display: block;}
+#headerWrap .logoBox{position: absolute; left: 50%; transform: translateX(-50%);}
+#headerWrap .logoBox h1 a,
+#headerWrap .logoBox h1 a img{display: block;}

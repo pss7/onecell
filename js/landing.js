@@ -1,0 +1,151 @@
+
+$(function () {
+
+  //비주얼영역 
+  $(window).load(function () {
+    $('#visualWrap .visualBox').addClass('active');
+  });
+
+  $('#visualWrap .slickWrap .slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    $('#visualWrap .visualBox').removeClass('active');
+  });
+  $('#visualWrap .slickWrap .slick').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    $('#visualWrap .visualBox').addClass('active');
+  });
+
+  $('#visualWrap .slickWrap .slick').slick({
+    autoplay: false,
+    arrows: false,
+    dots: false,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1300,
+  });
+
+  //센터 영역
+  $('.centerBox01 .slickWrap .slick').slick({
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1300,
+  });
+
+  $('.centerBox02 .slickWrap .slick').slick({
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1300,
+  });
+
+  $('.centerBox03 .slickWrap .slick').slick({
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1300,
+  });
+
+  $('.centerBox04 .slickWrap .slick').slick({
+    autoplay: false,
+    arrows: false,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1300,
+  });
+
+
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector('.scrollWrap'),
+    smooth: true,
+    smoothMobile: true,
+    paused: true,
+    onUpdate: () => {
+      window.dispatchEvent(new Event('resize'));
+    },
+    multiplier: 1,
+    smartphone: {
+      smooth: true
+    },
+    tablet: {
+      smooth: true
+    },
+    useKeyboard: true,
+
+  });
+
+  let lastScrollTop = 0;
+  let delta = 0;
+  locoScroll.on('scroll', (position) => { });
+
+  locoScroll.on("scroll", ScrollTrigger.update);
+
+  ScrollTrigger.scrollerProxy(".scrollWrap", {
+    scrollTop(value) {
+      return arguments.length ?
+        locoScroll.scrollTo(value, 0, 0) :
+        locoScroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+      return {
+        top: 0,
+        left: 0,
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
+    },
+    pinType: document.querySelector('.scrollWrap').style.transform ? "transform" : "fixed"
+  });
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+  ScrollTrigger.refresh();
+
+
+
+
+
+
+
+
+
+
+
+
+});

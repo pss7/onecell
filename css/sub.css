@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+#wrap{height: 100%; display: flex; flex-direction: column;}
+#subWrap{flex: 1;}
+
+.contentBox{padding: 80px 0;}
+
+@media (max-width: 767px){
+
+  .contentBox{padding: 50px 0;}
+
+}
+
+/* 공통 - 폼 */
+.customSelectBox .selectBtn,
+input[type="text"]{ width: 100%; padding: 0 20px 0 16px; height: 48px; border: 1px solid #E8EBED; border-radius: 8px; font-weight: 500; font-size: 14px; background-color: #fff;}
+input[type="text"]::placeholder{color: #9EA4AA;}
+.customSelectBox{position: relative;}
+.customSelectBox .selectBtn{padding: 0 36px 0 16px; text-align: left;}
+.customSelectBox .selectBtn.active::after{transform: translateY(-50%) rotate(90deg);}
+.customSelectBox .selectBtn::after{content: ''; width: 7px; height: 10px; position: absolute; top: 50%; transform: translateY(-50%) rotate(-90deg); right:16px; background: url(../images/sub/arrow_icon01.svg)no-repeat center;}
+.customSelectBox .selectList{display: none; padding: 10px 0; position: absolute; top:56px; left:0; right:0; border: 1px solid #E8EBED; border-radius: 8px; background-color: #fff; z-index: 99;}
+.customSelectBox .selectList li .btn{padding: 10px 10px 10px 16px; display: block; width: 100%; text-align: left; font-weight: 500; font-size: 14px; transition: all .3s;}
+.customSelectBox .selectList li .btn:hover{background-color: #4D8FFF; color: #fff;}
+input[type="radio"] + label{padding-left: 16px; height: 48px; display: flex; align-items: center; gap: 0 8px; font-size: 14px; font-weight: 500; color: #454C53; font-weight: 500; border: 1px solid #E8EBED; border-radius: 8px; cursor: pointer;}
+input[type="radio"]:checked + label{background-color: #4D8FFF; color: #fff; font-weight: 700;}
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before{content: ''; width: 22px; height: 22px; background: url(../images/sub/radio_icon.svg)no-repeat center / contain;}
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before{ background: url(../images/sub/radio_on_icon.svg)no-repeat center / contain;}
+
+/* 공통 - 정렬 */
+.textCenter{text-align: center!important;}
+
+/* 공통 - 여백 */
+.mb30{margin-bottom: 30px!important;}
+.mb50{margin-bottom: 50px!important;}
+.mb60{margin-bottom: 60px!important;}
+
+/* 공통 - 버튼 */
+.comBtn{display: flex; align-items: center; justify-content: center; width: 100%; height: 56px; padding: 0 10px; background-color: #454C53; border-radius: 16px; text-align: center; color: #fff; font-weight:700;}
+.comBtn.garyBtnColor{background-color: #9EA4AA;}
+
+@media (max-width: 767px){
+
+  .comBtn{height: 45px; border-radius: 8px;}
+
+}
+
+@media (max-width: 480px){
+
+  .comBtn{font-size: 14px;}
+
+}
+
+/* 공통 - 그라데이션 텍스트 */
+.gradientText{background: linear-gradient(to right, #203c6b,
+    #4d8fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+
+/* 공통 - 그라데이션 배경색 */
+.gradientBG{background: radial-gradient(ellipse 40% 48% at center,rgba(173, 203, 255, 0.5) 0%, rgba(173, 203, 255, 0.5) 60%,#F7F8F9 100% );}
+
+/* 공통 - 상단 영역 */    
+.subVisualBox {padding-bottom: 64px; background: linear-gradient(to bottom,rgba(255, 255, 255, 1),rgba(237, 244, 255, 1),rgba(255, 255, 255, 1));}
+.subVisualBox .visualBox{margin-bottom: 24px; position: relative; height: 164px; border-radius: 65px; overflow: hidden;}
+.subVisualBox .visualBox.active img{transform: scale(1);}
+.subVisualBox .visualBox img{display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.5); transition: all 5.5s;}
+.subVisualBox .visualBox .title{padding: 0 40px; width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: #fff; font-family: 'Retrosans'; z-index: 9; letter-spacing: 20px; text-align: center; word-break: keep-all;}
+.subVisualBox .visualBox .title em{display: inline-block;}
+.subVisualBox .visualBox .title em:nth-child(1){animation-delay: .3s;}
+.subVisualBox .visualBox .title em:nth-child(2){animation-delay: .35s;}
+.subVisualBox .visualBox .title em:nth-child(3){animation-delay: .4s;}
+.subVisualBox .visualBox .title em:nth-child(4){animation-delay: .45s;}
+.subVisualBox .visualBox .title em:nth-child(5){animation-delay: .5s;}
+.subVisualBox .visualBox .title em:nth-child(6){animation-delay: .55s;}
+.subVisualBox .visualBox .title em:nth-child(7){animation-delay: .6s;}
+.subVisualBox .visualBox .title em:nth-child(8){animation-delay: .65s;}
+.subVisualBox .visualBox .title em:nth-child(9){animation-delay: .7s;}
+.subVisualBox .visualBox .title em:nth-child(10){animation-delay: .75s;}
+.subVisualBox .visualBox .title em:nth-child(11){animation-delay: .8s;}
+.subVisualBox .subMenuBox{display: flex; justify-content: center;}
+.subVisualBox .subMenuBox .title01{margin: 0 auto; padding: 7px 16px; font-size: 18px; font-weight: 500; color: #454C53; border-radius: 50px; background-color:#fff;}
+.subDepthBox{padding-bottom: 18px; border-bottom: 1px solid #E8EBED;}
+.subDepthBox .container{position: relative;}
+.subDepthBox .breadcrumbsList{margin-bottom: 24px; padding: 2px 8px; display: inline-flex; align-items: center; background-color: #F7F8F9; border-radius: 10px;}
+.subDepthBox .breadcrumbsList li a{display: flex; align-items: center; font-size: 14px; font-weight: 500; color: #9EA4AA;}
+.subDepthBox .breadcrumbsList li a::after{content: ''; margin: 0 5px; width: 4px; height: 1px; background-color: #9EA4AA;}
+.subDepthBox .breadcrumbsList li:last-child a{ color: #454C53; font-weight: 700;}
+.subDepthBox .breadcrumbsList li:last-child a::after{display: none;}
+.subDepthBox .title01{margin-bottom: 20px; font-weight: 400; font-family: 'Retrosans'; font-size: 38px;}
+.subDepthBox .title02{font-weight: 700; color: #9EA4AA; font-size: 24px;}
+.subDepthBox .shareBox{position: absolute; top:0; right:20px; display: flex; gap: 0 8px;}
+.subDepthBox .shareBox a{position: relative; display: block; width: 64px; height: 54px; border-radius: 50%; background-color: #fff; box-shadow: 0 0 40px rgba(0,0,0,.1);}
+.subDepthBox .shareBox a::after{content: ''; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);}
+.subDepthBox .shareBox .shareBtn::after{width: 24px; height: 24px; background: url(../images/sub/share_icon.svg)no-repeat center;}
+.subDepthBox .shareBox .printerBtn::after{width: 22px; height: 21px; background: url(../images/sub/printer_icon.svg)no-repeat center;}
+
+@media (max-width: 767px){
+
+  .subVisualBox .visualBox .title{font-size: 20px;}
+  .subDepthBox .shareBox{display: none;}
+
+}
+
+@media (max-width: 480px){
+
+  .subVisualBox{padding-bottom: 48px;}
+  .subVisualBox .visualBox{margin-bottom: 16px;}
+  .subVisualBox .visualBox .title{font-size: 16px; letter-spacing: 10px;}
+  .subVisualBox .subMenuBox .title01{font-size: 16px;}
+
+  .subDepthBox{padding-bottom: 8px;}
+  .subDepthBox .breadcrumbsList{margin-bottom: 20px;}
+  .subDepthBox .title01{margin: 0;}
+  .subDepthBox .title02{display: none;}
+
+}
+
+/* 인사말 */
+.greetingsBox{position: relative;}
+.greetingsBox::after{content: ''; width: 176px; height: 847px; position: absolute; top:0; right:0; background: url(../images/sub/bg02.png)no-repeat right top;}
+.greetingsBox .layoutBox{display: flex; align-items: flex-start; gap: 0 77px;}
+.greetingsBox .imgBox{position: relative; padding:104px 87px 0 0;}
+.greetingsBox .imgBox img{display: block; max-width: 100%;}
+.greetingsBox .imgBox img.m{display: none;}
+.greetingsBox .imgBox::before{content: ''; position: absolute; top:0; left:-240px; right:0; bottom: 0; background: url(../images/sub/bg01.png)no-repeat right top; background-size: cover; z-index: -1;border-radius: 0 160px 0 0;}
+.greetingsBox .textBox .title{margin-bottom: 38px; color: #1B1D1F; font-weight: 700; font-size: 48px; line-height: 1.4;}
+.greetingsBox .textBox .text{margin-bottom: 35px; color: #454C53; font-size: 18px; word-break: keep-all; line-height: 1.7;}
+
+@media (max-width: 1440px){
+
+  .greetingsBox::after{display: none;}  
+
+}
+
+@media (max-width: 1199px){
+
+  .greetingsBox .layoutBox{gap: 0 40px;}
+  .greetingsBox .imgBox{flex-shrink: 0; padding: 102px 44px 0 0;}
+  .greetingsBox .imgBox img{width: 380px;}
+  .greetingsBox .textBox .title{font-size: 32px;}
+  
+}
+
+@media (max-width: 1024px){
+
+
+  .greetingsBox .imgBox img{width: 265px;}
+  .greetingsBox .imgBox{padding: 124px 17px 0 0;}
+  .greetingsBox .textBox .title{font-size: 28px;}
+  .greetingsBox .textBox .text{margin-bottom: 28px; font-size: 16px;}
+  
+}
+
+@media (max-width: 767px){
+
+  .greetingsBox .textBox .text br{display: none;}
+  .greetingsBox .layoutBox{flex-direction: column; gap: 64px 0;}
+  .greetingsBox .imgBox{padding: 0; width: 100%;}
+  .greetingsBox .imgBox::before{ top: 85px; left: -20px; right:-20px; border-radius: 0 120px 0 0;}
+  .greetingsBox .imgBox img.m{display: block; width: auto; margin: 0 auto;}
+  .greetingsBox .imgBox img.pc{display: none;}
+
+}
+ 
+@media (max-width: 480px){
+
+  .greetingsBox .imgBox::before{ top: 17.71vw; left: -20px; right:-20px; border-radius: 0 25vw 0 0;}
+
+}
+
+/* 로그인 */
+.comContentBox{position: relative; padding: 64px; max-width: 720px; margin: 0 auto; border: 1px solid #E8EBED; border-radius: 64px; background-color: #fff;}
+.comContentBox .title{margin-bottom: 44px; font-size: 24px; font-weight: 500; color: #454C53; text-align: left;}
+
+.signinBox .box h4{margin-bottom: 16px; font-size: 14px; font-weight: 700; color: #454C53;}
+.signinBox .box .snsLoginLink{margin-bottom: 26px;}
+.signinBox .box .snsLoginLink a{height: 72px; padding: 21px 10px 21px 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 0 8px; border-radius: 8px; border: 1px solid #E8EBED; color: #454C53;}
+.signinBox .box .snsLoginLink a:hover{border: 2px solid #454C53; font-weight: 700; color: #454C53;}
+.signinBox .box .snsLoginLink a::before{content: ''; width: 28px; height: 28px;}
+.signinBox .box .snsLoginLink a.kakaoLogin:before{content: ''; background: url(../images/sub/kakao_icon.svg)no-repeat center;}
+.signinBox .box .snsLoginLink a.naverLogin:before{content: ''; background: url(../images/sub/naver_icon.svg)no-repeat center;}
+.signinBox .box .snsLoginLink a:last-child{margin-bottom: 0;}
+.signinBox .box .infoBox{padding-right: 20px; display: flex; align-items: center; gap: 0 0; justify-content: space-between;}
+.signinBox .box .infoBox p{font-weight: 500; color: #9EA4AA; font-size: 14px;}
+.signinBox .box .infoBox a{display: flex; align-items: center; gap: 0 8px; font-size: 14px; font-weight: 700; color: #454C53;}
+.signinBox .box .infoBox a::before{content: ''; margin-top: -1px; width: 7px; height: 10px; background: url(../images/sub/arrow_icon01.svg)no-repeat center;}
+.signinBox .box .selectBox span{display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #9EA4AA;}
+.signinBox .box .selectBox .selectBtnBox{padding: 4px; display: flex; align-items: center; width: 142px; height: 44px; border-radius: 16px; background-color: #F7F8F9;} 
+.signinBox .box .selectBox .selectBtnBox .selectBtn{display: flex; align-items: center; justify-content: center; width: 67px; height: 36px; border-radius: 16px; color: #9EA4AA; font-weight: 700;}
+.signinBox .box .selectBox .selectBtnBox .selectBtn.active{background-color: #4D8FFF; color: #fff;}
+.signinBox .box .selectBox{position: absolute; top:64px; right:64px;}
+.signinBox .box .inputTextBox{margin-bottom: 10px;}
+.signinBox .box .inputTextBox input{padding-left: 49px; width: 100%; border: 1px solid #E8EBED; height: 72px; background-color: #F7F8F9; border-radius: 8px; font-weight: 500;}
+.signinBox .box .inputTextBox input::placeholder{color: #9EA4AA;}
+.signinBox .box .inputTextBox input#id{background: url(../images/sub/id_icon.svg)no-repeat 21px center;}
+.signinBox .box .inputTextBox input#password{background: url(../images/sub/pw_icon.svg)no-repeat 21px center;}
+.signinBox .box .loginBtn{display: block; margin-bottom: 26px; width: 100%; height: 72px; font-size: 20px;}
+
+@media (max-width: 1199px){
+
+  .comContentBox .title{font-size: 22px;}
+
+}
+
+@media (max-width: 767px){
+
+  .comContentBox .title{font-size: 20px;}
+  
+  .comContentBox{padding: 55px 30px 40px; border-radius: 30px;}
+  .signinBox .box .loginBtn,
+  .signinBox .box .inputTextBox input,
+  .signinBox .box .snsLoginLink a{height: 65px;}
+  .signinBox .box .loginBtn{font-size: 18px;}
+  .signinBox .box .inputTextBox input#id{background: url(../images/sub/id_icon.svg)no-repeat 17px center;}
+  .signinBox .box .inputTextBox input#password{background: url(../images/sub/pw_icon.svg)no-repeat 17px center;}
+
+}
+
+@media (max-width: 480px){
+
+  .comContentBox .title{margin-bottom: 20px; font-size: 18px; text-align: center;}
+
+  .comContentBox{padding: 45px 20px 40px; }
+
+  .signinBox .box .selectBox{margin-bottom: 30px; position: static; text-align: center;}
+  .signinBox .box .selectBox .selectBtnBox{margin: 0 auto;}
+  .signinBox .box .infoBox{flex-direction: column; gap: 15px 0;}
+  .signinBox .box .snsLoginLink a{font-size: 14px;}
+
+}
+
+/* 회원가입 */
+.signupBox h4{margin-bottom: 16px; font-size: 18px;}
+.signupBox .label{display: block; margin-bottom: 14px; font-weight: 700; color: #454C53;}
+.signupBox .label .required{color: #FF8539;}
+.signupBox .phoneBox{display: flex; flex-wrap: wrap; align-items: center; gap: 8px;}
+.signupBox .phoneBox .inputTextBox{width: calc(100% - 98px);}
+.signupBox .phoneBox .comBtn{padding: 0; width: 90px; height: 48px; font-size: 14px; border-radius: 8px;}
+.signupBox .emailBox{display: flex; align-items: center; flex-wrap: wrap; gap:8px .95%;}
+.signupBox .emailBox span{font-weight: 500; color: #454C53;}
+.signupBox .emailBox .customSelectBox{width: calc(100% - 477px);}
+.signupBox .btnBox{display: flex; gap: 8px; justify-content: center;} 
+.signupBox .btnBox .comBtn{width: 108px;}
+.signupBox .genderBox{display: flex;flex-wrap: wrap; gap:8px;}
+.signupBox .genderBox .inputRadioBox{flex: 1;}
+.signupBox .signupInfoBox{margin-top: 16px;}
+.signupBox .signupInfoBox .infoText01{padding: 6px 0 6px 16px; font-size: 14px; font-weight: 700; color: #203C6B; background-color: #EDF4FF; border-radius: 8px;}
+.signupBox .signupInfoBox .infoBox{padding: 16px; display: flex; align-items: center; justify-content: space-between; background-color: #FFF2E8; border-radius: 8px;}
+.signupBox .signupInfoBox .infoBox .infoText02{margin-bottom: 6px; font-size: 14px; font-weight: 700; color: #6A340C; } 
+.signupBox .signupInfoBox .infoBox .mailText{display: flex; align-items: center; gap: 0 8px; font-size: 14px; color: #454C53; font-weight: 500;}
+.signupBox .signupInfoBox .infoBox .mailText::before{content: ''; width: 20px; height: 20px; }
+.signupBox .signupInfoBox .infoBox .mailText.kakao::before{background: url(../images/sub/kakao_icon.svg)no-repeat center / contain;}
+.signupBox .signupInfoBox .infoBox .mailText.naver::before{background: url(../images/sub/naver_icon.svg)no-repeat center / contain;}
+.signupBox .signupInfoBox .infoBox .link{display: block; padding: 6px 8px; background-color: #fff; border-radius: 8px; font-size: 14px; color: #454C53; font-weight: 700;}
+.signupBox .agreeBox{padding: 24px; border: 2px solid #C8DCFF; border-radius: 16px;} 
+.signupBox .agreeBox .agreeTitle{margin-bottom: 16px; padding-bottom: 16px; color: #454C53; font-size: 15px; border-bottom: 1px solid #E8EBED; text-align: left;}
+.signupBox .agreeBox .title01{margin-bottom: 8px; color: #1B1D1F; font-size: 16px;}
+.signupBox .agreeBox .title02{margin-bottom: 4px; color: #454C53; font-size: 14px;}
+.signupBox .agreeBox .list01{margin-bottom: 8px;}
+.signupBox .agreeBox .list01 li{padding-left: 4px; display: flex; align-items: center; gap: 0 8px; font-size: 14px; color: #454C53;}
+.signupBox .agreeBox .list01 li::before{content: ''; margin-top: -1px; width: 6px; height: 6px; border-radius: 50%; background-color: #D9D9D9;}
+.signupBox .agreeBox .agreeInputChkBox{margin-top: 16px; padding: 17px 10px 17px 16px; background-color: #F7F8F9; border-radius: 8px;}
+.signupBox .agreeBox .agreeInputChkBox label{display: flex; gap: 0 8px; font-size: 14px; color: #454C53; font-weight: 500; cursor: pointer;}
+.signupBox .birthDateBox{position: relative;}
+.signupBox .birthDateBox .calendarBtn{position: absolute; top: 50%; transform: translateY(-50%); right:19px;}
+.signupBox .birthDateBox .calendarBtn img{display: block;}
+.signupBox .birthDateBox input[type="text"]{padding: 0 54px 0 16px;}
+.signupBox form{margin-bottom: 64px;}
+
+.loginInfoBox{padding: 21px 20px 21px 16px; display: flex; align-items: center; gap: 0 16px; border: 1px solid #E8EBED; border-radius: 8px;}
+.loginInfoBox span{width: 71px; height: 22px; line-height: 22px; text-align: center; background-color: #EDF4FF; color: #203C6B; font-weight: 700; font-size: 12px;}
+.loginInfoBox em{display: flex; align-items: center; gap: 0 8px; font-weight: 500; color: #454C53;}
+.loginInfoBox em::before{content: ''; width: 28px; height: 28px;}
+.loginInfoBox em.kakao::before{background: url(../images/sub/kakao_icon.svg)no-repeat center;}
+.loginInfoBox em.naver::before{background: url(../images/sub/naver_icon.svg)no-repeat center;}
+
+@media (max-width: 767px){
+
+  .signupBox .emailBox{flex-direction: column; gap: 5px 0;}
+  .signupBox .emailBox .customSelectBox,
+  .signupBox .emailBox .inputTextBox{width: 100%;}
+
+  .signupBox .phoneBox{flex-direction: column;}
+  .signupBox .phoneBox .inputTextBox{width: 100%;}
+  .signupBox .phoneBox .comBtn{width:100%;}
+  .signupBox .agreeBox{border-radius: 8px;}
+  .signupBox .genderBox{flex-direction: column;}
+
+  .signupBox .btnBox{flex-direction: column;}
+  .signupBox .btnBox .comBtn{width: 100%;}
+
+  .signupBox form{margin-bottom: 40px;}
+  
+}
+
+@media (max-width: 480px){
+
+  .loginInfoBox{flex-direction: column; gap: 8px 0; padding: 15px 10px 15px 15px;}
+
+}
+
+/* 마이페이지 */
+.mypageBox .mypageLayoutBox{display: flex; gap: 0 100px; justify-content: space-between;}
+.mypageBox .leftBox{position: relative; width: 400px;}
+.mypageBox .leftBox .topBox{margin-bottom: 56px;}
+.mypageBox .leftBox .topBox .text01{margin-bottom: 24px; font-size: 32px; color: #454C53; font-weight: 500;}
+.mypageBox .leftBox .topBox .text02{position: relative; padding: 6px 10px 6px 16px; font-size: 14px; color: #fff; border-radius: 8px; background-color: #E8EBED; z-index: 1;}
+.mypageBox .leftBox .topBox .text02 .percent{width: 0; position: absolute; top:0; left:0; right:0; bottom: 0; background: linear-gradient(to right, #4D8FFF, #72787F); z-index: -1; border-radius: 8px;}
+.mypageBox .leftBox .topBox .infoBox{position: absolute; top:52px; right:0;  display: flex; gap: 0 4px;}
+.mypageBox .leftBox .topBox .infoBox .comBtn{padding: 0 16px; height: 36px; width: auto; border-radius: 8px;}
+.mypageBox .leftBox .loginInfoBox{margin-bottom: 19px; border: 0; padding: 0;}
+.mypageBox .leftBox .memberInfoBox{padding: 24px 10px 24px 24px; background-color: #fff; border-radius: 20px; border: 1px solid #E8EBED;}
+.mypageBox .leftBox .memberInfoBox .box{margin-bottom: 14px; display: flex; gap: 0 24px;}
+.mypageBox .leftBox .memberInfoBox .box:last-child{margin-bottom: 0;}
+.mypageBox .leftBox .memberInfoBox .box span{flex-shrink: 0; width: 56px; font-weight: 700; color: #9EA4AA; font-size: 14px;}
+.mypageBox .leftBox .memberInfoBox .box em{font-weight: 500; color: #454C53;}
+.mypageBox .rightBox{position: relative; width: 840px; height: 674px; padding: 48px; background-color: #fff; border: 1px solid #E8EBED; border-radius: 64px;}
+.mypageBox .rightBox .stateList{position: absolute; top:55px; right:48px; display: flex; align-items: center; gap: 0 16px;}
+.mypageBox .rightBox .stateList li{display: flex; align-items: center; gap: 0 4px;}
+.mypageBox .rightBox .stateList li.active .stateBtn{font-weight: 700; color: #4D8FFF;}
+.mypageBox .rightBox .stateList li.active .number{background-color: #4D8FFF; color: #fff;}
+.mypageBox .rightBox .stateList li .stateBtn{font-size: 14px; font-weight: 500; color: #454C53;}
+.mypageBox .rightBox .stateList li .number{min-width: 17px; color: #454C53; font-size: 14px; font-weight: 500; border-radius: 4px; background-color: #E8EBED; text-align: center;} 
+.mypageBox .rightBox h4{margin-bottom: 16px; font-size: 24px; color: #454C53; font-weight: 700;}
+.mypageBox .rightBox .tableBox {max-height: 528px; overflow-y: auto; overflow-x: hidden;}
+.mypageBox .rightBox table{width: 100%;}
+.mypageBox .rightBox table thead tr{border-radius: 8px;}
+.mypageBox .rightBox table thead th:first-child {border-radius: 8px 0 0 8px;}
+.mypageBox .rightBox table thead th:last-child {border-radius: 0 8px 8px 0;}
+.mypageBox .rightBox table thead tr th{ position: sticky; top: 0; background: #fff; z-index: 1; height: 32px; font-size: 12px; color: #9EA4AA; font-weight: 700; background-color: #F7F8F9; text-align: left;}
+.mypageBox .rightBox table thead tr th.date{padding-left: 28px;}
+.mypageBox .rightBox table tbody tr td{height: 88px; border-bottom: 1px solid #E8EBED;}
+.mypageBox .rightBox table tbody tr td .dateBox{padding-left: 28px; position: relative; display: flex; flex-direction: column; gap: 6px 0;}
+.mypageBox .rightBox table tbody tr td .dateBox::before{content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 12px; height: 12px; border-radius: 50%;}
+.mypageBox .rightBox table tbody tr td .dateBox.secondHalf::before{background: url(../images/sub/icon01.svg)no-repeat center;}
+.mypageBox .rightBox table tbody tr td .dateBox.firstHalf::before{background: url(../images/sub/icon02.svg)no-repeat center;}
+.mypageBox .rightBox table tbody tr td .dateBox .date{font-size: 14px; font-weight: 500; color: #454C53;}
+.mypageBox .rightBox table tbody tr td .dateBox em{font-size: 14px; color: #9EA4AA; font-weight: 500;}
+.mypageBox .rightBox table tbody tr td .sportBox{display: flex; align-items: center; }
+.mypageBox .rightBox table tbody tr td .sportBox img{margin-right: 16px;}
+.mypageBox .rightBox table tbody tr td .sportBox .sport{margin-right: 8px; font-weight: 700; color: #454C53;}
+.mypageBox .rightBox table tbody tr td .sportBox .time{padding: 4px 8px; font-size: 12px; font-weight: 700; color: #203C6B; border-radius: 4px; background-color: #EDF4FF;} 
+.mypageBox .rightBox table tbody tr td .attendanceBox{display: flex; flex-direction: column; gap: 4px 0;}
+.mypageBox .rightBox table tbody tr td .attendanceBox span{font-weight: 500; color: #454C53; font-size: 14px;}
+.mypageBox .rightBox table tbody tr td .attendanceBox em{font-weight: 700; color: #9EA4AA; font-size: 14px;}
+.mypageBox .rightBox table tbody tr td .stateBox{text-align: center;}
+.mypageBox .rightBox table tbody tr td .stateBox .state{padding: 4px 8px; font-size: 12px; font-weight: 500; border-radius: 8px;}
+.mypageBox .rightBox table tbody tr td .stateBox .state.approval{border: 1px solid #4D8FFF; color: #4D8FFF;} 
+.mypageBox .rightBox table tbody tr td .stateBox .state.atmosphere{background-color: #E8EBED; color: #454C53;} 
+
+@media (max-width: 1199px){
+
+  .mypageBox .rightBox,
+  .mypageBox .leftBox{width: 100%;}
+  .mypageBox .mypageLayoutBox{flex-direction: column; gap: 35px 0;}
+
+  .mypageBox .leftBox .topBox .text01{font-size: 28px;}
+  .mypageBox .rightBox h4{font-size: 22px;}
+
+}
+
+@media (max-width: 767px){
+
+  .mypageBox .rightBox{padding: 30px; border-radius: 20px;}
+  .mypageBox .leftBox .topBox .text01{font-size: 24px;}
+  .mypageBox .rightBox h4{font-size: 20px;}
+  .mypageBox .rightBox .stateList{position: static; margin-bottom: 20px;}
+
+  .mypageBox .rightBox table colgroup .colAttend{width: 80px!important;}
+
+}
+
+@media (max-width: 576px){
+
+  .mypageBox .rightBox table{width: 576px;}
+  .mypageBox .rightBox table colgroup .colDate{width:130px!important;}
+  .mypageBox .rightBox .tableBox{max-height: none;}
+  .mypageBox .rightBox .tableBox{overflow-x: auto; overflow-y: hidden;}
+
+}
+
+@media (max-width: 480px){
+
+  .mypageBox .mypageLayoutBox{gap: 25px 0;}
+  .mypageBox .leftBox .memberInfoBox,
+  .mypageBox .rightBox{border-radius: 10px;}
+  .mypageBox .leftBox .memberInfoBox .box{gap: 0 10px;}
+  .mypageBox .leftBox .topBox{margin-bottom: 45px;}
+  .mypageBox .leftBox .topBox .text01{margin-bottom: 15px; text-align: center; font-size: 22px;}
+  .mypageBox .leftBox .topBox .infoBox{margin: 20px 0; position: static; justify-content: center;}
+  .mypageBox .leftBox .memberInfoBox .box em{font-size: 14px;}
+
+  .mypageBox .rightBox h4{font-size: 18px;}
+  .mypageBox .rightBox table tbody tr td .sportBox .sport{font-size: 14px;}
+  .mypageBox .rightBox table tbody tr td .sportBox img{margin-right: 12px; width: 30px;}
+
+}

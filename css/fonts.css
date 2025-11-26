@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(fonts/NotoSansKR-Black.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Black.woff) format('woff'),
+        url(fonts/NotoSansKR-Black.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/NotoSansKR-Bold.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Bold.woff) format('woff'),
+        url(fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/NotoSansKR-Medium.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Medium.woff) format('woff'),
+        url(fonts/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NotoSansKR-Regular.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Regular.woff) format('woff'),
+        url(fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NotoSansKR-Regular.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Regular.woff) format('woff'),
+        url(fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+
+/*
+@font-face {
+    font-family: 'NotoSerifKR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/NotoSerifKR-Bold.woff2) format('woff2'),
+        url(fonts/NotoSerifKR-Bold.woff) format('woff'),
+        url(fonts/NotoSerifKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSerifKR';
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/NotoSerifKR-SemiBold.woff2) format('woff2'),
+        url(fonts/NotoSerifKR-SemiBold.woff) format('woff'),
+        url(fonts/NotoSerifKR-SemiBold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSerifKR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/NotoSerifKR-Medium.woff2) format('woff2'),
+        url(fonts/NotoSerifKR-Medium.woff) format('woff'),
+        url(fonts/NotoSerifKR-Medium.otf) format('opentype');
+}
+*/
+
+@font-face {
+    font-family: 'SourceHanSansKR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/SourceHanSansKR-Bold.woff2) format('woff2'),
+        url(fonts/SourceHanSansKR-Bold.woff) format('woff'),
+        url(fonts/SourceHanSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'SourceHanSansKR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/SourceHanSansKR-Medium.woff2) format('woff2'),
+        url(fonts/SourceHanSansKR-Medium.woff) format('woff'),
+        url(fonts/SourceHanSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'SourceHanSansKR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/SourceHanSansKR-Regular.woff2) format('woff2'),
+        url(fonts/SourceHanSansKR-Regular.woff) format('woff'),
+        url(fonts/SourceHanSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'SourceHanSansKR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/SourceHanSansKR-Light.woff2) format('woff2'),
+        url(fonts/SourceHanSansKR-Light.woff) format('woff'),
+        url(fonts/SourceHanSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'SourceHanSansKR';
+    font-style: normal;
+    font-weight: 200;
+    src: url(fonts/SourceHanSansKR-ExtraLight.woff2) format('woff2'),
+        url(fonts/SourceHanSansKR-ExtraLight.woff) format('woff'),
+        url(fonts/SourceHanSansKR-ExtraLight.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/GmarketSansMedium.woff2) format('woff2'),
+        url(fonts/GmarketSansMedium.woff) format('woff'),
+        url(fonts/GmarketSansMedium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Constantia';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Constantia.woff2) format('woff2'),
+        url(fonts/Constantia.woff) format('woff'),
+        url(fonts/Constantia.otf) format('opentype');
+}
+

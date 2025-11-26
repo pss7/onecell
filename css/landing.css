@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* 가운데영역 */
+.container{max-width: 1520px; padding: 0 20px; margin: 0 auto;}
+
+/* 애니메이션 */
+.fadeEffect{animation: fadeEffect 1.5s .3s both;}
+
+@keyframes fadeEffect {
+
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+.is-inview{animation: fadeEffect 1.5s .3s both;}
+.is-inview.scrollText{animation: none;}
+
+@keyframes fadeEffect {
+
+  0%{
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+.slick-dots{display: flex!important; flex-wrap: wrap; gap: 0 7px; align-items: center; justify-content: center; width: 100%;}
+.slick-dots li.slick-active button{background: #ae9373;}
+.slick-dots li button{display: block; width: 15px; height: 15px; text-indent: -9999px; border-radius: 50px; background-color:#dedede; cursor: pointer;}
+
+/* 헤더 */
+#headerWrap{position: fixed; top:0; left:0; right:0; padding: 0 60px; display: flex; align-items: center; justify-content: space-between; background-color: #fff; z-index: 999;}
+#headerWrap .link{display: flex; align-items: center;}
+#headerWrap .link li h2 a{display: block; padding: 47px 18px; font-size: 20px; color: #121212; font-weight: 500;} 
+#headerWrap .link li h2 a img{display: block;}
+#headerWrap .logoBox{position: absolute; left: 50%; transform: translateX(-50%);}
+#headerWrap .logoBox h1 a,
+#headerWrap .logoBox h1 a img{display: block;}
+
+/* 비주얼 영역 */
+#visualWrap .visualBox{position: relative; height: 100vh; overflow: hidden;}
+#visualWrap .visualBox .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
+#visualWrap .visualBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.3);}
+#visualWrap .visualBox .textBox{position: absolute; left:152px; bottom: 166px;}
+#visualWrap .visualBox .textBox h2{opacity: 0; font-size: 59px; color: #fff; font-family: 'Constantia'; font-weight: 400; letter-spacing: 15px; filter: blur(5px);}
+#visualWrap .visualBox .textBox p{opacity: 0; font-family: 'Noto Serif KR', serif; font-size: 22px; color: #fff; line-height: 1.7;}
+#visualWrap .visualBox.active .imgBox img{transform: scale(1); transition: all 5s;}
+#visualWrap .visualBox.active .textBox h2{opacity: 1; filter: blur(0); letter-spacing: 0; transition: all 3s;}
+#visualWrap .visualBox.active .textBox p{animation: fadeEffect 1.5s .3s both;}
+
+/* 병원센터 영역 */
+#centerWrap{padding: 128px 0 90px; background: url(../images/landing/bg.png) no-repeat center bottom;}
+#centerWrap .topInfoBox{margin-bottom: 153px;}
+#centerWrap .topInfoBox .title{margin-bottom: 60px; text-align: center; font-size:35px; color: #1f1f1f; font-family: 'Noto Serif KR', serif; letter-spacing: -1px;}
+#centerWrap .topInfoBox .topCenterList{max-width: 583px; margin: 0 auto; display: flex;}
+#centerWrap .topInfoBox .topCenterList li{flex: 1; border-right: 1px solid #e8e8e8;}
+#centerWrap .topInfoBox .topCenterList li:last-child{border-right: 0;}
+#centerWrap .topInfoBox .topCenterList li .iconBox{margin-bottom: 12px; height: 85px;}
+#centerWrap .topInfoBox .topCenterList li .iconBox.icon01{background: url(../images/landing/info_icon01.png)no-repeat center 6px;}
+#centerWrap .topInfoBox .topCenterList li .iconBox.icon02{background: url(../images/landing/info_icon02.png)no-repeat center 20px;}
+#centerWrap .topInfoBox .topCenterList li .iconBox.icon03{background: url(../images/landing/info_icon03.png)no-repeat center 6px;}
+#centerWrap .topInfoBox .topCenterList li .iconBox.icon04{background: url(../images/landing/info_icon04.png)no-repeat center 6px;}
+#centerWrap .topInfoBox .topCenterList li h3{font-size: 20px; font-weight: 700; color: #131313; text-align: center;}
+#centerWrap .centerBox .layouyBox{display: flex; justify-content: center; gap: 0 116px;}
+#centerWrap .centerBox .imgBox{flex-shrink: 0;}
+#centerWrap .centerBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#centerWrap .centerBox .textBox{padding-top: 56px;}
+#centerWrap .centerBox .textBox span{display: block; font-size: 25px; color: #d9d3d0; font-family: 'Constantia';}
+#centerWrap .centerBox .textBox h3{margin-bottom: 10px; font-size: 55px; font-weight: 500; color: #1f1f1f; font-family: 'Noto Serif KR', serif; letter-spacing: -3px;}
+#centerWrap .centerBox .textBox p{margin-bottom: 37px; font-size: 20px; color: #131313; line-height: 1.8;}
+#centerWrap .centerBox .centerInfoList{ display: flex; flex-wrap: wrap; gap: 13px 8px;}
+#centerWrap .centerBox .centerInfoList li{display: flex; align-items: center; justify-content: center; height: 60px; line-height: 58px; min-width: 193px; border-radius: 50px; color: #fff; font-weight: 400; font-size: 17px; background-color: #ae9373; text-align: center;}
+#centerWrap .centerBox01{position: relative; padding-bottom: 150px; z-index: 1;}
+#centerWrap .centerBox01 .slick-dots{justify-content: flex-start; margin-left: 555px;}
+#centerWrap .centerBox01 .scrollText{position: absolute; right: 0; bottom: 84px; z-index: -1;}
+ #centerWrap .centerBox01 .scrollText p{font-family: 'Constantia'; font-size: 174px; color: #f3f0ef; white-space: nowrap; line-height: 1;}
+
+/* 병원센터(피부, 성형) 영역 */
+#centerWrap .centerBox02{margin-bottom: 197px;}
+#centerWrap .centerBox04{margin-bottom: 230px ;}
+#centerWrap .centerBox04 .layouyBox,
+#centerWrap .centerBox02 .layouyBox{flex-direction: row-reverse;}
+#centerWrap .centerBox04 .textBox,
+#centerWrap .centerBox02 .textBox{padding:56px 0 0 100px;}
+#centerWrap .centerBox04 .layouyBox,
+#centerWrap .centerBox02 .layouyBox{gap: 0 40px;}
+#centerWrap .centerBox04 .slick-dots,
+#centerWrap .centerBox02 .slick-dots{justify-content: flex-end;}
+
+/* 병원센터(성형) 영역 */
+#centerWrap .centerBox03{margin-bottom: 345px;}
+#centerWrap .centerBox03 .slick-dots{justify-content: flex-start; margin-left: 555px;}
+
+/* 의료진영역 */
+.doctorsBox .title{padding-left: 100px;}
+.doctorsBox .titleBox{margin-bottom: 92px;}
+.doctorsBox .titleBox h3{font-size: 93px; color: #151515; font-family: 'Constantia'; font-weight: 400;}
+.doctorsBox .titleBox p{font-size: 20px; color: #131313; line-height: 1.8;}
