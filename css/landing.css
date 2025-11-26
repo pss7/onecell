@@ -253,8 +253,20 @@ aside .quickBtnList li a.icon03::after{width: 25px; height: 23px; background: ur
 aside .quickBtnList li a.icon04::after{width: 23px; height: 23px; background: url(../images/landing/icon04.png)no-repeat center;}
 aside .quickBtnList li a.top::after{width: 8px; height: 15px; background: url(../images/landing/top.png)no-repeat center;}
 
-
-
-
-
-
+/* 팝업 */
+.popupWrap.active{opacity: 1; visibility: visible;}
+.popupWrap{opacity: 0; position: fixed; top:0; left:0; right:0;bottom: 0; background-color: rgba(0,0,0,75%); z-index: 99999; visibility: hidden; transition: all .3s;}
+.popupWrap .popupBox{display: flex; gap: 0 75px; padding: 105px 70px 70px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1056px; height: calc(100vh - 100px); background-color: #fff; border-radius: 20px;}
+.popupWrap .imgBox img{display: block;}
+.popupWrap .textBox .titleBox{margin-bottom: 40px; padding-bottom: 30px; display: flex; align-items: flex-end; gap: 0 20px; border-bottom: 1px solid #e1e1e1;}
+.popupWrap .textBox .titleBox strong{font-size: 50px; color: #a08170; font-weight: 600; font-family: 'Noto Serif KR', serif; font-weight: 400;}
+.popupWrap .textBox .titleBox span{position: relative; top:-5px; font-weight: 700; font-size: 22px; color: #0f0f0f; letter-spacing: -1px;}
+.popupWrap .textBox .careerBox{max-height: 77%; overflow-y: auto;}
+.popupWrap .textBox .careerBox .box h4{margin-bottom: 8px; font-weight: 500; color: #a08170; font-weight: 15px;}
+.popupWrap .textBox .careerBox .box .list li{margin-bottom: 7px; font-weight: 500; color: #0f0f0f; font-size: 15px;}
+.popupWrap .textBox .careerBox .box .list li:last-child{margin-bottom: 0;}
+.popupWrap .textBox .careerBox .box{margin-bottom: 27px;}
+.popupWrap .layoutBox{display: flex; gap: 0 50px;}
+.popupWrap .text{position: absolute; left:70px; bottom: 30px; font-size: 94px; font-family: 'Constantia'; color: #ecedf1; z-index: 999999;}
+.popupWrap .popupCloseBtn{display: flex; gap: 0 12px; align-items: center; position: absolute; top:70px; right:64px; font-weight: 700; color: #0f0f0f; font-size: 15px;} 
+.popupWrap .popupCloseBtn::after{content: ''; width: 14px; height: 15px; background: url(../images/landing/close_icon.png)no-repeat center;}
