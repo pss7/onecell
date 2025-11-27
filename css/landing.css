@@ -200,11 +200,15 @@
 #footerWrap .footerTopBox .mapBox img{display: block;}
 #footerWrap .footerCenterBox .timeInfoBox{padding: 63px 0 56px; border-bottom: 2px solid #575a60;}
 #footerWrap .footerCenterBox .timeInfoBox .text{display: block; margin-bottom: 20px; color: #d8d8d8; font-size: 23px; font-weight: 500;}
-#footerWrap .footerCenterBox .timeInfoBox .box{margin-bottom: 5px; display: flex; gap: 0 38px;}
-#footerWrap .footerCenterBox .timeInfoBox .box .text01{width: 85px; font-weight: 500; color: #fff; font-size:22px; color: #fff;}
+#footerWrap .footerCenterBox .timeInfoBox .box{margin-bottom: 5px; display: flex; gap: 0 22px;}
+#footerWrap .footerCenterBox .timeInfoBox .box .text01{width: 100px; font-weight: 500; color: #fff; font-size:20px; color: #fff;}
 #footerWrap .footerCenterBox .timeInfoBox .box .text02{font-weight: 500; color: #fff; font-size:22px; color: #fff;}
 #footerWrap .footerCenterBox .timeInfoBox .box .text02 em{font-size: 16px;}
 #footerWrap .footerCenterBox .timeInfoBox .infoText{display: block; margin-top: 10px; color: #fff; font-weight: 500; color: #d8d8d8;}
+#footerWrap .footerCenterBox .centerTimeBox h4{margin-bottom: 6px; font-weight: 500; color: #c0b396; font-size: 20px;}
+#footerWrap .footerCenterBox .timeInfoBox .layoutBox{display: flex; justify-content: space-between;}
+
+
 #footerWrap .footerBottomBox{padding-top: 40px;}
 #footerWrap .footerBottomBox .infoBox02{position: relative; display: flex; align-items: center ;}
 #footerWrap .footerBottomBox .logoBox{padding-left: 18px; margin-right: 37px;}
