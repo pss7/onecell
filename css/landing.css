@@ -134,10 +134,10 @@
   }
 
 /* 병원센터(통증) 영역 */
-#centerWrap .centerBox04{padding:100px 0 230px;}
+#centerWrap .centerBox04{padding:100px 0 130px;}
 
 /* 의료진영역 */
-.doctorsBox{position: relative; z-index: 1;}
+.doctorsBox{padding: 100px 0 0; position: relative; z-index: 1;}
 .doctorsBox::after{content: ''; width: 779px; height: 859px; position: absolute; bottom: 0; right: 0; background: url(../images/landing/bg03.png)no-repeat center; z-index: -1;}
 .doctorsBox .title{padding-left: 100px;}
 .doctorsBox .titleBox{margin-bottom: 92px;}
