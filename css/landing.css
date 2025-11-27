@@ -449,7 +449,6 @@
 @media (max-width: 767px){
 
   #promotionWrap::after{width: 350px; height: 280px;}
-  #promotionWrap .promotionImgList .slide{border-radius: 10px;}
   
 }
 
