@@ -67,6 +67,17 @@ $(function () {
     locoScroll.scrollTo($(this).attr('href'));
   });
 
+  $('#headerWrap .mobileBtn').click(function () {
+    $('#headerWrap .mobileMenuBox').addClass('active');
+    $('#headerWrap .mobileBG').fadeIn();
+  });
+
+  $('#headerWrap .mobileCloseBtn').click(function () {
+    $('#headerWrap .mobileMenuBox').removeClass('active');
+    $('#headerWrap .mobileBG').fadeOut();
+  });
+
+
   //비주얼영역 
   $(window).load(function () {
     $('#visualWrap .visualBox').addClass('active');
