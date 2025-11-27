@@ -6,17 +6,17 @@ $(function () {
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector('.scrollWrap'),
     smooth: true,
-    smoothMobile: true,
+    smoothMobile: false,
     paused: true,
     onUpdate: () => {
       window.dispatchEvent(new Event('resize'));
     },
     multiplier: 1,
     smartphone: {
-      smooth: true
+      smooth: false
     },
     tablet: {
-      smooth: true
+      smooth: false
     },
     useKeyboard: true,
 
@@ -118,6 +118,15 @@ $(function () {
     pauseOnHover: false,
     autoplaySpeed: 5000,
     speed: 1300,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   $('.centerBox02 .slickWrap .slick').slick({
@@ -133,6 +142,15 @@ $(function () {
     pauseOnHover: false,
     autoplaySpeed: 5000,
     speed: 1300,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   $('.centerBox03 .slickWrap .slick').slick({
@@ -148,6 +166,15 @@ $(function () {
     pauseOnHover: false,
     autoplaySpeed: 5000,
     speed: 1300,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   $('.centerBox04 .slickWrap .slick').slick({
@@ -163,6 +190,15 @@ $(function () {
     pauseOnHover: false,
     autoplaySpeed: 5000,
     speed: 1300,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   $('.doctorsBox .doctorsSlideWrap .slick').slick({

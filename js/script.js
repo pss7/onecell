@@ -93,10 +93,6 @@ $(function () {
     $('#sitemapBox').removeClass('active');
   });
 
-
-
-
-
   //스크롤 시 top 버튼 fadeIn, fadeOut
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
