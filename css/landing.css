@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#wrap{display: flex; flex-direction: column;}
+#wrap{display: flex; flex-direction: column; overflow-x: hidden;}
 #mainWrap{flex: 1;}
 
 /* 가운데영역 */
