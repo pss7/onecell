@@ -161,7 +161,7 @@
 }
 
 /* 병원센터 영역 */
-#centerWrap{padding: 128px 0 0; background: url(../images/landing/bg.png) no-repeat center bottom;}
+#centerWrap{padding: 128px 0 0; background: url(../images/landing/bg.png) no-repeat center bottom / cover; }
 #centerWrap .topInfoBox{margin-bottom: 80px;}
 #centerWrap .topInfoBox .title{margin-bottom: 60px; text-align: center; font-size:35px; color: #1f1f1f; font-family: 'Noto Serif KR', serif; letter-spacing: -1px;}
 #centerWrap .topInfoBox .topCenterList{max-width: 583px; margin: 0 auto; display: flex;}
@@ -394,7 +394,7 @@
 }
 
 /* 공간영역 */
-#spaceWrap{padding: 343px 0 254px; background: url(../images/landing/bg.jpg)no-repeat center; background-attachment: fixed;}
+#spaceWrap{padding: 343px 0 254px; background: url(../images/landing/bg.jpg)no-repeat center / cover; background-attachment: fixed;}
 #spaceWrap .topBox{display: inline-block; position: relative;}
 #spaceWrap .topBox .control{position: absolute; top:38px; right:284px;}
 #spaceWrap .topBox .control button{background-color: #ae9373;}
