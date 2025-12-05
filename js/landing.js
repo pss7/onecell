@@ -270,46 +270,11 @@ $(function () {
   });
 
   /* 팝업 */
-  $('.doctor01').click(function () {
-    $('#popupWrap01').addClass('active');
+  $('.doctorPopup').click(function () {
+    $($(this).data('target')).addClass('active');
   });
-  $('#popupWrap01 .popupCloseBtn').click(function () {
-    $('#popupWrap01').removeClass('active');
-  });
-
-  $('.doctor02').click(function () {
-    $('#popupWrap02').addClass('active');
-  });
-  $('#popupWrap02 .popupCloseBtn').click(function () {
-    $('#popupWrap02').removeClass('active');
-  });
-
-  $('.doctor03').click(function () {
-    $('#popupWrap03').addClass('active');
-  });
-  $('#popupWrap03 .popupCloseBtn').click(function () {
-    $('#popupWrap03').removeClass('active');
-  });
-
-  $('.doctor04').click(function () {
-    $('#popupWrap04').addClass('active');
-  });
-  $('#popupWrap04 .popupCloseBtn').click(function () {
-    $('#popupWrap04').removeClass('active');
-  });
-
-  $('.doctor05').click(function () {
-    $('#popupWrap05').addClass('active');
-  });
-  $('#popupWrap05 .popupCloseBtn').click(function () {
-    $('#popupWrap05').removeClass('active');
-  });
-
-  $('.doctor06').click(function () {
-    $('#popupWrap06').addClass('active');
-  });
-  $('#popupWrap06 .popupCloseBtn').click(function () {
-    $('#popupWrap06').removeClass('active');
+  $('.popupCloseBtn').click(function () {
+    $(this).closest('.popupWrap').removeClass('active');
   });
 
   /* 푸터 */
