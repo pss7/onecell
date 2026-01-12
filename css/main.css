@@ -212,7 +212,7 @@
     #laboratoryWrap .more{margin: 0 auto;}
     #laboratoryWrap .comTitleBox{text-align: center;}
     #laboratoryWrap .comTitleBox p{text-align: center;}
-    #laboratoryWrap .rowImgBox .cardImgBox{position: static; display: flex; flex-direction: row; gap: 18px; width: max-content; will-change: transform; animation: animationLeft 20s linear infinite;}
+    #laboratoryWrap .rowImgBox .cardImgBox{position: static; display: flex; flex-direction: row; gap: 18px; width: max-content; will-change: transform; animation: animationLeft 50s linear infinite;}
     #laboratoryWrap .rowImgBox .cardImgBox img{display: block;}
 
 }
@@ -271,7 +271,7 @@
 @media (max-width:1199px){
 
   #programWrap{padding: 100px 0;}
-  #programWrap .topText{margin-bottom: 75px; font-size: 75px;}
+  #programWrap .topText{margin-bottom: 75px; font-size: 75px; animation-duration: 50s;}
   #programWrap .imgBox.m{gap: 15px}
   #programWrap .imgBox.m a{width: calc((100% - 30px) / 3);}
 

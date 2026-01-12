@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /* 헤더 */
-#headerWrap{position: fixed; top:0; left:0; right:0; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; z-index: 9999999; transition: all .3s; border-bottom: 1px solid rgba(255,255,255,.3);}
+#headerWrap{position: fixed; top:-100%; left:0; right:0; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; z-index: 9999999; transition: all .3s; border-bottom: 1px solid rgba(255,255,255,.3); transition: all 1.5s;}
+#headerWrap.active{top: 0;}
 #headerWrap nav .link{display: flex; align-items: center;}
 #headerWrap nav .link li h2 a{position: relative; display: block; padding: 47px 18px; font-size: 18px; color: #fff; font-weight: 500;} 
 #headerWrap nav .link li h2 a::before{content: ''; position: absolute; left:0; bottom: 0; width: 0; height: 2px; background-color: #fff; transition: all .3s;}

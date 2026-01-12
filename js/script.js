@@ -1,6 +1,10 @@
 
 $(function () {
 
+  $(window).load(function () {
+    $('#headerWrap').addClass('active');
+  });
+
   //상단으로 이동
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
