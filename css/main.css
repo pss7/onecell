@@ -75,6 +75,7 @@
 /* 애니메이션 */
 .fadeUpEffect{animation: fadeUpEffect 1.5s .3s both;}
 .fadeEffect{animation: fadeEffect 1.5s .3s both;}
+.animationLeft{display: flex; gap: 0 18px; width: max-content; will-change: transform; animation: animationLeft 20s linear infinite;}
 
 @keyframes fadeUpEffect {
 
@@ -100,8 +101,16 @@
   
 }
 
-.is-inview{animation: fadeUpEffect 1.5s .3s both;}
+@keyframes animationLeft{
+  0%{
+     transform: translateX(0);
+    }
+  100%{
+    transform: translateX(-50%);
+  }
+}
 
+.is-inview{animation: fadeUpEffect 1.5s .3s both;}
 
 /* 비주얼 영역 */
 #visualWrap{position: relative;}
@@ -179,17 +188,6 @@
     }
 }
 
-.animationLeft{display: flex; gap: 0 18px; width: max-content; will-change: transform; animation: animationLeft 20s linear infinite;}
-
-@keyframes animationLeft{
-  0%{
-     transform: translateX(0);
-    }
-  100%{
-    transform: translateX(-50%);
-  }
-}
-
 @media (max-width: 1199px){
 
     #laboratoryWrap .layoutBox{gap:0 50px;}
@@ -244,6 +242,7 @@
 #programWrap .comTitleBox{display: inline-block; position: relative; z-index: 999;}
 #programWrap .programBox{height: 967px; position: relative;}
 #programWrap .topText{margin-bottom: 145px; font-size: 113px; color: #27433c; font-family: 'Constantia'; white-space: nowrap;}
+#programWrap .mTopText{display: none;}
 #programWrap .imgBox.m{display: none;}
 #programWrap .imgBox{position: absolute; top:0; right:0; display: flex; flex-direction: column; align-items: flex-end; gap: 20px 0; z-index: 9;}
 #programWrap .imgBox .box{display: flex; gap: 0 20px;}
@@ -254,6 +253,8 @@
 
   #programWrap{padding: 160px 0 120px;}
   #programWrap .topText{margin-bottom: 110px;}
+  #programWrap .pcTopText{display: none;}
+  #programWrap .mTopText{display: block;}
   #programWrap .programBox{height: auto;}
   #programWrap .comTitle,
   #programWrap .comTitleBox p{text-align: center;}
@@ -305,7 +306,7 @@
 #doctorsWrap .tabBox .doctorsBtnBox .btn img{display: block;}
 #doctorsWrap .doctorsInfoBox{height: 684px; position: relative;}
 #doctorsWrap .doctorsInfoBox .slick{width: 100%; position: absolute; top: 50%; transform: translateY(-50%); left:550px;}
-#doctorsWrap .doctorsInfoBox .layoutBox{min-height: 230px;}
+#doctorsWrap .doctorsInfoBox .textWrap{height: 100%; min-height: 230px;}
 #doctorsWrap .doctorsInfoBox .textBox{padding-left: 90px; height: 100%; display: flex; align-items: center; flex-shrink: 0;}
 #doctorsWrap .doctorsInfoBox .textBox .nameBox{margin-bottom: 30px; display: flex; align-items: flex-end; gap: 0 24px; line-height: 1;}
 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name{font-family: 'Noto Serif KR', serif; font-size: 45px; color: #27433c; letter-spacing: -2px;} 
@@ -358,7 +359,7 @@
 @media (max-width: 480px){
 
   #doctorsWrap{padding: 0;}
-  #doctorsWrap .doctorsInfoBox .layoutBox{min-height: 210px;}
+  #doctorsWrap .doctorsInfoBox .textWrap{min-height: 210px;}
   #doctorsWrap .tabBox{margin-bottom: 40px;}
   #doctorsWrap .doctorsInfoBox .textBox .nameBox .name{font-size: 26px;}
   #doctorsWrap .doctorsInfoBox .textBox .nameBox em{font-size: 14px;}
@@ -400,6 +401,7 @@
   #systemWrap .systemList li .imgBox img{width: 300px; margin: 0 auto;}
   #systemWrap .comTitleBox .title{margin-bottom: 50px; font-size: 60px;}
   #systemWrap .comTitleBox p{margin-bottom: 40px;}
+  #systemWrap .is-inview{animation: fadeUpEffect 1.5s .3s both;}
 
 }
 
