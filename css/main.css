@@ -302,7 +302,6 @@
 #doctorsWrap .tabBox{margin-bottom: 50px; display: flex; gap: 0 69px;}
 #doctorsWrap .tabBox .doctorsBtnBox{display: flex; flex-wrap: wrap; gap: 10px 14px;}
 #doctorsWrap .tabBox .doctorsBtnBox .btn{transition: all .3s;}
-#doctorsWrap .tabBox .doctorsBtnBox .btn:hover{transform: translateY(-10px);}
 #doctorsWrap .tabBox .doctorsBtnBox .btn img{display: block;}
 #doctorsWrap .doctorsInfoBox{height: 684px; position: relative;}
 #doctorsWrap .doctorsInfoBox .slick{width: 100%; position: absolute; top: 50%; transform: translateY(-50%); left:550px;}
@@ -324,6 +323,7 @@
   #doctorsWrap .doctorsInfoBox .textBox p{font-size: 18px;}
   #doctorsWrap .doctorsInfoBox .slick{left: 478px;}
   #doctorsWrap .tabBox{margin-bottom: 80px; flex-direction: column; align-items: center;}
+  #doctorsWrap .tabBox .doctorsBtnBox .btn:hover{transform: translateY(0);}
 
 }
 
