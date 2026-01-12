@@ -536,19 +536,21 @@
 
 /* 이미지 영역 */
 #imgWrap{padding: 0 0 185px;}
-#imgWrap img{display: block;}
+#imgWrap .img{display: flex; gap: 0 18px;}
+#imgWrap .img img{display: block; width: 100%;}
 
 @media (max-width: 767px){
 
   #imgWrap{padding: 100px 0;}
-  #imgWrap img{width: 250px;}
+  #imgWrap .img img{width: 250px;}
 
 }
 
 @media (max-width: 767px){
 
   #imgWrap{padding: 70px 0; gap: 0 10px;}
-  #imgWrap img{width: 160px;}
+  #imgWrap .img{display: flex; gap: 0 10px;}
+  #imgWrap .img img{width: 160px;}
 
 }
 
