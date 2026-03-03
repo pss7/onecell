@@ -2,8 +2,21 @@
 
 #wrap{display: flex; flex-direction: column; overflow-x: hidden;}
 #mainWrap{flex: 1;}
-#bgWrap{background: url(../images/main/bg02.jpg)no-repeat center top;}
-#wrap.main02 #bgWrap{background: url(../images/main/skincenter/bg.png)no-repeat center top;}
+#wrap.main01 #bgWrap{background: url(../images/main/stemcell/bg.jpg)no-repeat center top;}
+#wrap.main02 #bgWrap{background: url(../images/main/skin/bg.png)no-repeat center top;}
+
+@media (max-width: 1199px){
+
+  #bgWrap{background-position-y: -1000px!important;}
+
+}
+
+@media (max-width: 480px){
+
+  #bgWrap{background-position-y: -1600px!important;}
+
+}
+
 
 #systemWrap .is-inview{animation: fadeEffect 1.5s .3s both;}
 .is-inview.scrollText{animation: none;}
@@ -400,7 +413,7 @@
 
   #systemWrap .systemList li h4{font-size: 28px; text-align: center;}
   #systemWrap .systemList li p{font-size: 18px; text-align: center;}
-  #systemWrap .systemList li .imgBox img{width: 300px; margin: 0 auto;}
+  #systemWrap .systemList li .imgBox{display: flex; width: 300px; margin: 0 auto 28px;}
   #systemWrap .comTitleBox .title{margin-bottom: 50px; font-size: 60px;}
   #systemWrap .comTitleBox p{margin-bottom: 40px;}
   #systemWrap .is-inview{animation: fadeUpEffect 1.5s .3s both;}
@@ -509,10 +522,10 @@
 @media (max-width: 1199px){
 
   #spaceWrap .comTitleBox .title{font-size: 60px;}
-  #spaceWrap .comTitleBox .title,
+  /* #spaceWrap .comTitleBox .title,
   #spaceWrap .comTitleBox p,
   #spaceWrap .comTitleBox span{color: #fff;}
-  #spaceWrap .more{border: 1px solid #fff; color: #fff;}
+  #spaceWrap .more{border: 1px solid #fff; color: #fff;} */
 
 }
 
