@@ -12,12 +12,13 @@ $(function () {
         $('#introWrap .hover').removeClass('active');
         $(this).children('.hover').addClass('active');
         $('#introWrap .linkTit').show();
-        $(this).children('.linkTit').hide();
+        $('#introWrap .linkTit').removeClass('active');
+        $(this).children('.linkTit').addClass('active');
     });
     $('#introWrap .introLink').mouseleave(function () {
         $('#introWrap .hoverImg').removeClass('active');
         $('#introWrap .hover').removeClass('active');
-        $('#introWrap .linkTit').show();
+        $('#introWrap .linkTit').removeClass('active');
     });
 
 });
