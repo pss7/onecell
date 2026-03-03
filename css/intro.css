@@ -1,0 +1,144 @@
+@charset "utf-8";
+main{overflow: hidden;}
+#introWrap .introBox{display: flex;}
+#introWrap .introBox .introLeft,
+#introWrap .introBox .introRight{height: 100vh;}
+#introWrap .introBox .introLeft{padding: 0 20px; flex-shrink: 0; position: relative; width: calc(50% - 490px); background: #fff;}
+#introWrap .introBox .introLeft .box{width: 100%; position: absolute; top: 14%; left: 50%; transform: translateX(-50%); bottom: 0;}
+#introWrap .introBox .introLeft .tit{margin-bottom: 32px;}
+#introWrap .introBox .introLeft .tit span{display: block; margin-bottom: 15px; font-family: 'Constantia'; font-weight: 400; font-size: 30px; text-align: center; color: #ae9574;}
+#introWrap .introBox .introLeft .tit span em{display: inline-block; word-break: keep-all;}
+#introWrap .introBox .introLeft .tit span em:nth-child(1){animation-delay: .1s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(2){animation-delay: .15s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(3){animation-delay: .2s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(4){animation-delay: .25s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(5){animation-delay: .3s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(6){animation-delay: .35s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(7){animation-delay: .4s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(8){animation-delay: .45s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(9){animation-delay: .5s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(10){animation-delay: .55s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(11){animation-delay: .6s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(12){animation-delay: .65s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(13){animation-delay: .7s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(14){animation-delay: .75s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(15){animation-delay: .8s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(16){animation-delay: .85s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(17){animation-delay: .9s;}
+#introWrap .introBox .introLeft .tit span em:nth-child(18){animation-delay: .95s;}
+#introWrap .introBox .introLeft .tit h1 .title{display: inline-block; font-size: 22px; color: #ae9574; text-align: center; font-weight: 700;}
+#introWrap .introBox .introLeft .tit .logoBox{overflow: hidden;}
+#introWrap .introBox .introLeft .tit .logoBox img{display: block; margin:0 auto 18px;}
+#introWrap .introBox .introLeft{position: relative; }
+#introWrap .introBox .introLeft::before{content: ''; width: 339px; height: 743px; position: absolute; left:0; bottom: 55px; background: url(../images/intro/logo_bg01.png)no-repeat center / contain;}
+#introWrap .introBox .introLeft .link{position: relative; padding: 130px 0 160px; animation-delay: 1s;}
+#introWrap .introBox .introLeft .link::before{content: ''; width: 2px; height: 108px; position: absolute; left:50%; top:0; background-color: #ccbda8;}
+#introWrap .introBox .introLeft .link::after{content: ''; width: 2px; height: 134px; position: absolute; left:50%; bottom:0; background-color: #ccbda8;}
+#introWrap .introBox .introLeft .link li{margin-bottom: 17px;}
+#introWrap .introBox .introLeft .link li:last-child{margin-bottom: 0;}
+#introWrap .introBox .introLeft .link li h2 a{display: block; font-size: 18px; color: #ae9574; text-align: center;}
+#introWrap .introBox .introLeft .copy{width: 100%; position: absolute; left:0; bottom: 87px; animation-delay: 1.3s;}
+#introWrap .introBox .introLeft .copy img{display: block; margin: 0 auto;}
+#introWrap .introBox .introRight{position: relative; flex: 1;}
+#introWrap .introBox .introRight .introLink{position: absolute; top:0; left:0; right:0; bottom: 0; display: flex; z-index: 9;}
+#introWrap .introBox .introRight .introLink > li{display: flex; align-items: center; justify-content: center; position: relative; flex: 1;}
+#introWrap .introBox .introRight .introLink > li:nth-child(1){animation-delay: .4s;}
+#introWrap .introBox .introRight .introLink > li:nth-child(2){animation-delay: .5s;}
+#introWrap .introBox .introRight .introLink > li:nth-child(3){animation-delay: .6s;}
+#introWrap .introBox .introRight .introLink > li:nth-child(4){animation-delay: .7s;}
+#introWrap .introBox .introRight .introLink > li:nth-child(5){animation-delay: .7s;}
+#introWrap .introBox .introRight .introLink > li{height: 100%; border-right: 1px solid rgba(255,255,255,23%);}
+#introWrap .introBox .introRight .introLink li .linkTit h2{position: relative; margin-bottom: 36px;}
+#introWrap .introBox .introRight .introLink li .linkTit h2 img{display: block; margin: 0 auto;}
+#introWrap .introBox .introRight .introLink li .linkTit span img{display: block; margin: 0 auto;}
+#introWrap .introBox .introRight .introLink li .linkTit{position: relative;}
+#introWrap .introBox .introRight .introLink li .linkTit h2::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -29px; width: 19px; height: 10px; background: url(../images/intro/arrow.png)no-repeat center / cover;}
+#introWrap .introBox .introRight .introLink li .linkTit h2{color: #fff; font-size: 28px; text-align: center; word-break: keep-all;}
+#introWrap .introBox .introRight .introLink li .linkTit h2 span{margin-top: 5px; display: block; font-family: 'Constantia'; font-size: 22px; color: #fff; font-weight: 400;}
+#introWrap .introBox .introRight .introMain{position: absolute; top:0; left:0; right:0; bottom: 0; overflow: hidden;}
+#introWrap .introBox .introRight .introMain img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1.7s; clip-path: inset(0px 100% 0px 0px);}
+#introWrap .introBox .introRight .introMain.active img{clip-path: inset(0);}
+#introWrap .introBox .introRight .introLink li .hoverImg{opacity: 0; position: absolute; top:0; left:0; right:0; bottom: 0;}
+#introWrap .introBox .introRight .introLink li .hover{display: flex; align-items: center; justify-content: center; opacity: 0; position: absolute; top:0; left:0; right:0; bottom: 0; background-color: rgba(0,0,0,.5); transition: all .5s;}
+#introWrap .introBox .introRight .introLink li .hover h2{margin-bottom: 26px; font-size: 28px; color: #fff; text-align: center;}
+#introWrap .introBox .introRight .introLink li .hover.active{opacity: 1;}
+#introWrap .introBox .introRight .introLink li .hover > a{position: relative; display: block; width: 165px; height: 55px; line-height: 55px; margin: 0 auto 50px; border: 2px solid #5f5f5f; font-weight: 500; color: #fff; text-align: center; font-family: 'GmarketSans';}
+#introWrap .introBox .introRight .introLink li .hover > a::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; background-color: #000; z-index: -1; transition: all .3s;}
+#introWrap .introBox .introRight .introLink li .hover > a:hover::before{width: 100%;}
+#introWrap .introBox .introRight .introLink li .hover .introDepth01 li{margin-bottom: 32px;}
+#introWrap .introBox .introRight .introLink li .hover .introDepth01 li:last-child{margin-bottom: 0;}
+#introWrap .introBox .introRight .introLink li .hover .introDepth01 li a{display: block; font-weight: 500; color: #fff; font-size: 19px; text-align: center; transition: all .3s; font-family: 'GmarketSans';}
+#introWrap .introBox .introRight .introLink li .hover .introDepth01 li a:hover{transform: translateX(10px);}
+#introWrap .introBox .introRight .introHover{position: absolute; top:0; left:0; right:0; bottom: 0;}
+#introWrap .introBox .introRight .introHover .hoverImg{opacity: 0; position: absolute; top:0; left:0; right:0; bottom: 0; height: 100%; transition: all .5s;}
+#introWrap .introBox .introRight .introHover .hoverImg.active{opacity: 1;}
+#introWrap .introBox .introRight .introHover .hoverImg:nth-child(1){background: url(../images/intro/intro01.jpg)no-repeat; background-size: cover;}
+#introWrap .introBox .introRight .introHover .hoverImg:nth-child(2){background: url(../images/intro/intro02.jpg)no-repeat; background-size: cover;}
+#introWrap .introBox .introRight .introHover .hoverImg:nth-child(3){background: url(../images/intro/intro03.jpg)no-repeat; background-size: cover;}
+#introWrap .introBox .introRight .introHover .hoverImg:nth-child(4){background: url(../images/intro/intro04.jpg)no-repeat; background-size: cover;}
+#introWrap .introBox .introRight .introLink li .hover .link{position: relative; display: block; margin: 0 auto 55px; max-width: 166px; width: 100%; height: 55px; line-height: 55px; font-size: 16px; border: 1px solid #5f5f5f; color: #fff; text-align: center;}
+#introWrap .introBox .introRight .introLink li .hover .link::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; background-color: #000; z-index: -1; transition: all .3s;}
+#introWrap .introBox .introRight .introLink li .hover .link:hover::before{width: 100%;}
+#introWrap .introBox .introRight .introLink li .hover .hoverBox{width: 100%;}
+
+.opEffect{animation: opEffect 1s both;}
+
+@keyframes opEffect{
+
+    0%{opacity: 0; transform: translateY(70px);}
+    100%{opacity: 1; transform: translateY(0);}
+
+}
+
+@media (max-width: 1536px){
+
+    #introWrap .introBox{flex-direction: column; height: 100vh;}
+    #introWrap .introBox .introLeft .tit .logoBox img{display: none; width: 50px; margin: 0 auto 10px;}
+    #introWrap .introBox .introLeft{padding: 20px; width: 100%;}
+    #introWrap .introBox .introLeft,
+    #introWrap .introBox .introRight{height: auto;}
+    #introWrap .introBox .introLeft::before{display: none;}
+    #introWrap .introBox .introLeft .box{position: static; transform: none;}
+    #introWrap .introBox .introLeft .copy{display: none;}
+    #introWrap .introBox .introLeft .link li{margin: 0;}
+    #introWrap .introBox .introLeft .tit h1 .title,
+    #introWrap .introBox .introLeft .tit span{font-size: 18px;}
+    #introWrap .introBox .introLeft .link li h2 a{font-size: 16px;}
+    #introWrap .introBox .introLeft .link{padding: 0; display: none; justify-content: center; gap: 0 30px;}
+    #introWrap .introBox .introLeft .link::before,
+    #introWrap .introBox .introLeft .link::after{display: none;}
+    #introWrap .introBox .introLeft .tit,
+    #introWrap .introBox .introLeft .tit span{margin-bottom: 0;}
+    #introWrap .introBox .introRight .introLink > li{position: relative; border-right: 1px solid rgba(255, 255, 255, 23%);}
+    #introWrap .introBox .introRight .introLink li .linkTit{padding: 0 20px; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+    #introWrap .introBox .introRight .introLink li .linkTit h2{font-size: 20px;}
+    #introWrap .introBox .introRight .introLink li .linkTit h2 span{margin-top: 7px; font-size: 18px;}
+    #introWrap .introBox .introRight .introLink li .linkTit h2::after{bottom: -20px; width: 19px; height: 10px;}
+    #introWrap .introBox .introRight .introLink li .hover{padding: 0;}
+    #introWrap .introBox .introRight .introLink li .hover h2{font-size: 20px;}
+    #introWrap .introBox .introRight .introLink li .hover .introDepth01 li{margin-bottom: 20px;}
+    #introWrap .introBox .introRight .introLink li .hover .introDepth01 li a{font-size: 16px;}
+    #introWrap .introBox .introRight .introLink li .hover .hoverBox{width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+}
+
+@media (max-width: 1199px){
+
+    #introWrap .introBox .introRight .introLink{flex-wrap: wrap;}
+    #introWrap .introBox .introRight .introLink > li{margin-bottom: -1px; flex: none; width: 50%; height: auto; border: 1px solid rgba(255, 255, 255, 23%); border-width: 0 1px 1px 0;}
+    #introWrap .introBox .introRight .introLink > li:nth-child(2),
+    #introWrap .introBox .introRight .introLink > li:nth-child(4){border-right: 0;}
+    #introWrap .introBox .introRight .introLink > li:nth-child(3),
+    #introWrap .introBox .introRight .introLink > li:nth-child(4){border-bottom: 0;}
+    #introWrap .introBox .introRight .introLink li .hover h2,
+    #introWrap .introBox .introRight .introLink li .hover .link{display: none;}
+
+
+}
+
+@media (max-width: 767px){
+
+    #introWrap .introBox .introRight .introLink li .linkTit h2{font-size: 18px;}
+    #introWrap .introBox .introRight .introLink li .linkTit h2 span{font-size: 16px;}
+
+}
