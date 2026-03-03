@@ -36,7 +36,8 @@ main{overflow: hidden;}
 #introWrap .introBox .introLeft .link::after{content: ''; width: 2px; height: 134px; position: absolute; left:50%; bottom:0; background-color: #ccbda8;}
 #introWrap .introBox .introLeft .link li{margin-bottom: 17px;}
 #introWrap .introBox .introLeft .link li:last-child{margin-bottom: 0;}
-#introWrap .introBox .introLeft .link li h2 a{display: block; font-size: 18px; color: #ae9574; text-align: center;}
+#introWrap .introBox .introLeft .link li h2 a{display: block; font-size: 18px; color: #ae9574; text-align: center; transition: all .3s;}
+#introWrap .introBox .introLeft .link li h2 a:hover{transform: translateX(10px);}
 #introWrap .introBox .introLeft .copy{width: 100%; position: absolute; left:0; bottom: 87px; animation-delay: 1.3s;}
 #introWrap .introBox .introLeft .copy img{display: block; margin: 0 auto;}
 #introWrap .introBox .introRight{position: relative; flex: 1;}
