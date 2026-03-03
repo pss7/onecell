@@ -3,6 +3,7 @@
 #wrap{display: flex; flex-direction: column; overflow-x: hidden;}
 #mainWrap{flex: 1;}
 #bgWrap{background: url(../images/main/bg02.jpg)no-repeat center top;}
+#wrap.main02 #bgWrap{background: url(../images/main/skincenter/bg.png)no-repeat center top;}
 
 #systemWrap .is-inview{animation: fadeEffect 1.5s .3s both;}
 .is-inview.scrollText{animation: none;}
@@ -389,8 +390,9 @@
 #systemWrap .systemList::after{content: ''; position: absolute; left: 50%; top:0; bottom: 0; width: 1px; margin-left: -0.5px; background-color: rgba(255,255,255,.2);}
 #systemWrap .systemList li{width: 50%;}
 #systemWrap .systemList li:nth-child(2n){padding-left: 70px; margin: -145px 0; align-self: flex-end;}
-#systemWrap .systemList li .imgBox{margin-bottom: 28px;}
-#systemWrap .systemList li .imgBox img{display: block; max-width: 100%;}
+#systemWrap .systemList li .imgBox.imgStyle{border-radius: 50%;}
+#systemWrap .systemList li .imgBox{margin-bottom: 28px; box-shadow: 20px 30px 30px rgba(0, 0, 0, .15); border-radius: 218px; display: inline-block; overflow: hidden;}
+#systemWrap .systemList li .imgBox img{display: block; max-width: 100%; height: 100%; object-fit: cover;}
 #systemWrap .systemList li h4{margin-bottom: 13px; font-size: 46px; color: #fff; font-family: 'Noto Serif KR', serif; font-weight: 400; letter-spacing: -2px;}
 #systemWrap .systemList li p{color: #fff; font-size: 20px; color: #fff; font-weight: 300; line-height: 1.7;}
 

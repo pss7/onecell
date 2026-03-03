@@ -37,44 +37,6 @@
 }
 
 @font-face {
-    font-family: 'NotoSansKR';
-    font-style: normal;
-    font-weight: 400;
-    src: url(fonts/NotoSansKR-Regular.woff2) format('woff2'),
-        url(fonts/NotoSansKR-Regular.woff) format('woff'),
-        url(fonts/NotoSansKR-Regular.otf) format('opentype');
-}
-
-/*
-@font-face {
-    font-family: 'NotoSerifKR';
-    font-style: normal;
-    font-weight: 700;
-    src: url(fonts/NotoSerifKR-Bold.woff2) format('woff2'),
-        url(fonts/NotoSerifKR-Bold.woff) format('woff'),
-        url(fonts/NotoSerifKR-Bold.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'NotoSerifKR';
-    font-style: normal;
-    font-weight: 600;
-    src: url(fonts/NotoSerifKR-SemiBold.woff2) format('woff2'),
-        url(fonts/NotoSerifKR-SemiBold.woff) format('woff'),
-        url(fonts/NotoSerifKR-SemiBold.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'NotoSerifKR';
-    font-style: normal;
-    font-weight: 500;
-    src: url(fonts/NotoSerifKR-Medium.woff2) format('woff2'),
-        url(fonts/NotoSerifKR-Medium.woff) format('woff'),
-        url(fonts/NotoSerifKR-Medium.otf) format('opentype');
-}
-*/
-
-@font-face {
     font-family: 'SourceHanSansKR';
     font-style: normal;
     font-weight: 700;
