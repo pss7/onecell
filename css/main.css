@@ -3,7 +3,6 @@
 #wrap{display: flex; flex-direction: column; overflow-x: hidden;}
 #mainWrap{flex: 1;}
 #wrap.main01 #bgWrap{background: url(../images/main/stemcell/bg.jpg)no-repeat center top;}
-#wrap.main02 #bgWrap{background: url(../images/main/skin/bg.png)no-repeat center top;}
 
 @media (max-width: 1199px){
 
@@ -613,6 +612,13 @@
 
   
 }
+
+/* 피부센터 */
+#wrap.main02 #programWrap .topText,
+#wrap.main02 .comTitle,
+#wrap.main02 #laboratoryWrap .tit{color: #436369;}
+#wrap.main02 #bgWrap{background: url(../images/main/skin/bg.png)no-repeat center top;}
+#wrap.main02 #laboratoryWrap .laboratoryBox{background-color: #e7ece7;}
 
 /* 성형센터 */
 #wrap.main03 #programWrap .topText,
