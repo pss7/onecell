@@ -614,4 +614,9 @@
   
 }
 
-
+/* 성형센터 */
+#wrap.main03 #programWrap .topText,
+#wrap.main03 .comTitle,
+#wrap.main03 #laboratoryWrap .tit{color: #614a61;}
+#wrap.main03 #bgWrap{background: url(../images/main/aesthetic/bg.png)no-repeat center top;}
+#wrap.main03 #laboratoryWrap .laboratoryBox{background-color: #eee9ee;}
