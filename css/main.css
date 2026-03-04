@@ -617,12 +617,19 @@
 #wrap.main02 #programWrap .topText,
 #wrap.main02 .comTitle,
 #wrap.main02 #laboratoryWrap .tit{color: #436369;}
-#wrap.main02 #bgWrap{background: url(../images/main/skin/bg.png)no-repeat center top;}
+#wrap.main02 #bgWrap{background: url(../images/main/skin/bg.png)no-repeat center -500px / cover;}
 #wrap.main02 #laboratoryWrap .laboratoryBox{background-color: #e7ece7;}
 
 /* 성형센터 */
 #wrap.main03 #programWrap .topText,
 #wrap.main03 .comTitle,
 #wrap.main03 #laboratoryWrap .tit{color: #614a61;}
-#wrap.main03 #bgWrap{background: url(../images/main/aesthetic/bg.png)no-repeat center top;}
+#wrap.main03 #bgWrap{background: url(../images/main/plasticsurgery/bg.png)no-repeat center -500px / cover;}
 #wrap.main03 #laboratoryWrap .laboratoryBox{background-color: #eee9ee;}
+
+/* 척추/관절/통증 센터 */
+#wrap.main04 #programWrap .topText,
+#wrap.main04 .comTitle,
+#wrap.main04 #laboratoryWrap .tit{color: #354668;}
+#wrap.main04 #bgWrap{background: url(../images/main/paincare/bg.png)no-repeat center -500px / cover;}
+#wrap.main04 #laboratoryWrap .laboratoryBox{background-color: #e8ecef;}
