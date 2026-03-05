@@ -2,7 +2,6 @@
 
 #wrap{display: flex; flex-direction: column; overflow-x: hidden;}
 #mainWrap{flex: 1;}
-#wrap.main01 #bgWrap{background: url(../images/main/stemcell/bg.jpg)no-repeat center top;}
 
 @media (max-width: 1199px){
 
@@ -395,7 +394,7 @@
 #systemWrap .comTitleBox p{margin-bottom: 63px; line-height: 2;}
 #systemWrap .comTitleBox span,
 #systemWrap .comTitleBox .title,
-#systemWrap .comTitleBox p{color: #fff; text-align: center;}
+#systemWrap .comTitleBox p{color: #fff!important; text-align: center;}
 #systemWrap .more{margin: 0 auto; border-color: #fff; color: #fff;}
 #systemWrap .more:hover{border: 1px solid #27433c;}
 #systemWrap .systemList{padding: 76px 0 246px; position: relative; max-width: 1148px; margin: 0 auto; display: flex; flex-direction: column;}
@@ -460,7 +459,7 @@
 /* 프로모션 영역 */
 #promotionWrap{padding: 45px 0 0;}
 #promotionWrap .comTitleBox{margin-bottom: 85px;}
-#promotionWrap .comTitleBox .title{margin-bottom: 0; color: #fff; text-align: center; font-size: 74px;}
+#promotionWrap .comTitleBox .title{margin-bottom: 0; color: #fff!important; text-align: center; font-size: 74px;}
 #promotionWrap .comTitleBox p{color: #fff; text-align: center; font-size: 20px;}
 #promotionWrap .imgBox{margin: 0 35px;}
 #promotionWrap .imgBox img{display: block; width: 100%;}
@@ -612,6 +611,19 @@
 
   
 }
+
+/* 줄기세포센터 */
+#wrap.main01 .comTitleBox span,
+#wrap.main01 .comTitleBox .title,
+#wrap.main01 #spaceWrap .comTitleBox .title,
+#wrap.main01 #spaceWrap .comTitleBox span,
+#wrap.main01 #programWrap .topText,
+#wrap.main01 .comTitle,
+#wrap.main01 #laboratoryWrap .tit{color: #593f52;}
+#wrap.main01 #bgWrap{background: url(../images/main/stemcell/bg.png)no-repeat center -500px / cover;}
+#wrap.main01 #laboratoryWrap .laboratoryBox{background-color: #edeae5;}
+#wrap.main01 .more{color: #303030; border-color: #303030;}
+#wrap.main01 .slick-dots li.slick-active button{background-color: #3d3d3d;}
 
 /* 피부센터 */
 #wrap.main02 #programWrap .topText,

@@ -13,7 +13,10 @@
 #headerWrap .logoBox h1 a img{display: block;}
 #headerWrap .logoBox h1 a{display: flex; align-items: center; gap: 0 19px;}
 #headerWrap .logoBox h1 a span{font-size: 25px; font-weight: 700; color: #fff;}
+#headerWrap .logoBox .scrollLogo{display: none;}
 #headerWrap.scroll{background-color: rgba(255,255,255,.9); box-shadow: 0 10px 20px rgba(0,0,0,.08);}
+#headerWrap.scroll .logoBox img{display: none;}
+#headerWrap.scroll .logoBox .scrollLogo{display: block;}
 #headerWrap.scroll nav .link li h2 a{color: #27433c;}
 #headerWrap.scroll .logoBox h1 a span{color: #27433c;}
 #headerWrap.scroll .box .menuBtn em{background-color: #27433c;}
@@ -22,10 +25,9 @@
 #headerWrap .box{display: flex; align-items: center;}
 #headerWrap .box .globalBtn{width: 26px; height: 26px; background: url(../images/common/global_icon.png)no-repeat center / contain;}
 #headerWrap .box .mobileBtn{display: none!important;}
-#headerWrap .box button:hover{transform: translateY(-6px);}
-#headerWrap .box button{transition: all .3s;}
+#headerWrap .box button:hover{transform: translateY(-6px); transition: all .3s;}
 #headerWrap .box .menuBtn{margin-right: 25px; margin-left: 25px; display:flex; flex-direction: column; gap:6px;}
-#headerWrap .box .menuBtn em{display:block;width:26px;height:2px;background:#fff; transition:.3s ease;}
+#headerWrap .box .menuBtn em{display:block;width:26px;height:2px;background:#fff;}
 #headerWrap .box .menuBtn em:nth-of-type(1){width: 38px;}
 #headerWrap .box .menuBtn.active span:nth-child(1){transform:rotate(45deg);} 
 #headerWrap .box .menuBtn.active span:nth-child(2){opacity:0;} 
