@@ -23,7 +23,7 @@
 .comTitle{margin-bottom: 25px; font-size: 74px; font-family: 'Constantia'; font-weight: 400;}
 .comTitleBox span{display: block; margin-bottom: 13px; font-size: 25px; font-family: 'Constantia';}
 .comTitleBox .title{margin-bottom: 30px; font-size: 45px; font-family: 'Noto Serif KR', serif; font-weight: 500; letter-spacing: -1px;}
-.comTitleBox p{margin-bottom: 40px; font-size: 20px; color: #303030; text-align: left; line-height: 1.7;}
+.comTitleBox p{margin-bottom: 40px; font-size: 20px; color: #303030!important; text-align: left; line-height: 1.7;}
 
 @media (max-width: 1199px){
 
@@ -460,7 +460,7 @@
 #promotionWrap{padding: 45px 0 0;}
 #promotionWrap .comTitleBox{margin-bottom: 85px;}
 #promotionWrap .comTitleBox .title{margin-bottom: 0; color: #fff!important; text-align: center; font-size: 74px;}
-#promotionWrap .comTitleBox p{color: #fff; text-align: center; font-size: 20px;}
+#promotionWrap .comTitleBox p{color: #fff!important; text-align: center; font-size: 20px;}
 #promotionWrap .imgBox{margin: 0 35px;}
 #promotionWrap .imgBox img{display: block; width: 100%;}
 #promotionWrap .control{display: flex; justify-content: space-between; width: 1488px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
@@ -617,9 +617,7 @@
 #wrap.main01 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name,
 #wrap.main01 .comTitleBox span,
 #wrap.main01 .comTitleBox .title,
-#wrap.main01 #spaceWrap .comTitleBox .title,
-#wrap.main01 #spaceWrap .comTitleBox p,
-#wrap.main01 #spaceWrap .comTitleBox span,
+#wrap.main01 .comTitleBox p,
 #wrap.main01 #programWrap .topText,
 #wrap.main01 .comTitle,
 #wrap.main01 #laboratoryWrap .tit{color: #593f52;}
@@ -634,9 +632,7 @@
 #wrap.main02 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name,
 #wrap.main02 .comTitleBox span,
 #wrap.main02 .comTitleBox .title,
-#wrap.main02 #spaceWrap .comTitleBox .title,
-#wrap.main02 #spaceWrap .comTitleBox p,
-#wrap.main02 #spaceWrap .comTitleBox span,
+#wrap.main02 .comTitleBox p,
 #wrap.main02 #programWrap .topText,
 #wrap.main02 .comTitle,
 #wrap.main02 #laboratoryWrap .tit{color: #436369;}
@@ -651,9 +647,7 @@
 #wrap.main03 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name,
 #wrap.main03 .comTitleBox span,
 #wrap.main03 .comTitleBox .title,
-#wrap.main03 #spaceWrap .comTitleBox .title,
-#wrap.main03 #spaceWrap .comTitleBox p,
-#wrap.main03 #spaceWrap .comTitleBox span,
+#wrap.main03 .comTitleBox p,
 #wrap.main03 #programWrap .topText,
 #wrap.main03 .comTitle,
 #wrap.main03 #laboratoryWrap .tit{color: #614a61;}
@@ -668,9 +662,7 @@
 #wrap.main04 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name,
 #wrap.main04 .comTitleBox span,
 #wrap.main04 .comTitleBox .title,
-#wrap.main04 #spaceWrap .comTitleBox .title,
-#wrap.main04 #spaceWrap .comTitleBox p,
-#wrap.main04 #spaceWrap .comTitleBox span,
+#wrap.main04 .comTitleBox p,
 #wrap.main04 #programWrap .topText,
 #wrap.main04 .comTitle,
 #wrap.main04 #laboratoryWrap .tit{color: #354668;}
