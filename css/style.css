@@ -25,7 +25,6 @@
 #headerWrap .box{display: flex; align-items: center;}
 #headerWrap .box .globalBtn{width: 26px; height: 26px; background: url(../images/common/global_icon.png)no-repeat center / contain;}
 #headerWrap .box .mobileBtn{display: none!important;}
-#headerWrap .box button:hover{transform: translateY(-6px); transition: all .3s;}
 #headerWrap .box .menuBtn{margin-right: 25px; margin-left: 25px; display:flex; flex-direction: column; gap:6px;}
 #headerWrap .box .menuBtn em{display:block;width:26px;height:2px;background:#fff;}
 #headerWrap .box .menuBtn em:nth-of-type(1){width: 38px;}

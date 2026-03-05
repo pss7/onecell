@@ -20,9 +20,9 @@
 .is-inview.scrollText{animation: none;}
 
 /* 공통 - 제목 */
-.comTitle{margin-bottom: 25px; font-size: 74px; color: #27433c; font-family: 'Constantia'; font-weight: 400;}
-.comTitleBox span{display: block; margin-bottom: 13px; font-size: 25px; color: #27433c; font-family: 'Constantia';}
-.comTitleBox .title{margin-bottom: 30px; font-size: 45px; color: #27433c; font-family: 'Noto Serif KR', serif; font-weight: 500; letter-spacing: -1px;}
+.comTitle{margin-bottom: 25px; font-size: 74px; font-family: 'Constantia'; font-weight: 400;}
+.comTitleBox span{display: block; margin-bottom: 13px; font-size: 25px; font-family: 'Constantia';}
+.comTitleBox .title{margin-bottom: 30px; font-size: 45px; font-family: 'Noto Serif KR', serif; font-weight: 500; letter-spacing: -1px;}
 .comTitleBox p{margin-bottom: 40px; font-size: 20px; color: #303030; text-align: left; line-height: 1.7;}
 
 @media (max-width: 1199px){
@@ -53,8 +53,8 @@
 }
 
 /* 공통 - 더보기 */
-.more{display: flex; align-items: center; justify-content: center; width: 145px; height: 57px; color: #27433c; font-size: 20px; border-radius: 50px; border: 1px solid #31544b; font-family: 'Constantia'; transition: all .3s;}
-.more:hover{background-color: #27433c; color: #fff;}
+.more{display: flex; align-items: center; justify-content: center; width: 145px; height: 57px; font-size: 20px; border-radius: 50px; border: 1px solid #31544b; font-family: 'Constantia'; transition: all .3s;}
+.more:hover{color: #fff!important;}
 
 @media (max-width: 767px){
 
@@ -320,8 +320,8 @@
 #doctorsWrap .doctorsInfoBox .textWrap{height: 100%; min-height: 230px;}
 #doctorsWrap .doctorsInfoBox .textBox{padding-left: 90px; height: 100%; display: flex; align-items: center; flex-shrink: 0;}
 #doctorsWrap .doctorsInfoBox .textBox .nameBox{margin-bottom: 30px; display: flex; align-items: flex-end; gap: 0 24px; line-height: 1;}
-#doctorsWrap .doctorsInfoBox .textBox .nameBox .name{font-family: 'Noto Serif KR', serif; font-size: 45px; color: #27433c; letter-spacing: -2px;} 
-#doctorsWrap .doctorsInfoBox .textBox .nameBox  em{font-weight: 700; color: #303030; font-size: 22px;}
+#doctorsWrap .doctorsInfoBox .textBox .nameBox .name{font-family: 'Noto Serif KR', serif; font-size: 45px; letter-spacing: -2px;} 
+#doctorsWrap .doctorsInfoBox .textBox .nameBox  em{font-weight: 700; font-size: 22px;}
 #doctorsWrap .doctorsInfoBox .textBox p{margin-bottom: 35px; font-size: 20px; color: #303030; line-height: 1.7; letter-spacing: -1px;}
 #doctorsWrap .doctorsInfoBox .imgBox img{display: block;}
 #doctorsWrap .slide{width: 432px;}
@@ -395,8 +395,8 @@
 #systemWrap .comTitleBox span,
 #systemWrap .comTitleBox .title,
 #systemWrap .comTitleBox p{color: #fff!important; text-align: center;}
-#systemWrap .more{margin: 0 auto; border-color: #fff; color: #fff;}
-#systemWrap .more:hover{border: 1px solid #27433c;}
+#systemWrap .more{margin: 0 auto; border-color: #fff!important; color: #fff!important;}
+
 #systemWrap .systemList{padding: 76px 0 246px; position: relative; max-width: 1148px; margin: 0 auto; display: flex; flex-direction: column;}
 #systemWrap .systemList::after{content: ''; position: absolute; left: 50%; top:0; bottom: 0; width: 1px; margin-left: -0.5px; background-color: rgba(255,255,255,.2);}
 #systemWrap .systemList li{width: 50%;}
@@ -613,9 +613,12 @@
 }
 
 /* 줄기세포센터 */
+#wrap.main01 #doctorsWrap .doctorsInfoBox .textBox .nameBox em,
+#wrap.main01 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name,
 #wrap.main01 .comTitleBox span,
 #wrap.main01 .comTitleBox .title,
 #wrap.main01 #spaceWrap .comTitleBox .title,
+#wrap.main01 #spaceWrap .comTitleBox p,
 #wrap.main01 #spaceWrap .comTitleBox span,
 #wrap.main01 #programWrap .topText,
 #wrap.main01 .comTitle,
@@ -623,25 +626,56 @@
 #wrap.main01 #bgWrap{background: url(../images/main/stemcell/bg.png)no-repeat center -500px / cover;}
 #wrap.main01 #laboratoryWrap .laboratoryBox{background-color: #edeae5;}
 #wrap.main01 .more{color: #303030; border-color: #303030;}
+#wrap.main01 .more:hover{background-color: #303030; border: 1px solid #303030!important;}
 #wrap.main01 .slick-dots li.slick-active button{background-color: #3d3d3d;}
 
 /* 피부센터 */
+#wrap.main02 #doctorsWrap .doctorsInfoBox .textBox .nameBox em,
+#wrap.main02 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name,
+#wrap.main02 .comTitleBox span,
+#wrap.main02 .comTitleBox .title,
+#wrap.main02 #spaceWrap .comTitleBox .title,
+#wrap.main02 #spaceWrap .comTitleBox p,
+#wrap.main02 #spaceWrap .comTitleBox span,
 #wrap.main02 #programWrap .topText,
 #wrap.main02 .comTitle,
 #wrap.main02 #laboratoryWrap .tit{color: #436369;}
 #wrap.main02 #bgWrap{background: url(../images/main/skin/bg.png)no-repeat center -500px / cover;}
 #wrap.main02 #laboratoryWrap .laboratoryBox{background-color: #e7ece7;}
+#wrap.main02 .more{color: #27433c; border-color: #27433c;}
+#wrap.main02 .more:hover{background-color: #27433c; border: 1px solid #27433c!important;}
+#wrap.main02 .slick-dots li.slick-active button{background-color: #27433c;}
 
 /* 성형센터 */
+#wrap.main03 #doctorsWrap .doctorsInfoBox .textBox .nameBox em,
+#wrap.main03 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name,
+#wrap.main03 .comTitleBox span,
+#wrap.main03 .comTitleBox .title,
+#wrap.main03 #spaceWrap .comTitleBox .title,
+#wrap.main03 #spaceWrap .comTitleBox p,
+#wrap.main03 #spaceWrap .comTitleBox span,
 #wrap.main03 #programWrap .topText,
 #wrap.main03 .comTitle,
 #wrap.main03 #laboratoryWrap .tit{color: #614a61;}
 #wrap.main03 #bgWrap{background: url(../images/main/plasticsurgery/bg.png)no-repeat center -500px / cover;}
 #wrap.main03 #laboratoryWrap .laboratoryBox{background-color: #eee9ee;}
+#wrap.main03 .more{color: #3f3f3f; border-color: #3f3f3f;}
+#wrap.main03 .more:hover{background-color: #3f3f3f; border: 1px solid #3f3f3f!important;}
+#wrap.main03 .slick-dots li.slick-active button{background-color: #3a3a3a;}
 
 /* 척추/관절/통증 센터 */
+#wrap.main04 #doctorsWrap .doctorsInfoBox .textBox .nameBox em,
+#wrap.main04 #doctorsWrap .doctorsInfoBox .textBox .nameBox .name,
+#wrap.main04 .comTitleBox span,
+#wrap.main04 .comTitleBox .title,
+#wrap.main04 #spaceWrap .comTitleBox .title,
+#wrap.main04 #spaceWrap .comTitleBox p,
+#wrap.main04 #spaceWrap .comTitleBox span,
 #wrap.main04 #programWrap .topText,
 #wrap.main04 .comTitle,
 #wrap.main04 #laboratoryWrap .tit{color: #354668;}
 #wrap.main04 #bgWrap{background: url(../images/main/paincare/bg.png)no-repeat center -500px / cover;}
 #wrap.main04 #laboratoryWrap .laboratoryBox{background-color: #e8ecef;}
+#wrap.main04 .more{color: #3f3f3f; border-color: #3f3f3f;}
+#wrap.main04 .more:hover{background-color: #3f3f3f; border: 1px solid #3f3f3f!important;}
+#wrap.main04 .slick-dots li.slick-active button{background-color: #3a3a3a;}
