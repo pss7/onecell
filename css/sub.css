@@ -54,7 +54,7 @@
 /* 공통 - 비주얼영역 */
 #visualWrap .visualBox .textBox span{margin-bottom: 10px; display: block; font-size: 22px; color: #fff; font-family: 'Constantia'; text-align: center; }
 #visualWrap .visualBox .textBox h2{margin-bottom: 25px; font-family: 'Noto Serif KR', serif; font-size: 50px;}
-#visualWrap .visualBox.active .textBox p{font-size: 20px;}
+#visualWrap .visualBox.active .textBox p{font-size: 20px; font-family: 'NotoSansKR', sans-serif;}
 
 @media (max-width: 1199px){
 
@@ -348,7 +348,7 @@
 
 @media (max-width: 480px){
 
-  #programWrap{padding: 0 0 100px;}
+  #programWrap{padding: 0 0 60px;}
   #programWrap .programImgList li img{width: 200px;}
   
 }
@@ -357,6 +357,8 @@
 #laboratoryWrap{padding: 155px 0 0; background-color: #f4f1ee;}
 #laboratoryWrap .titleBox{margin-bottom: 92px;}
 #laboratoryWrap .titleBox em{ font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 45px; color: #593f52;}
+#laboratoryWrap .laboratoryTopImgBox{margin-bottom: 110px;}
+#laboratoryWrap .laboratoryTopImgBox img{display: block; width: 100%;}
 #laboratoryWrap .laboratoryInfoBox{margin-bottom: 110px; display: flex; justify-content: center; align-items: center; gap: 0 100px;}
 #laboratoryWrap .laboratoryInfoBox .laboratoryTextBox h4{margin-bottom: 25px; font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
 #laboratoryWrap .laboratoryInfoBox .laboratoryTextBox p{font-size: 20px; color: #303030; line-height: 1.8; letter-spacing: -1px;}
@@ -372,6 +374,7 @@
   #laboratoryWrap{padding: 120px 0 0;}
   #laboratoryWrap .titleBox{margin-bottom: 60px;}
   #laboratoryWrap .titleBox em{font-size: 40px;}
+  #laboratoryWrap .laboratoryTopImgBox{margin-bottom: 65px;}
   #laboratoryWrap .laboratoryInfoBox{flex-direction: column; gap: 100px 0;}
   #laboratoryWrap .laboratoryInfoBox .laboratoryTextBox{width: 100%; text-align: center;}
   #laboratoryWrap .laboratoryInfoBox .laboratoryTextBox h4{font-size: 30px;}
@@ -397,7 +400,9 @@
 
 @media (max-width: 480px){
 
+  #laboratoryWrap{padding: 80px 0 0;}
   #laboratoryWrap .titleBox em{font-size: 28px;}
+  #laboratoryWrap .laboratoryTopImgBox{margin-bottom: 50px;}
   #laboratoryWrap .laboratoryInfoBox{margin-bottom: 50px;}
   #laboratoryWrap .laboratoryInfoBox .laboratoryTextBox h4{font-size: 20px;}
   #laboratoryWrap .laboratoryInfoBox .laboratoryTextBox p br{display: none;}
@@ -405,6 +410,12 @@
   #laboratoryWrap .marqueeBox{height: 200px;}
   #laboratoryWrap .marqueeTextBox p{width: 450px; font-size: 60px;} 
   
+}
+
+@media (max-width: 414px){
+
+  #laboratoryWrap .laboratoryInfoBox{gap: 70px 0;}
+
 }
 
 /* 공통 - 카드영역 */
@@ -541,7 +552,7 @@
 #introduceWrap .introduceCardBox .introduceCardList img{display: block; width: 100%;}
 #introduceWrap .introduceCardBox .titleBox{margin-bottom: 50px;}
 #introduceWrap .introduceCardBox .titleBox .tit{margin-bottom: 30px; font-size: 40px; line-height: 1.2;}
-#introduceWrap .introduceCardBox .titleBox p{font-size: 20px; color: #303030; font-family: 'NotoSansKR'; font-weight: 400;}
+#introduceWrap .introduceCardBox .titleBox p{font-size: 20px; color: #303030; font-family: 'NotoSansKR', sans-serif; font-weight: 400;}
 #introduceWrap .introduceCardBox .viewBox{margin-bottom: 80px;}
 
 @media (max-width: 767px){
