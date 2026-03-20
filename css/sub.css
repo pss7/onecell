@@ -1,5 +1,56 @@
 @charset "UTF-8";
 
+/* 공통 - 마퀴텍스트 */
+.marqueeBox{position: relative; display: flex; align-items: center; height: 320px;}
+.marqueeTextBox{position: absolute; display: flex; animation: textEffect 23s linear infinite;}
+.marqueeTextBox p{display: flex; align-items: center; gap: 0 20px; width: 1250px; font-size: 90px; font-weight: 400; color: #593f52; font-family: 'Constantia'; text-align: center; line-height: 1;}
+.marqueeTextBox p::before{content: '';  width: 76px; height: 76px; background: url(../images/sub/stemcellcenter/marqueetext_icon.png)no-repeat center / contain;}
+.marqueeType02 .marqueeTextBox p{color: #e9e5e0;}
+.marqueeType02 .marqueeTextBox p::before{content: ''; background: url(../images/sub/stemcellcenter/marqueetext_icon02.png)no-repeat center / contain;}
+
+@keyframes textEffect {
+    0%{
+      left: 0;
+    }
+    100%{
+      left: -1250px;
+    }
+  }
+
+@media (max-width: 1024px){
+
+  .marqueeBox{height: 250px;}
+  .marqueeTextBox p{width: 1000px; font-size: 70px;}
+  .marqueeTextBox p::before{width: 50px; height: 50px;}
+
+@keyframes textEffect {
+    0%{
+      left: 0;
+    }
+    100%{
+      left: -1000px;
+    }
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .marqueeBox{height: 200px;}
+  .marqueeTextBox p{width: 600px; font-size: 40px;}
+  .marqueeTextBox p::before{width: 40px; height: 40px;}
+
+@keyframes textEffect {
+    0%{
+      left: 0;
+    }
+    100%{
+      left: -700px;
+    }
+  }
+
+}
+
 /* 공통 - 비주얼영역 */
 #visualWrap .visualBox .textBox span{margin-bottom: 10px; display: block; font-size: 22px; color: #fff; font-family: 'Constantia'; text-align: center; }
 #visualWrap .visualBox .textBox h2{margin-bottom: 25px; font-family: 'Noto Serif KR', serif; font-size: 50px;}
@@ -158,8 +209,35 @@
 
 }
 
-/* 원셀줄기세포센터 - 줄기세포센터*/
+/* 원셀줄기세포센터 - 줄기세포센터 */
+.stemcellWrap .introduceTopInfoBox .introduceLayoutBox:nth-child(2){flex-direction: row-reverse;}
+.stemcellWrap .introduceTopInfoBox .introduceLayoutBox:nth-child(2) .introduceImgBox{border-radius: 242px!important;} 
+.stemcellWrap #cardListWrap{padding: 190px 0 0;}
+.stemcellWrap #cardListWrap .cardList{margin-bottom: 6.3vw;}
+.stemcellWrap #cardListWrap .cardList li:nth-child(1){grid-column: 1; grid-row: 1;}
+.stemcellWrap #cardListWrap .cardList li:nth-child(2){grid-column: 2; grid-row: 1;}
+.stemcellWrap #cardListWrap .cardList li:nth-child(3){grid-column: 3; grid-row: 1;}
+.stemcellWrap #cardListWrap .cardList li:nth-child(4){grid-column: 2; grid-row: 2;}
+.stemcellWrap #cardListWrap .cardList li:nth-child(5){grid-column: 3; grid-row: 2;}
+.stemcellWrap #cardListWrap .cardList li:nth-child(6){grid-column: 4; grid-row: 2;}
 .stemcellWrap .introduceBox01{background: url(../images/sub/stemcellcenter/bg.jpg)no-repeat center 70px;}
+.stemcellWrap .infoTextBox{background-color: #f4f1ee;}
+.stemcellWrap #cardListWrap .cardList::before,
+.stemcellWrap #cardListWrap .cardList::after{content: ''; display: block;}
+.stemcellWrap #cardListWrap .cardList::before{grid-column: 4; grid-row: 1;}
+.stemcellWrap #cardListWrap .cardList::after{ grid-column: 1; grid-row: 2;}
+
+@media (max-width: 1199px){
+
+  .stemcellWrap #cardListWrap{padding: 150px 0 0;}
+
+}
+
+@media (max-width: 767px){
+
+  .stemcellWrap #cardListWrap{padding: 100px 0 0;}
+
+}
 
 /* 소개영역 */
 #introduceWrap{padding: 100px 0 0;} 
@@ -170,8 +248,6 @@
 #introduceWrap .titleBox h3{font-size: 74px; word-break: keep-all;}
 #introduceWrap .introduceBox01 .introduceLayoutBox{margin-bottom: 160px; display: flex; align-items: center; justify-content: center; gap: 0 106px;}
 #introduceWrap .introduceBox01 .introduceLayoutBox:last-child{margin-bottom: 0;}
-/* #introduceWrap .introduceBox01 .introduceLayoutBox:nth-child(odd){flex-direction: row-reverse;}
-#introduceWrap .introduceBox01 .introduceLayoutBox:nth-child(odd) .introduceImgBox{border-radius: 242px;} */
 #introduceWrap .introduceBox01 .introduceLayoutBox .introduceImgBox{flex-shrink: 0; border-radius: 50%; box-shadow: 30px 50px 50px rgba(0,0,0,.1);  overflow: hidden;}
 #introduceWrap .introduceBox01 .introduceLayoutBox .introduceImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap .introduceBox01 .introduceTextBox h4{margin-bottom: 15px; font-family: 'Noto Serif KR'; font-weight: 600; font-size: 40px; color: #593f52; letter-spacing: -3px; word-break: keep-all;} 
@@ -192,9 +268,7 @@
   #introduceWrap .titleBox{margin-bottom: 100px;}
   #introduceWrap .titleBox p{font-size: 30px;}
   #introduceWrap .titleBox h3{font-size: 40px;}
-
-  .stemcellWrap .introduceBox01{background: url(../images/sub/stemcellcenter/bg.jpg)no-repeat 0 70px;}
-  
+ 
   #introduceWrap .introduceBox01 .introduceTextBox{width: 100%; text-align: center;}
   #introduceWrap .introduceBox01 .introduceTextBox h4{font-size: 36px;}
   #introduceWrap .introduceBox01 .introduceTextBox p{font-size: 18px;}
@@ -249,56 +323,7 @@
 
 }
 
-/* 마퀴텍스트 */
-.marqueeBox{position: relative; display: flex; align-items: center; height: 320px;}
-.marqueeTextBox{position: absolute; display: flex; animation: textEffect 23s linear infinite;}
-.marqueeTextBox p{display: flex; align-items: center; gap: 0 20px; width: 1250px; font-size: 90px; font-weight: 400; color: #593f52; font-family: 'Constantia'; text-align: center; line-height: 1;}
-.marqueeTextBox p::before{content: '';  width: 76px; height: 76px; background: url(../images/sub/stemcellcenter/marqueetext_icon.png)no-repeat center / contain;}
-.marqueeType02 .marqueeTextBox p{color: #e9e5e0;}
-.marqueeType02 .marqueeTextBox p::before{content: ''; background: url(../images/sub/stemcellcenter/marqueetext_icon02.png)no-repeat center / contain;}
 
-@keyframes textEffect {
-    0%{
-      left: 0;
-    }
-    100%{
-      left: -1250px;
-    }
-  }
-
-@media (max-width: 1024px){
-
-  .marqueeBox{height: 250px;}
-  .marqueeTextBox p{width: 1000px; font-size: 70px;}
-  .marqueeTextBox p::before{width: 50px; height: 50px;}
-
-@keyframes textEffect {
-    0%{
-      left: 0;
-    }
-    100%{
-      left: -1000px;
-    }
-  }
-
-}
-
-@media (max-width: 480px){
-
-  .marqueeBox{height: 200px;}
-  .marqueeTextBox p{width: 600px; font-size: 40px;}
-  .marqueeTextBox p::before{width: 40px; height: 40px;}
-
-@keyframes textEffect {
-    0%{
-      left: 0;
-    }
-    100%{
-      left: -700px;
-    }
-  }
-
-}
 
 /* 프로그램영역 */
 #programWrap{padding: 0 0 160px;}
@@ -383,39 +408,26 @@
   
 }
 
-/* 프로세스영역 */
-#cardListWrap{padding: 190px 0 0;}
-#cardListWrap .cardList li img{display: block;}
-.infoTextBox{background-color: #f4f1ee;}
-.infoTextBox p{padding: 24px 10px; font-weight: 700; color: #303030; font-weight: 700; border-radius: 8px; text-align: center;}
-#cardListWrap .cardList{margin-bottom: 6.3vw; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;}
-#cardListWrap .cardList::before,
-#cardListWrap .cardList::after{content: ''; display: block;}
-#cardListWrap .cardList::before{grid-column: 4; grid-row: 1;}
-#cardListWrap .cardList::after{ grid-column: 1; grid-row: 2;}
-#cardListWrap .cardList li:nth-child(1){grid-column: 1; grid-row: 1;}
-#cardListWrap .cardList li:nth-child(2){grid-column: 2; grid-row: 1;}
-#cardListWrap .cardList li:nth-child(3){grid-column: 3; grid-row: 1;}
-#cardListWrap .cardList li:nth-child(4){grid-column: 2; grid-row: 2;}
-#cardListWrap .cardList li:nth-child(5){grid-column: 3; grid-row: 2;}
-#cardListWrap .cardList li:nth-child(6){grid-column: 4; grid-row: 2;}
+/* 공통 - 카드영역 */
+#cardListWrap{padding: 0 0 180px;}
+#cardListWrap .cardList li{grid-column: auto; grid-row:auto;}
 #cardListWrap .cardList li img{display: block; width: 100%;}
+#cardListWrap .cardList{margin-bottom: 4.7vw; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;}
 
-@media (max-width: 1199px){
 
-  #cardListWrap{padding: 150px 0 0;}
+@media (max-width: 1440px){
+
+  #cardListWrap{padding: 0 0 120px;}
 
 }
 
 @media (max-width: 767px){
 
-  #cardListWrap .cardList{gap: 10px;}
-  #cardListWrap{padding: 100px 0 0;}
-  #cardListWrap .cardList{grid-template-columns: repeat(3, 1fr);}
+  #cardListWrap .cardList{gap: 10px; grid-template-columns: repeat(3, 1fr);}
+  #cardListWrap .cardList li{grid-column: auto!important; grid-row:auto!important;}
   #cardListWrap .cardList::before,
-  #cardListWrap .cardList::after{display: none;}
-  #cardListWrap .cardList li{grid-area: auto !important; grid-column: auto !important; grid-row: auto !important;}
-
+  #cardListWrap .cardList::after{display: none!important;}
+ 
 }
 
 @media (max-width: 480px){
@@ -424,20 +436,26 @@
 
 }
 
-/* 원셀줄기세포 - 안티에이징 */
+/* 공통 - 안내텍스트 */
+.infoTextBox{background-color: #e8e7e2;}
+.infoTextBox p{padding: 24px 10px; font-weight: 700; color: #303030; font-weight: 700; border-radius: 8px; text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+/* 원셀줄기세포센터 - 안티에이징 */
 #introduceWrap .introduceBox01 .introduceLayoutBox{margin: 0;}
 #introduceWrap .imgBox{position: relative; height: 432px;}
 #introduceWrap .imgBox img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 /* 공통 - 안티에이징, 가슴지방성형, 얼굴지방이식, 리프팅, 활력치료, 스킨부스터 */
-.skinshotWrap .infoTextBox,
-.immunityWrap .infoTextBox,
-.vitalityWrap .infoTextBox,
-.liftingWrap .infoTextBox,
-.facialFatTransferWrap .infoTextBox,
-.breastFatTransferWrap .infoTextBox,
-.agingcareWrap .infoTextBox{background-color: #e8e7e2;}
-
 .skinshotWrap #introduceWrap .titleBox,
 .immunityWrap #introduceWrap .titleBox,
 .vitalityWrap #introduceWrap .titleBox,
@@ -446,70 +464,15 @@
 .breastFatTransferWrap #introduceWrap .titleBox,
 .agingcareWrap #introduceWrap .titleBox{margin-bottom: 70px;}
 
-.skinshotWrap #cardListWrap,
-.immunityWrap #cardListWrap,
-.vitalityWrap #cardListWrap,
-.liftingWrap #cardListWrap,
-.facialFatTransferWrap #cardListWrap,
-.breastFatTransferWrap #cardListWrap,
-.agingcareWrap #cardListWrap{padding: 0 0 180px;}
 
-.skinshotWrap #cardListWrap .cardList,
-.immunityWrap #cardListWrap .cardList,
-.vitalityWrap #cardListWrap .cardList,
-.liftingWrap #cardListWrap .cardList,
-.facialFatTransferWrap #cardListWrap .cardList,
-.breastFatTransferWrap #cardListWrap .cardList,
-.agingcareWrap #cardListWrap .cardList{margin-bottom: 4.7vw;}
 
-.skinshotWrap #cardListWrap .cardList::before,
-.immunityWrap #cardListWrap .cardList::before,
-.vitalityWrap #cardListWrap .cardList::before,
-.liftingWrap #cardListWrap .cardList::before,
-.facialFatTransferWrap #cardListWrap .cardList::before,
-.breastFatTransferWrap #cardListWrap .cardList::before,
-.agingcareWrap #cardListWrap .cardList::before,
-.skinshotWrap #cardListWrap .cardList::after,
-.immunityWrap #cardListWrap .cardList::after,
-.vitalityWrap #cardListWrap .cardList::after,
-.liftingWrap #cardListWrap .cardList::after,
-.facialFatTransferWrap #cardListWrap .cardList::after,
-.breastFatTransferWrap #cardListWrap .cardList::after,
-.agingcareWrap #cardListWrap .cardList::after{display: none;}
 
-.skinshotWrap #cardListWrap .cardList li,
-.immunityWrap #cardListWrap .cardList li,
-.vitalityWrap #cardListWrap .cardList li,
-.liftingWrap #cardListWrap .cardList li,
-.facialFatTransferWrap #cardListWrap .cardList li,
-.facialFatTransferWrap #cardListWrap .cardList li,
-.breastFatTransferWrap #cardListWrap .cardList li,
-.agingcareWrap #cardListWrap .cardList li{grid-column: auto; grid-row:auto;}
+
 
 @media (max-width: 1440px){
 
-  .skinshotWrap #cardListWrap,
-  .immunityWrap #cardListWrap,
-  .vitalityWrap #cardListWrap,
-  .liftingWrap #cardListWrap,
-  .facialFatTransferWrap #cardListWrap,
-  .breastFatTransferWrap #cardListWrap,
-  .agingcareWrap #cardListWrap{padding: 0 0 120px;}
-
    #introduceWrap .imgBox{margin: 100px 0; height: auto;} 
    #introduceWrap .imgBox img{position: static; width: 100%; transform: none;}
-
-}
-
-@media (max-width: 767px){
-
-  .skinshotWrap #cardListWrap .cardList,
-  .immunityWrap #cardListWrap .cardList,
-  .vitalityWrap #cardListWrap .cardList,
-  .liftingWrap #cardListWrap .cardList,
-  .facialFatTransferWrap #cardListWrap .cardList,
-  .breastFatTransferWrap #cardListWrap .cardList,
-  .agingcareWrap #cardListWrap .cardList{grid-template-columns: repeat(2, 1fr);}
 
 }
 
