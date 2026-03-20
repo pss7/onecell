@@ -430,36 +430,53 @@
 #introduceWrap .imgBox{position: relative; height: 432px;}
 #introduceWrap .imgBox img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-/* 공통 - 안티에이징, 가슴지방성형, 얼굴지방이식 */
+/* 공통 - 안티에이징, 가슴지방성형, 얼굴지방이식, 리프팅, 활력치료 */
+.vitalityWrap .infoTextBox,
+.liftingWrap .infoTextBox,
 .facialFatTransferWrap .infoTextBox,
 .breastFatTransferWrap .infoTextBox,
 .agingcareWrap .infoTextBox{background-color: #e8e7e2;}
 
+.vitalityWrap #introduceWrap .titleBox,
+.liftingWrap #introduceWrap .titleBox,
 .facialFatTransferWrap #introduceWrap .titleBox,
 .breastFatTransferWrap #introduceWrap .titleBox,
 .agingcareWrap #introduceWrap .titleBox{margin-bottom: 70px;}
 
+.vitalityWrap #cardListWrap,
+.liftingWrap #cardListWrap,
 .facialFatTransferWrap #cardListWrap,
 .breastFatTransferWrap #cardListWrap,
 .agingcareWrap #cardListWrap{padding: 0 0 180px;}
 
+.vitalityWrap #cardListWrap .cardList,
+.liftingWrap #cardListWrap .cardList,
 .facialFatTransferWrap #cardListWrap .cardList,
 .breastFatTransferWrap #cardListWrap .cardList,
 .agingcareWrap #cardListWrap .cardList{margin-bottom: 4.7vw;}
 
+.vitalityWrap #cardListWrap .cardList::before,
+.liftingWrap #cardListWrap .cardList::before,
 .facialFatTransferWrap #cardListWrap .cardList::before,
 .breastFatTransferWrap #cardListWrap .cardList::before,
 .agingcareWrap #cardListWrap .cardList::before,
+.vitalityWrap #cardListWrap .cardList::after,
+.liftingWrap #cardListWrap .cardList::after,
 .facialFatTransferWrap #cardListWrap .cardList::after,
 .breastFatTransferWrap #cardListWrap .cardList::after,
 .agingcareWrap #cardListWrap .cardList::after{display: none;}
 
+.vitalityWrap #cardListWrap .cardList li,
+.liftingWrap #cardListWrap .cardList li,
+.facialFatTransferWrap #cardListWrap .cardList li,
 .facialFatTransferWrap #cardListWrap .cardList li,
 .breastFatTransferWrap #cardListWrap .cardList li,
 .agingcareWrap #cardListWrap .cardList li{grid-column: auto; grid-row:auto;}
 
 @media (max-width: 1440px){
 
+  .vitalityWrap #cardListWrap,
+  .liftingWrap #cardListWrap,
   .facialFatTransferWrap #cardListWrap,
   .breastFatTransferWrap #cardListWrap,
   .agingcareWrap #cardListWrap{padding: 0 0 120px;}
@@ -471,6 +488,8 @@
 
 @media (max-width: 767px){
 
+  .vitalityWrap #cardListWrap .cardList,
+  .liftingWrap #cardListWrap .cardList,
   .facialFatTransferWrap #cardListWrap .cardList,
   .breastFatTransferWrap #cardListWrap .cardList,
   .agingcareWrap #cardListWrap .cardList{grid-template-columns: repeat(2, 1fr);}
@@ -535,5 +554,31 @@
 @media (max-width: 767px){
 
   #introduceWrap .introduceTableBox{margin-bottom: 80px;}
+
+}
+
+/* 카드 목록 영역 */
+#introduceWrap .introduceCardBox{padding: 0 0 170px;}
+#introduceWrap .introduceCardBox .introduceCardList img{display: block; width: 100%;}
+#introduceWrap .introduceCardBox .titleBox{margin-bottom: 50px;}
+#introduceWrap .introduceCardBox .titleBox .tit{margin-bottom: 30px; font-size: 40px; line-height: 1.2;}
+#introduceWrap .introduceCardBox .titleBox p{font-size: 20px; color: #303030; font-family: 'NotoSansKR'; font-weight: 400;}
+#introduceWrap .introduceCardBox .viewBox{margin-bottom: 80px;}
+
+@media (max-width: 767px){
+  
+  #introduceWrap .introduceCardBox{padding: 0 0 100px;}
+  #introduceWrap .introduceCardBox .titleBox .tit{font-size: 28px;}
+  #introduceWrap .introduceCardBox .titleBox p{font-size: 16px;}
+  #introduceWrap .introduceCardBox .viewBox{margin-bottom: 62px;}
+
+}
+
+@media (max-width: 480px){
+  
+  #introduceWrap .introduceCardBox{padding: 0 0 70px;}
+  #introduceWrap .introduceCardBox .titleBox .tit{font-size: 24px;}
+  #introduceWrap .introduceCardBox .viewBox{margin-bottom: 50px;}
+  #introduceWrap .introduceCardBox .titleBox p br{display: none;}
 
 }
