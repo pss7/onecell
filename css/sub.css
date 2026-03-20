@@ -431,41 +431,48 @@
 #introduceWrap .imgBox img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 /* 공통 - 안티에이징, 가슴지방성형, 얼굴지방이식, 리프팅, 활력치료 */
+.immunityWrap .infoTextBox,
 .vitalityWrap .infoTextBox,
 .liftingWrap .infoTextBox,
 .facialFatTransferWrap .infoTextBox,
 .breastFatTransferWrap .infoTextBox,
 .agingcareWrap .infoTextBox{background-color: #e8e7e2;}
 
+.immunityWrap #introduceWrap .titleBox,
 .vitalityWrap #introduceWrap .titleBox,
 .liftingWrap #introduceWrap .titleBox,
 .facialFatTransferWrap #introduceWrap .titleBox,
 .breastFatTransferWrap #introduceWrap .titleBox,
 .agingcareWrap #introduceWrap .titleBox{margin-bottom: 70px;}
 
+.immunityWrap #cardListWrap,
 .vitalityWrap #cardListWrap,
 .liftingWrap #cardListWrap,
 .facialFatTransferWrap #cardListWrap,
 .breastFatTransferWrap #cardListWrap,
 .agingcareWrap #cardListWrap{padding: 0 0 180px;}
 
+.immunityWrap #cardListWrap .cardList,
 .vitalityWrap #cardListWrap .cardList,
 .liftingWrap #cardListWrap .cardList,
 .facialFatTransferWrap #cardListWrap .cardList,
 .breastFatTransferWrap #cardListWrap .cardList,
 .agingcareWrap #cardListWrap .cardList{margin-bottom: 4.7vw;}
 
+.immunityWrap #cardListWrap .cardList::before,
 .vitalityWrap #cardListWrap .cardList::before,
 .liftingWrap #cardListWrap .cardList::before,
 .facialFatTransferWrap #cardListWrap .cardList::before,
 .breastFatTransferWrap #cardListWrap .cardList::before,
 .agingcareWrap #cardListWrap .cardList::before,
+.immunityWrap #cardListWrap .cardList::after,
 .vitalityWrap #cardListWrap .cardList::after,
 .liftingWrap #cardListWrap .cardList::after,
 .facialFatTransferWrap #cardListWrap .cardList::after,
 .breastFatTransferWrap #cardListWrap .cardList::after,
 .agingcareWrap #cardListWrap .cardList::after{display: none;}
 
+.immunityWrap #cardListWrap .cardList li,
 .vitalityWrap #cardListWrap .cardList li,
 .liftingWrap #cardListWrap .cardList li,
 .facialFatTransferWrap #cardListWrap .cardList li,
@@ -475,6 +482,7 @@
 
 @media (max-width: 1440px){
 
+  .immunityWrap #cardListWrap,
   .vitalityWrap #cardListWrap,
   .liftingWrap #cardListWrap,
   .facialFatTransferWrap #cardListWrap,
@@ -488,6 +496,7 @@
 
 @media (max-width: 767px){
 
+  .immunityWrap #cardListWrap .cardList,
   .vitalityWrap #cardListWrap .cardList,
   .liftingWrap #cardListWrap .cardList,
   .facialFatTransferWrap #cardListWrap .cardList,
