@@ -178,6 +178,7 @@
 #introduceWrap .introduceBox01 .introduceLayoutBox .introduceImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap .introduceBox01 .introduceTextBox h4{margin-bottom: 15px; font-family: 'Noto Serif KR'; font-weight: 600; font-size: 40px; color: #593f52; letter-spacing: -3px; word-break: keep-all;} 
 #introduceWrap .introduceBox01 .introduceTextBox p{ font-size: 20px; color: #303030; line-height: 2; letter-spacing: -2px;}
+#introduceWrap .introduceBox01 .introduceTextBox p span{display: block; margin-top: 30px; font-size: 17px; color: #593f52;}
 #introduceWrap .introduceBox01 .introduceTextBox p br{display: none;}
 #introduceWrap .introduceBox02{ position: relative;}
 #introduceWrap .introduceBox02 .titleBox{width: 100%; position: absolute; top:126px; left: 50%; transform: translateX(-50%);}
@@ -430,7 +431,8 @@
 #introduceWrap .imgBox{position: relative; height: 432px;}
 #introduceWrap .imgBox img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-/* 공통 - 안티에이징, 가슴지방성형, 얼굴지방이식, 리프팅, 활력치료 */
+/* 공통 - 안티에이징, 가슴지방성형, 얼굴지방이식, 리프팅, 활력치료, 스킨부스터 */
+.skinshotWrap .infoTextBox,
 .immunityWrap .infoTextBox,
 .vitalityWrap .infoTextBox,
 .liftingWrap .infoTextBox,
@@ -438,6 +440,7 @@
 .breastFatTransferWrap .infoTextBox,
 .agingcareWrap .infoTextBox{background-color: #e8e7e2;}
 
+.skinshotWrap #introduceWrap .titleBox,
 .immunityWrap #introduceWrap .titleBox,
 .vitalityWrap #introduceWrap .titleBox,
 .liftingWrap #introduceWrap .titleBox,
@@ -445,6 +448,7 @@
 .breastFatTransferWrap #introduceWrap .titleBox,
 .agingcareWrap #introduceWrap .titleBox{margin-bottom: 70px;}
 
+.skinshotWrap #cardListWrap,
 .immunityWrap #cardListWrap,
 .vitalityWrap #cardListWrap,
 .liftingWrap #cardListWrap,
@@ -452,6 +456,7 @@
 .breastFatTransferWrap #cardListWrap,
 .agingcareWrap #cardListWrap{padding: 0 0 180px;}
 
+.skinshotWrap #cardListWrap .cardList,
 .immunityWrap #cardListWrap .cardList,
 .vitalityWrap #cardListWrap .cardList,
 .liftingWrap #cardListWrap .cardList,
@@ -459,12 +464,14 @@
 .breastFatTransferWrap #cardListWrap .cardList,
 .agingcareWrap #cardListWrap .cardList{margin-bottom: 4.7vw;}
 
+.skinshotWrap #cardListWrap .cardList::before,
 .immunityWrap #cardListWrap .cardList::before,
 .vitalityWrap #cardListWrap .cardList::before,
 .liftingWrap #cardListWrap .cardList::before,
 .facialFatTransferWrap #cardListWrap .cardList::before,
 .breastFatTransferWrap #cardListWrap .cardList::before,
 .agingcareWrap #cardListWrap .cardList::before,
+.skinshotWrap #cardListWrap .cardList::after,
 .immunityWrap #cardListWrap .cardList::after,
 .vitalityWrap #cardListWrap .cardList::after,
 .liftingWrap #cardListWrap .cardList::after,
@@ -472,6 +479,7 @@
 .breastFatTransferWrap #cardListWrap .cardList::after,
 .agingcareWrap #cardListWrap .cardList::after{display: none;}
 
+.skinshotWrap #cardListWrap .cardList li,
 .immunityWrap #cardListWrap .cardList li,
 .vitalityWrap #cardListWrap .cardList li,
 .liftingWrap #cardListWrap .cardList li,
@@ -482,6 +490,7 @@
 
 @media (max-width: 1440px){
 
+  .skinshotWrap #cardListWrap,
   .immunityWrap #cardListWrap,
   .vitalityWrap #cardListWrap,
   .liftingWrap #cardListWrap,
@@ -496,6 +505,7 @@
 
 @media (max-width: 767px){
 
+  .skinshotWrap #cardListWrap .cardList,
   .immunityWrap #cardListWrap .cardList,
   .vitalityWrap #cardListWrap .cardList,
   .liftingWrap #cardListWrap .cardList,
