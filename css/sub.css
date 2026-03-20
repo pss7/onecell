@@ -53,7 +53,7 @@
 
 /* 공통 - 비주얼영역 */
 #visualWrap .visualBox .textBox span{margin-bottom: 10px; display: block; font-size: 22px; color: #fff; font-family: 'Constantia'; text-align: center; }
-#visualWrap .visualBox .textBox h2{margin-bottom: 25px; font-family: 'Noto Serif KR', serif; font-size: 50px;}
+#visualWrap .visualBox .textBox h2{margin-bottom: 25px; font-family: 'NotoSerifKR', serif; font-size: 50px;}
 #visualWrap .visualBox.active .textBox p{font-size: 20px; font-family: 'NotoSansKR', sans-serif;}
 
 @media (max-width: 1199px){
@@ -83,7 +83,7 @@
 /* 공통 - 제목 */
 .titleBox{margin-bottom: 66px; text-align: center;}
 .titleBox span{display: block; font-size: 25px; color: #593f52; font-family: 'Constantia'; letter-spacing: 10px;}
-.titleBox .tit{font-size: 42px; color: #593f52; font-family: 'Noto Serif KR', serif; font-weight: 600; letter-spacing: -1px;}
+.titleBox .tit{font-size: 42px; color: #593f52; font-family: 'NotoSerifKR', serif; font-weight: 600; letter-spacing: -1px;}
 
 @media (max-width: 1199px){
 
@@ -171,7 +171,7 @@
 .verticalSlideBox .verticalTextBox{width: calc(50% - -94px); display:flex; align-items:center;}
 .verticalSlideBox .verticalTextBox .comTextBox{width: 100%!important; opacity: .5; display: flex; align-items: flex-start; gap: 0 40px; margin: 60px 0;}
 .verticalSlideBox .verticalTextBox .comTextBox .comNumber{flex-shrink: 0; font-size: 74px; font-family: 'Constantia'; color: #ae9373; line-height: .6;} 
-.verticalSlideBox .verticalTextBox .comTextBox h4{margin-bottom: 20px; font-family: 'Noto Serif KR', serif; font-size: 36px; font-weight: 600; color: #fff; font-weight: 400; word-break: keep-all;}  
+.verticalSlideBox .verticalTextBox .comTextBox h4{margin-bottom: 20px; font-family: 'NotoSerifKR', serif; font-size: 36px; font-weight: 600; color: #fff; font-weight: 400; word-break: keep-all;}  
 .verticalSlideBox .verticalTextBox .comTextBox .comContentBox p{margin-bottom: 20px; font-size: 20px; color: #fff; line-height: 1.8; font-weight: 300;letter-spacing: -1px;} 
 .verticalSlideBox .verticalTextBox .comTextBox .comContentBox .comInfoList{display: flex; flex-wrap: wrap; gap: 9px;} 
 .verticalSlideBox .verticalTextBox .comTextBox .comContentBox .comInfoList li{padding: 8px 13px; font-weight: 700; color: #fff; border: 1px solid #fff; border-radius: 8px;}  
@@ -245,13 +245,13 @@
 #introduceWrap .introduceBox01{padding: 0 0 120px;}
 #introduceWrap .introduceBox01 .container{max-width: 1240px;}
 #introduceWrap .titleBox {margin-bottom: 160px;}
-#introduceWrap .titleBox p{margin-bottom: 10px; font-family: 'Noto Serif KR'; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
+#introduceWrap .titleBox p{margin-bottom: 10px; font-family: 'NotoSerifKR'; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
 #introduceWrap .titleBox h3{font-size: 74px; word-break: keep-all;}
 #introduceWrap .introduceBox01 .introduceLayoutBox{margin-bottom: 160px; display: flex; align-items: center; justify-content: center; gap: 0 106px;}
 #introduceWrap .introduceBox01 .introduceLayoutBox:last-child{margin-bottom: 0;}
 #introduceWrap .introduceBox01 .introduceLayoutBox .introduceImgBox{flex-shrink: 0; border-radius: 50%; box-shadow: 30px 50px 50px rgba(0,0,0,.1);  overflow: hidden;}
 #introduceWrap .introduceBox01 .introduceLayoutBox .introduceImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-#introduceWrap .introduceBox01 .introduceTextBox h4{margin-bottom: 15px; font-family: 'Noto Serif KR'; font-weight: 600; font-size: 40px; color: #593f52; letter-spacing: -3px; word-break: keep-all;} 
+#introduceWrap .introduceBox01 .introduceTextBox h4{margin-bottom: 15px; font-family: 'NotoSerifKR'; font-weight: 600; font-size: 40px; color: #593f52; letter-spacing: -3px; word-break: keep-all;} 
 #introduceWrap .introduceBox01 .introduceTextBox p{ font-size: 20px; color: #303030; line-height: 2; letter-spacing: -2px;}
 #introduceWrap .introduceBox01 .introduceTextBox p span{display: block; margin-top: 30px; font-size: 17px; color: #593f52;}
 #introduceWrap .introduceBox01 .introduceTextBox p br{display: none;}
@@ -356,11 +356,11 @@
 /* 연구소영역 */
 #laboratoryWrap{padding: 155px 0 0; background-color: #f4f1ee;}
 #laboratoryWrap .titleBox{margin-bottom: 92px;}
-#laboratoryWrap .titleBox em{ font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 45px; color: #593f52;}
+#laboratoryWrap .titleBox em{ font-family: 'NotoSerifKR', serif; font-weight: 600; font-size: 45px; color: #593f52;}
 #laboratoryWrap .laboratoryTopImgBox{margin-bottom: 110px;}
 #laboratoryWrap .laboratoryTopImgBox img{display: block; width: 100%;}
 #laboratoryWrap .laboratoryInfoBox{margin-bottom: 110px; display: flex; justify-content: center; align-items: center; gap: 0 100px;}
-#laboratoryWrap .laboratoryInfoBox .laboratoryTextBox h4{margin-bottom: 25px; font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
+#laboratoryWrap .laboratoryInfoBox .laboratoryTextBox h4{margin-bottom: 25px; font-family: 'NotoSerifKR', serif; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
 #laboratoryWrap .laboratoryInfoBox .laboratoryTextBox p{font-size: 20px; color: #303030; line-height: 1.8; letter-spacing: -1px;}
 .viewBox{display: flex; justify-content: center;}
 .viewBox .view{display: block; padding: 14px 28px; border-radius: 50px; font-weight: 700; font-size: 18px; color: #303030; border: 1px solid #333;}
@@ -497,7 +497,7 @@
 #synergyWrap .titleBox .tit{margin-bottom: 20px;}
 #synergyWrap .synergyInfoBox{margin-bottom: 120px; display: flex; justify-content: center; gap: 0 80px;}
 #synergyWrap .synergyImgBox img{display: block; width: 100%;}
-#synergyWrap .synergyTextBox h4{margin-bottom: 30px; padding-bottom: 20px; font-family: 'Noto Serif KR', serif; font-size: 50px; font-size: 36px; color: #593f52; border-bottom: 1px solid #acacac;}
+#synergyWrap .synergyTextBox h4{margin-bottom: 30px; padding-bottom: 20px; font-family: 'NotoSerifKR', serif; font-size: 50px; font-size: 36px; color: #593f52; border-bottom: 1px solid #acacac;}
 #synergyWrap .synergyTextBox h4 + p{margin-bottom: 50px; font-size: 20px; color: #303030;}
 #synergyWrap .synergyTextBox .synergyList li{margin-bottom:40px;}
 #synergyWrap .synergyTextBox .synergyList li:last-child{margin-bottom: 0;}

@@ -22,7 +22,7 @@
 /* 공통 - 제목 */
 .comTitle{margin-bottom: 25px; font-size: 74px; font-family: 'Constantia'; font-weight: 400;}
 .comTitleBox span{display: block; margin-bottom: 13px; font-size: 25px; font-family: 'Constantia';}
-.comTitleBox .title{margin-bottom: 30px; font-size: 45px; font-family: 'Noto Serif KR', serif; font-weight: 500; letter-spacing: -1px;}
+.comTitleBox .title{margin-bottom: 30px; font-size: 45px; font-family: 'NotoSerifKR', serif; font-weight: 500; letter-spacing: -1px;}
 .comTitleBox p{margin-bottom: 40px; font-size: 20px; color: #303030; text-align: left; line-height: 1.7;}
 
 @media (max-width: 1199px){
@@ -80,7 +80,7 @@
 }
 
 /* 연구소영역 */
-#laboratoryWrap .tit{padding: 113px 0; text-align: center; font-size: 36px;  color: #27433c; font-family: 'Noto Serif KR', serif; letter-spacing: -1px;}
+#laboratoryWrap .tit{padding: 113px 0; text-align: center; font-size: 36px;  color: #27433c; font-family: 'NotoSerifKR', serif; letter-spacing: -1px;}
 #laboratoryWrap .laboratoryBox{background-color: #e8e7e2; overflow: hidden;}
 #laboratoryWrap .leftBox{padding: 148px 0 322px; width: calc(100% - 783px); position: relative;}
 #laboratoryWrap .comTitle{margin-bottom: 165px;}
@@ -225,7 +225,7 @@
 #doctorsWrap .doctorsInfoBox .textWrap{height: 100%; min-height: 230px;}
 #doctorsWrap .doctorsInfoBox .textBox{padding-left: 90px; height: 100%; display: flex; align-items: center; flex-shrink: 0;}
 #doctorsWrap .doctorsInfoBox .textBox .nameBox{margin-bottom: 30px; display: flex; align-items: flex-end; gap: 0 24px; line-height: 1;}
-#doctorsWrap .doctorsInfoBox .textBox .nameBox .name{font-family: 'Noto Serif KR', serif; font-size: 45px; letter-spacing: -2px;} 
+#doctorsWrap .doctorsInfoBox .textBox .nameBox .name{font-family: 'NotoSerifKR', serif; font-size: 45px; letter-spacing: -2px;} 
 #doctorsWrap .doctorsInfoBox .textBox .nameBox  em{font-weight: 700; font-size: 22px;}
 #doctorsWrap .doctorsInfoBox .textBox p{margin-bottom: 35px; font-size: 20px; color: #303030; line-height: 1.7; letter-spacing: -1px;}
 #doctorsWrap .doctorsInfoBox .imgBox img{display: block;}
@@ -309,7 +309,7 @@
 #systemWrap .systemList li .imgBox.imgStyle{border-radius: 50%;}
 #systemWrap .systemList li .imgBox{margin-bottom: 28px; box-shadow: 20px 30px 30px rgba(0, 0, 0, .15); border-radius: 218px; display: inline-block; overflow: hidden;}
 #systemWrap .systemList li .imgBox img{display: block; max-width: 100%; height: 100%; object-fit: cover;}
-#systemWrap .systemList li h4{margin-bottom: 13px; font-size: 46px; color: #fff; font-family: 'Noto Serif KR', serif; font-weight: 400; letter-spacing: -2px;}
+#systemWrap .systemList li h4{margin-bottom: 13px; font-size: 46px; color: #fff; font-family: 'NotoSerifKR', serif; font-weight: 400; letter-spacing: -2px;}
 #systemWrap .systemList li p{color: #fff; font-size: 20px; color: #fff; font-weight: 300; line-height: 1.7;}
 
 @media (max-width: 1199px){
