@@ -307,7 +307,7 @@
 #introduceWrap .introduceBox01{padding: 0 0 120px;}
 #introduceWrap .introduceBox01 .container{max-width: 1240px;}
 #introduceWrap .titleBox p{margin-bottom: 10px; font-family: 'Noto Serif KR'; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
-#introduceWrap .titleBox h3{font-size: 74px; word-break: keep-all;}
+#introduceWrap .titleBox .tit{font-size: 74px; word-break: keep-all;}
 #introduceWrap .introduceBox01 .introduceLayoutBox{margin-bottom: 160px; display: flex; align-items: center; justify-content: center; gap: 0 106px;}
 #introduceWrap .introduceBox01 .introduceLayoutBox:last-child{margin-bottom: 0;}
 #introduceWrap .introduceBox01 .introduceLayoutBox .introduceImgBox{flex-shrink: 0; border-radius: 50%; box-shadow: 30px 50px 50px rgba(0,0,0,.1);  overflow: hidden;}
@@ -328,7 +328,7 @@
 @media (max-width: 1199px){
 
   #introduceWrap .titleBox p{font-size: 30px;}
-  #introduceWrap .titleBox h3{font-size: 40px;}
+  #introduceWrap .titleBox .tit{font-size: 40px;}
  
   #introduceWrap .introduceBox01 .introduceTextBox{width: 100%; text-align: center;}
   #introduceWrap .introduceBox01 .introduceTextBox h4{font-size: 36px;}
@@ -351,7 +351,7 @@
 @media (max-width: 767px){
 
   #introduceWrap .titleBox p{font-size: 24px;}
-  #introduceWrap .titleBox h3{font-size: 28px;}
+  #introduceWrap .titleBox .tit{font-size: 28px;}
 
   #introduceWrap .introduceBox01 .introduceTextBox h4{font-size: 26px;}
   #introduceWrap .introduceBox01 .introduceTextBox p{font-size: 16px;}
@@ -371,7 +371,7 @@
 
   #introduceWrap .titleBox{margin-bottom: 80px;}
   #introduceWrap .titleBox p{font-size: 20px;}
-  #introduceWrap .titleBox h3{font-size: 26px;}
+  #introduceWrap .titleBox .tit{font-size: 26px;}
 
   #introduceWrap .introduceBox01{padding: 0 0 90px;}
 
@@ -567,29 +567,20 @@
 
 }
 
-/* 테이블 영역 */
-#introduceWrap .introduceTableBox{margin-bottom: 180px;}
-#introduceWrap .introduceTableBox .introduceImgBox img{display: block; max-width: 100%; margin: 0 auto;}
 
-@media (max-width: 1199px){
-
-  #introduceWrap .introduceTableBox{margin-bottom: 100px;}
-
-}
-
-@media (max-width: 767px){
-
-  #introduceWrap .introduceTableBox{margin-bottom: 80px;}
-
-}
 
 /* 카드 목록 영역 */
 #introduceWrap .introduceCardBox{padding: 0 0 170px;}
 #introduceWrap .introduceCardBox .introduceCardList img{display: block; width: 100%;}
-#introduceWrap .introduceCardBox .titleBox{margin-bottom: 50px;}
-#introduceWrap .introduceCardBox .titleBox .tit{margin-bottom: 30px; font-size: 40px; line-height: 1.2;}
+#introduceWrap .introduceCardBox .titleBox .tit{font-size: 40px; line-height: 1.2;}
 #introduceWrap .introduceCardBox .titleBox p{font-size: 20px; color: #303030; font-family: 'NotoSansKR', sans-serif; font-weight: 400;}
 #introduceWrap .introduceCardBox .viewBox{margin-bottom: 80px;}
+
+@media (max-width: 1199px){
+
+  #introduceWrap .introduceCardBox .titleBox .tit{font-size: 36px;}
+
+}
 
 @media (max-width: 767px){
   
@@ -606,6 +597,36 @@
   #introduceWrap .introduceCardBox .titleBox .tit{font-size: 24px;}
   #introduceWrap .introduceCardBox .viewBox{margin-bottom: 50px;}
   #introduceWrap .introduceCardBox .titleBox p br{display: none;}
+
+}
+
+/* 테이블 영역 */
+#introduceWrap .introduceTableBox{margin-bottom: 160px;}
+#introduceWrap .introduceTableBox .titleBox{margin-bottom: 70px;}
+#introduceWrap .introduceTableBox .titleBox .tit{font-size: 40px; line-height: 1.2;}
+#introduceWrap .introduceTableBox .titleBox p{font-size: 20px; color: #303030; font-family: 'NotoSansKR', sans-serif; font-weight: 400;}
+#introduceWrap .introduceTableBox .introduceImgBox img{display: block; max-width: 100%; margin: 0 auto;}
+
+@media (max-width: 1199px){
+
+  #introduceWrap .introduceTableBox{margin-bottom: 120px;}
+  #introduceWrap .introduceTableBox .titleBox{margin-bottom: 60px;}
+  #introduceWrap .introduceTableBox .titleBox .tit{font-size: 36px;}
+
+}
+
+@media (max-width: 767px){
+
+  #introduceWrap .introduceTableBox{margin-bottom: 100px;}
+  #introduceWrap .introduceTableBox .titleBox .tit{font-size: 28px;}
+  #introduceWrap .introduceTableBox .titleBox p{font-size: 16px;}
+
+}
+
+@media (max-width: 480px){
+
+  #introduceWrap .introduceTableBox{margin-bottom: 80px;}
+  #introduceWrap .introduceTableBox .titleBox .tit{font-size: 24px;}
 
 }
 
