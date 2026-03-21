@@ -36,18 +36,18 @@ $(function () {
     vertical: true,
     verticalSwiping: true,
     asNavFor: '#pointWrap .sliderMain',
-    // responsive: [
-    //   {
-    //     breakpoint: 1025,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       centerMode: false,
-    //       vertical: false,
-    //       verticalSwiping: false
-    //     }
-    //   }
-    // ]
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          vertical: false,
+          verticalSwiping: false
+        }
+      }
+    ]
   });
 
   //시스템영역 - 세로 슬라이드
@@ -57,7 +57,7 @@ $(function () {
     arrows: false,
     fade: true,
     infinite: true,
-    asNavFor: '#systemWrap .sliderNav'
+    asNavFor: '#systemWrap .sliderNav',
   });
   $('#systemWrap .sliderNav').slick({
     slidesToShow: 1,
@@ -70,11 +70,13 @@ $(function () {
     asNavFor: '#systemWrap .sliderMain',
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 1200,
         settings: {
-          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
           vertical: false,
-          verticalSwiping: false,
+          verticalSwiping: false
         }
       }
     ]

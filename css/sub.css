@@ -53,7 +53,7 @@
 
 /* 공통 - 비주얼영역 */
 #visualWrap .visualBox .textBox span{margin-bottom: 10px; display: block; font-size: 22px; color: #fff; font-family: 'Constantia'; text-align: center; }
-#visualWrap .visualBox .textBox h2{margin-bottom: 25px; font-family: 'NotoSerifKR', serif; font-size: 50px;}
+#visualWrap .visualBox .textBox h2{margin-bottom: 25px; font-family: 'Noto Serif KR', serif; font-size: 50px;}
 #visualWrap .visualBox.active .textBox p{font-size: 20px; font-family: 'NotoSansKR', sans-serif;}
 
 @media (max-width: 1199px){
@@ -83,7 +83,7 @@
 /* 공통 - 제목 */
 .titleBox{margin-bottom: 66px; text-align: center;}
 .titleBox span{display: block; font-size: 25px; color: #593f52; font-family: 'Constantia'; letter-spacing: 10px;}
-.titleBox .tit{font-size: 42px; color: #593f52; font-family: 'NotoSerifKR', serif; font-weight: 600; letter-spacing: -1px;}
+.titleBox .tit{font-size: 42px; color: #593f52; font-family: 'Noto Serif KR', serif; font-weight: 600; letter-spacing: -1px;}
 
 @media (max-width: 1199px){
 
@@ -146,8 +146,8 @@
 #pointWrap{background:linear-gradient(to bottom, #976751, #3e2e3a);}
 #pointWrap .comContentBox p{margin-bottom: 0;}
 #systemWrap{background: url(../images/sub/system_bg.jpg)no-repeat center / cover;}
-.pointBox,
-.systemBox{height: 1180px; display: flex; align-items: center; overflow: hidden;} 
+#pointWrap .pointBox,
+#systemWrap .systemBox{height: 1180px; display: flex; align-items: center; overflow: hidden;} 
 #pointWrap .titleBox,
 #systemWrap .titleBox{flex-shrink: 0; padding: 180px 0 0; margin: 0; text-align: left; align-self: flex-start;}
 #pointWrap .titleBox span,
@@ -169,14 +169,14 @@
 .verticalSlideBox .verticalImgBox .comImgBox{width: 508px; height: 508px; box-shadow: 0 59px 49px 0 #5252522b; } 
 .verticalSlideBox .verticalImgBox .comImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .verticalSlideBox .verticalTextBox{width: calc(50% - -94px); display:flex; align-items:center;}
-.verticalSlideBox .verticalTextBox .comTextBox{width: 100%!important; opacity: .5; display: flex; align-items: flex-start; gap: 0 40px; margin: 60px 0;}
+.verticalSlideBox .verticalTextBox .comTextBox{opacity: .5; display: flex; align-items: flex-start; gap: 0 40px; margin: 60px 0;}
 .verticalSlideBox .verticalTextBox .comTextBox .comNumber{flex-shrink: 0; font-size: 74px; font-family: 'Constantia'; color: #ae9373; line-height: .6;} 
-.verticalSlideBox .verticalTextBox .comTextBox h4{margin-bottom: 20px; font-family: 'NotoSerifKR', serif; font-size: 36px; font-weight: 600; color: #fff; font-weight: 400; word-break: keep-all;}  
+.verticalSlideBox .verticalTextBox .comTextBox h4{margin-bottom: 20px; font-family: 'Noto Serif KR', serif; font-size: 36px; font-weight: 600; color: #fff; font-weight: 400; word-break: keep-all;}  
 .verticalSlideBox .verticalTextBox .comTextBox .comContentBox p{margin-bottom: 20px; font-size: 20px; color: #fff; line-height: 1.8; font-weight: 300;letter-spacing: -1px;} 
 .verticalSlideBox .verticalTextBox .comTextBox .comContentBox .comInfoList{display: flex; flex-wrap: wrap; gap: 9px;} 
 .verticalSlideBox .verticalTextBox .comTextBox .comContentBox .comInfoList li{padding: 8px 13px; font-weight: 700; color: #fff; border: 1px solid #fff; border-radius: 8px;}  
 .verticalSlideBox .verticalTextBox .comTextBox.slick-current{opacity: 1;}
-.verticalSlideBox .verticalImgBox .slick-list{padding: 0!important; border-radius: 50%; overflow: hidden;}
+.verticalSlideBox .verticalImgBox .slick-list{border-radius: 50%; overflow: hidden;}
 .verticalSlideBox .verticalTextBox .slick-list{overflow:visible; height:100%;}
 
 @media (max-width:1440px){
@@ -194,20 +194,73 @@
   .verticalSlideBox .verticalTextBox .comTextBox .comNumber{font-size: 40px;}
   .verticalSlideBox .verticalTextBox .comTextBox h4{margin-bottom: 15px; font-size: 26px;}
   .verticalSlideBox .verticalTextBox .comTextBox{gap: 0 20px;}
+  
+  #pointWrap,
+  #systemWrap{padding: 150px 0 100px;}
 
-}
+  #pointWrap .pointBox, 
+  #systemWrap .systemBox{height: auto; overflow: visible;}
 
-@media (max-width: 1024px){
+  #pointWrap .titleBox,
+  #systemWrap .titleBox{margin-bottom: 100px!important; padding: 0; text-align: center;}
+  
+  #pointWrap .titleBox span,
+  #systemWrap .titleBox span{font-size: 20px;}
 
-  /* .pointBox, .systemBox{height: auto;}
+  #pointWrap .titleBox h3,
+  #systemWrap .titleBox h3{font-size: 60px;}
 
+  .verticalSlideBox .verticalImgBox{margin: 0 auto 50px;}
+  .verticalSlideBox .verticalImgBox::before{margin: 0; left:-100%; top:50%; transform: translateY(-50%); right:-100%; bottom: auto; height: 3px; width: auto;}
+  .verticalSlideBox .verticalImgBox::before{content: ''; background: linear-gradient(to right,
+  rgba(113,122,133,0) 0%, rgba(113,122,133,0.2) 15%,rgba(113,122,133,0.7) 50%,
+  rgba(113,122,133,0.2) 85%,rgba(113,122,133,0) 100%);} 
   .verticalSlideBox,
-  .pointBox, .systemBox{flex-direction:column;}
+  #pointWrap .pointBox, #systemWrap .systemBox{display: block;}
   .verticalSlideBox .verticalTextBox{width: 100%;}
-  #pointWrap .titleBox, #systemWrap .titleBox{padding: 0; width: 100%; text-align: center;}
-  .verticalSlideBox .verticalImgBox::before {width: auto; height: 3px; left: -100%; top: 50%; right: -100%; bottom: 0; margin: -2px 0 0;} */
+  .verticalSlideBox .verticalTextBox .slick-list{overflow: hidden;}
 
 }
+
+@media (max-width: 767px){
+
+  #pointWrap, #systemWrap{padding: 120px 0 70px;}
+
+  #pointWrap .titleBox span,
+  #systemWrap .titleBox span{font-size: 18px;}
+
+  #pointWrap .titleBox h3,
+  #systemWrap .titleBox h3{font-size: 50px;}
+
+  .verticalSlideBox .verticalImgBox::before{height: 2px;}
+  .verticalSlideBox .verticalTextBox .comTextBox .comNumber{font-size: 32px;}
+  .verticalSlideBox .verticalTextBox .comTextBox h4{font-size: 22px;}
+  .verticalSlideBox .verticalTextBox .comTextBox .comContentBox p{font-size: 18px;}
+
+}
+
+@media (max-width: 480px){
+
+  #pointWrap .titleBox,
+  #systemWrap .titleBox{margin-bottom: 70px!important;}
+
+  #pointWrap .titleBox span,
+  #systemWrap .titleBox span{font-size: 16px;}
+
+  #pointWrap .titleBox h3,
+  #systemWrap .titleBox h3{font-size: 36px;}
+
+  .verticalSlideBox .verticalTextBox .comTextBox{flex-direction: column; align-items: center; gap: 30px 0;}
+
+  .verticalSlideBox .verticalTextBox .comTextBox h4{font-size: 22px; text-align: center;}
+  .verticalSlideBox .verticalTextBox .comTextBox .comContentBox p{font-size: 17px; text-align: center;}
+  .verticalSlideBox .verticalImgBox .comImgBox,
+  .verticalSlideBox .verticalImgBox{width: 250px; height: 250px;}
+  .verticalSlideBox .verticalTextBox .comTextBox{margin: 30px 0;}
+
+}
+
+
 
 /* 원셀줄기세포센터 - 줄기세포센터 */
 .stemcellWrap .introduceTopInfoBox .introduceLayoutBox:nth-child(2){flex-direction: row-reverse;}
@@ -245,13 +298,13 @@
 #introduceWrap .introduceBox01{padding: 0 0 120px;}
 #introduceWrap .introduceBox01 .container{max-width: 1240px;}
 #introduceWrap .titleBox {margin-bottom: 160px;}
-#introduceWrap .titleBox p{margin-bottom: 10px; font-family: 'NotoSerifKR'; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
+#introduceWrap .titleBox p{margin-bottom: 10px; font-family: 'Noto Serif KR'; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
 #introduceWrap .titleBox h3{font-size: 74px; word-break: keep-all;}
 #introduceWrap .introduceBox01 .introduceLayoutBox{margin-bottom: 160px; display: flex; align-items: center; justify-content: center; gap: 0 106px;}
 #introduceWrap .introduceBox01 .introduceLayoutBox:last-child{margin-bottom: 0;}
 #introduceWrap .introduceBox01 .introduceLayoutBox .introduceImgBox{flex-shrink: 0; border-radius: 50%; box-shadow: 30px 50px 50px rgba(0,0,0,.1);  overflow: hidden;}
 #introduceWrap .introduceBox01 .introduceLayoutBox .introduceImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-#introduceWrap .introduceBox01 .introduceTextBox h4{margin-bottom: 15px; font-family: 'NotoSerifKR'; font-weight: 600; font-size: 40px; color: #593f52; letter-spacing: -3px; word-break: keep-all;} 
+#introduceWrap .introduceBox01 .introduceTextBox h4{margin-bottom: 15px; font-family: 'Noto Serif KR'; font-weight: 600; font-size: 40px; color: #593f52; letter-spacing: -3px; word-break: keep-all;} 
 #introduceWrap .introduceBox01 .introduceTextBox p{ font-size: 20px; color: #303030; line-height: 2; letter-spacing: -2px;}
 #introduceWrap .introduceBox01 .introduceTextBox p span{display: block; margin-top: 30px; font-size: 17px; color: #593f52;}
 #introduceWrap .introduceBox01 .introduceTextBox p br{display: none;}
@@ -326,7 +379,7 @@
 
 /* 프로그램영역 */
 #programWrap{padding: 0 0 160px;}
-#programWrap .programImgList{display: flex; gap: 0 18px; margin-left: 20px; padding-bottom: 114px; overflow-x: auto;}
+#programWrap .programImgList{display: flex; gap: 0 18px; padding:0 20px 114px; overflow-x: auto;}
 #programWrap .programImgList li img{display: block;}
 #programWrap .titleBox{margin-bottom: 80px;}
 #programWrap .titleBox .tit{margin-bottom: 20px;}
@@ -340,7 +393,7 @@
 
 @media (max-width: 767px){
 
-  #programWrap .programImgList{gap: 0 13px; padding-bottom: 35px;}
+  #programWrap .programImgList{gap: 0 13px; padding:0 20px 35px;}
   #programWrap .programImgList li img{width: 250px;}
   #programWrap .titleBox p{font-size: 16px;}
   
@@ -356,11 +409,11 @@
 /* 연구소영역 */
 #laboratoryWrap{padding: 155px 0 0; background-color: #f4f1ee;}
 #laboratoryWrap .titleBox{margin-bottom: 92px;}
-#laboratoryWrap .titleBox em{ font-family: 'NotoSerifKR', serif; font-weight: 600; font-size: 45px; color: #593f52;}
+#laboratoryWrap .titleBox em{ font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 45px; color: #593f52;}
 #laboratoryWrap .laboratoryTopImgBox{margin-bottom: 110px;}
 #laboratoryWrap .laboratoryTopImgBox img{display: block; width: 100%;}
 #laboratoryWrap .laboratoryInfoBox{margin-bottom: 110px; display: flex; justify-content: center; align-items: center; gap: 0 100px;}
-#laboratoryWrap .laboratoryInfoBox .laboratoryTextBox h4{margin-bottom: 25px; font-family: 'NotoSerifKR', serif; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
+#laboratoryWrap .laboratoryInfoBox .laboratoryTextBox h4{margin-bottom: 25px; font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
 #laboratoryWrap .laboratoryInfoBox .laboratoryTextBox p{font-size: 20px; color: #303030; line-height: 1.8; letter-spacing: -1px;}
 .viewBox{display: flex; justify-content: center;}
 .viewBox .view{display: block; padding: 14px 28px; border-radius: 50px; font-weight: 700; font-size: 18px; color: #303030; border: 1px solid #333;}
@@ -448,17 +501,7 @@
 
 /* 공통 - 안내텍스트 */
 .infoTextBox{background-color: #e8e7e2;}
-.infoTextBox p{padding: 24px 10px; font-weight: 700; color: #303030; font-weight: 700; border-radius: 8px; text-align: center;}
-
-
-
-
-
-
-
-
-
-
+.infoTextBox p{padding: 24px 10px; font-weight: 700; color: #303030; border-radius: 8px; text-align: center;}
 
 /* 원셀줄기세포센터 - 안티에이징 */
 #introduceWrap .introduceBox01 .introduceLayoutBox{margin: 0;}
@@ -473,10 +516,6 @@
 .facialFatTransferWrap #introduceWrap .titleBox,
 .breastFatTransferWrap #introduceWrap .titleBox,
 .agingcareWrap #introduceWrap .titleBox{margin-bottom: 70px;}
-
-
-
-
 
 
 @media (max-width: 1440px){
@@ -497,7 +536,7 @@
 #synergyWrap .titleBox .tit{margin-bottom: 20px;}
 #synergyWrap .synergyInfoBox{margin-bottom: 120px; display: flex; justify-content: center; gap: 0 80px;}
 #synergyWrap .synergyImgBox img{display: block; width: 100%;}
-#synergyWrap .synergyTextBox h4{margin-bottom: 30px; padding-bottom: 20px; font-family: 'NotoSerifKR', serif; font-size: 50px; font-size: 36px; color: #593f52; border-bottom: 1px solid #acacac;}
+#synergyWrap .synergyTextBox h4{margin-bottom: 30px; padding-bottom: 20px; font-family: 'Noto Serif KR', serif; font-size: 50px; font-size: 36px; color: #593f52; border-bottom: 1px solid #acacac;}
 #synergyWrap .synergyTextBox h4 + p{margin-bottom: 50px; font-size: 20px; color: #303030;}
 #synergyWrap .synergyTextBox .synergyList li{margin-bottom:40px;}
 #synergyWrap .synergyTextBox .synergyList li:last-child{margin-bottom: 0;}
@@ -572,3 +611,18 @@
   #introduceWrap .introduceCardBox .titleBox p br{display: none;}
 
 }
+
+/* 모바일 이미지 크게 보기 */
+.zoomViewBox{position: relative;}
+.zoomViewBox .zoomView{display: none; position: absolute; bottom: 0px; right: 0px; width: 42px; height: 42px; background: url(../images/common/zoomview_icon.png) no-repeat; background-size: 42px 42px;}
+
+@media (max-width: 767px){
+
+  .zoomViewBox .zoomView{display: block;}
+  
+}
+
+/* 스크롤 */
+.scroll::-webkit-scrollbar {width: 3px; height: 3px;}
+.scroll::-webkit-scrollbar-thumb {background: #313132;}
+.scroll::-webkit-scrollbar-track {background: #d3d3d3;}
