@@ -287,6 +287,15 @@
 
 }
 
+@media (max-width: 1024px){
+
+  .stemcellWrap #cardListWrap .cardList{grid-template-columns: repeat(3, 1fr);}
+  .stemcellWrap #cardListWrap .cardList li{grid-column: auto!important; grid-row: auto!important;}
+  .stemcellWrap #cardListWrap .cardList::before,
+  .stemcellWrap #cardListWrap .cardList::after{display: none!important;}
+
+}
+
 @media (max-width: 767px){
 
   .stemcellWrap #cardListWrap{padding: 100px 0 0;}
@@ -482,20 +491,18 @@
 
 }
 
+@media (max-width: 1024px){
+
+  #cardListWrap .cardList{gap:10px;}
+  
+}
+
 @media (max-width: 767px){
 
-  #cardListWrap .cardList{gap: 10px; grid-template-columns: repeat(3, 1fr);}
-  #cardListWrap .cardList li{grid-column: auto!important; grid-row:auto!important;}
-  #cardListWrap .cardList::before,
-  #cardListWrap .cardList::after{display: none!important;}
+  #cardListWrap .cardList{grid-template-columns: repeat(2, 1fr)!important;}
  
 }
 
-@media (max-width: 480px){
-
-  #cardListWrap .cardList{grid-template-columns: repeat(2, 1fr);}
-
-}
 
 /* 공통 - 안내텍스트 */
 .infoTextBox{background-color: #e8e7e2;}
