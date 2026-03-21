@@ -260,9 +260,8 @@
 
 }
 
-
-
 /* 원셀줄기세포센터 - 줄기세포센터 */
+.stemcellWrap #introduceWrap .titleBox {margin-bottom: 160px;}
 .stemcellWrap .introduceTopInfoBox .introduceLayoutBox:nth-child(2){flex-direction: row-reverse;}
 .stemcellWrap .introduceTopInfoBox .introduceLayoutBox:nth-child(2) .introduceImgBox{border-radius: 242px!important;} 
 .stemcellWrap #cardListWrap{padding: 190px 0 0;}
@@ -282,6 +281,7 @@
 
 @media (max-width: 1199px){
 
+  .stemcellWrap #introduceWrap .titleBox{margin-bottom: 100px;}
   .stemcellWrap .introduceTopInfoBox{display: flex; flex-direction: column; gap: 150px 0;}
   .stemcellWrap #cardListWrap{padding: 150px 0 0;}
 
@@ -297,7 +297,6 @@
 #introduceWrap{padding: 100px 0 0;} 
 #introduceWrap .introduceBox01{padding: 0 0 120px;}
 #introduceWrap .introduceBox01 .container{max-width: 1240px;}
-#introduceWrap .titleBox {margin-bottom: 160px;}
 #introduceWrap .titleBox p{margin-bottom: 10px; font-family: 'Noto Serif KR'; font-weight: 600; font-size: 36px; color: #593f52; letter-spacing: -2px;}
 #introduceWrap .titleBox h3{font-size: 74px; word-break: keep-all;}
 #introduceWrap .introduceBox01 .introduceLayoutBox{margin-bottom: 160px; display: flex; align-items: center; justify-content: center; gap: 0 106px;}
@@ -319,7 +318,6 @@
 
 @media (max-width: 1199px){
 
-  #introduceWrap .titleBox{margin-bottom: 100px;}
   #introduceWrap .titleBox p{font-size: 30px;}
   #introduceWrap .titleBox h3{font-size: 40px;}
  
@@ -509,14 +507,6 @@
 #introduceWrap .imgBox img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 /* 공통 - 안티에이징, 가슴지방성형, 얼굴지방이식, 리프팅, 활력치료, 스킨부스터 */
-.skinshotWrap #introduceWrap .titleBox,
-.immunityWrap #introduceWrap .titleBox,
-.vitalityWrap #introduceWrap .titleBox,
-.liftingWrap #introduceWrap .titleBox,
-.facialFatTransferWrap #introduceWrap .titleBox,
-.breastFatTransferWrap #introduceWrap .titleBox,
-.agingcareWrap #introduceWrap .titleBox{margin-bottom: 70px;}
-
 
 @media (max-width: 1440px){
 
@@ -618,7 +608,7 @@
 
 @media (max-width: 767px){
 
-  .zoomViewBox .zoomView{display: block;}
+  .zoomViewBox .zoomView{display: block; bottom: 20px; right: 20px;}
   
 }
 
