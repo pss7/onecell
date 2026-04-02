@@ -1,53 +1,54 @@
 @charset "UTF-8";
 
+.contentBox{padding: 130px 0;}
+
+/* 공통 - 모바일 이미지 크게 보기 */
+.zoomViewBox{position: relative;}
+.zoomViewBox .zoomView{display: none; position: absolute; bottom: 0px; right: 0px; width: 42px; height: 42px; background: url(../images/common/zoomview_icon.png) no-repeat; background-size: 42px 42px;}
+
+@media (max-width: 767px){
+
+  .zoomViewBox .zoomView{display: block; bottom: 20px; right: 20px;}
+  
+}
+
+/* 공통 - 스크롤 */
+.scroll::-webkit-scrollbar {width: 3px; height: 3px;}
+.scroll::-webkit-scrollbar-thumb {background: #313132;}
+.scroll::-webkit-scrollbar-track {background: #d3d3d3;}
+
 /* 공통 - 마퀴텍스트 */
-.marqueeBox{position: relative; display: flex; align-items: center; height: 320px;}
-.marqueeTextBox{position: absolute; display: flex; animation: textEffect 23s linear infinite;}
-.marqueeTextBox p{display: flex; align-items: center; gap: 0 20px; width: 1250px; font-size: 90px; font-weight: 400; color: #593f52; font-family: 'Constantia'; text-align: center; line-height: 1;}
-.marqueeTextBox p::before{content: '';  width: 76px; height: 76px; background: url(../images/sub/stemcellcenter/marqueetext_icon.png)no-repeat center / contain;}
+.marqueeBox {overflow: hidden; position: relative; display: flex; align-items: center;
+  height: 320px;}
+.marqueeTextBox {display: flex; width: max-content; animation: marquee 23s linear infinite;}
+.marqueeTextBox p {flex-shrink: 0; display: flex; align-items: center; gap: 0 20px; padding-right: 80px;
+  font-size: 90px; font-weight: 400; color: #593f52; font-family: 'Constantia'; line-height: 1; white-space: nowrap;}
+.marqueeTextBox p::before {content: '';width: 76px; height: 76px; flex-shrink: 0; background: url(../images/sub/stemcellcenter/marqueetext_icon.png) no-repeat center / contain;}
 .marqueeType02 .marqueeTextBox p{color: #e9e5e0;}
 .marqueeType02 .marqueeTextBox p::before{content: ''; background: url(../images/sub/stemcellcenter/marqueetext_icon02.png)no-repeat center / contain;}
 
-@keyframes textEffect {
-    0%{
-      left: 0;
-    }
-    100%{
-      left: -1250px;
-    }
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 @media (max-width: 1024px){
 
-  .marqueeBox{height: 250px;}
-  .marqueeTextBox p{width: 1000px; font-size: 70px;}
+  .marqueeBox{height: 250px!important;}
+  .marqueeTextBox p{padding-right: 50px; font-size: 70px!important;}
   .marqueeTextBox p::before{width: 50px; height: 50px;}
-
-@keyframes textEffect {
-    0%{
-      left: 0;
-    }
-    100%{
-      left: -1000px;
-    }
-  }
 
 }
 
 @media (max-width: 480px){
 
-  .marqueeBox{height: 200px;}
-  .marqueeTextBox p{width: 600px; font-size: 40px;}
+  .marqueeBox{height: 200px!important;}
+  .marqueeTextBox p{padding-right: 20px; font-size: 40px!important;}
   .marqueeTextBox p::before{width: 40px; height: 40px;}
-
-@keyframes textEffect {
-    0%{
-      left: 0;
-    }
-    100%{
-      left: -700px;
-    }
-  }
 
 }
 
@@ -80,15 +81,20 @@
 
 }
 
+/* 공통 - 색상 */
+.colorBeige{color: #ae9574!important;}
+
 /* 공통 - 제목 */
 .titleBox{margin-bottom: 66px; text-align: center;}
 .titleBox span{display: block; font-size: 25px; color: #593f52; font-family: 'Constantia'; letter-spacing: 10px;}
-.titleBox .tit{font-size: 42px; color: #593f52; font-family: 'Noto Serif KR', serif; font-weight: 600; letter-spacing: -1px;}
+.titleBox .tit{margin-bottom: 20px; font-size: 42px; color: #593f52; font-family: 'Noto Serif KR', serif; font-weight: 600; letter-spacing: -1px;}
+.titleBox .text{font-size: 22px; color: #303030; line-height: 1.7;}
 
 @media (max-width: 1199px){
 
   .titleBox span{font-size: 22px;}
   .titleBox .tit{font-size: 36px;}
+  .titleBox .text{font-size: 18px;}
 
 }
 
@@ -97,6 +103,7 @@
   .titleBox{margin-bottom: 50px!important;}
   .titleBox span{font-size: 20px;}
   .titleBox .tit{font-size: 30px;}
+  .titleBox .text{font-size: 16px;}
 
 }
 
@@ -105,6 +112,7 @@
   .titleBox{margin-bottom: 40px!important;}
   .titleBox span{font-size: 18px;}
   .titleBox .tit{font-size: 24px;}
+  .titleBox .text br{display: none;}
 
 }
 
@@ -259,6 +267,40 @@
   .verticalSlideBox .verticalTextBox .comTextBox{margin: 30px 0;}
 
 }
+
+/* 공통 - 서브 상단 */
+.subVisualWrap{position: relative;}
+.subVisualWrap .subTopImgBox{height: 547px; overflow: hidden;}
+.subVisualWrap .subTopImgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.3);}
+.subVisualWrap  .subTopTextBox{width: 100%; position: absolute; top: 57%; left: 50%; transform: translate(-50%, -50%); text-align: center;} 
+.subVisualWrap  .subTopTextBox span{display: block; font-size: 22px; color: #fff; font-family: 'Constantia'; opacity: 0; letter-spacing: 15px; filter: blur(5px);}
+.subVisualWrap  .subTopTextBox h2{font-size: 50px; font-weight: 500; color: #fff; font-family: 'Noto Serif KR', serif; opacity: 0; letter-spacing: 15px; filter: blur(5px);} 
+.subVisualWrap.active .subVisualWrap .subTopImgBox img{transform: scale(1); transition: all 5s;}
+.subVisualWrap.active  .subTopTextBox span,
+.subVisualWrap.active  .subTopTextBox h2{opacity: 1; filter: blur(0); letter-spacing: 0; transition: all 3s;}
+ 
+@media (max-width: 1199px){
+
+  .subVisualWrap .subTopTextBox h2{font-size: 46px;}
+  .subVisualWrap .subTopTextBox{top: 54%;}
+
+}
+
+@media (max-width: 767px){
+
+  .subVisualWrap .subTopTextBox{top: 52%;}
+  .subVisualWrap  .subTopTextBox span{font-size: 18px;}
+  .subVisualWrap .subTopTextBox h2{font-size: 38px;}
+
+}
+
+@media (max-width: 480px){
+
+  .subVisualWrap  .subTopTextBox span{font-size: 16px;}
+  .subVisualWrap .subTopTextBox h2{font-size: 30px;}
+
+}
+
 
 /* 원셀줄기세포센터 - 줄기세포센터 */
 .stemcellWrap #introduceWrap .titleBox {margin-bottom: 160px;}
@@ -627,21 +669,6 @@
 
 }
 
-/* 모바일 이미지 크게 보기 */
-.zoomViewBox{position: relative;}
-.zoomViewBox .zoomView{display: none; position: absolute; bottom: 0px; right: 0px; width: 42px; height: 42px; background: url(../images/common/zoomview_icon.png) no-repeat; background-size: 42px 42px;}
-
-@media (max-width: 767px){
-
-  .zoomViewBox .zoomView{display: block; bottom: 20px; right: 20px;}
-  
-}
-
-/* 스크롤 */
-.scroll::-webkit-scrollbar {width: 3px; height: 3px;}
-.scroll::-webkit-scrollbar-thumb {background: #313132;}
-.scroll::-webkit-scrollbar-track {background: #d3d3d3;}
-
 /* 줄기세포센터 - 탈모치료 */
 .hairshotWrap .introduceLayoutBox:nth-of-type(5){margin-top: 125px;}
 .hairshotWrap .introduceTextBox h5{margin: 60px 0 10px;}
@@ -657,3 +684,224 @@
 
 /* 줄기세포센터 - 리프팅 */
 .liftingWrap #introduceWrap .introduceCardBox .titleBox p{margin-top: 30px;}
+
+/* 줄기세포센터 - 의료진 */
+.doctorsWrap #staffWrap{padding: 138px 0 270px;}
+.doctorsWrap #staffWrap .titleBox{margin-bottom: 128px;}
+.doctorsWrap #staffWrap .titleBox .tit::before{content: ''; width: 55px; height: 74px; background: url(../images/sub/staff/logo.png)no-repeat center / contain;}
+.doctorsWrap #staffWrap .titleBox .tit{display: flex; flex-direction: column; align-items: center; gap: 25px 0; margin-bottom: 30px; letter-spacing: -2px;}
+.doctorsWrap #staffWrap .staffList{display: grid; grid-template-columns: repeat(3, 1fr); gap: 124px 33px;}
+.doctorsWrap #staffWrap .staffList li .imgBox{margin-bottom: 22px;}
+.doctorsWrap #staffWrap .staffList li .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.doctorsWrap #staffWrap .staffList li em{display: block; font-size: 20px; color: #404040; text-align: center; letter-spacing: -1px;}
+.doctorsWrap #staffWrap .staffList li .name{display: block; font-size: 36px; color: #404040; font-family: 'Noto Serif KR', serif; text-align: center; font-weight: 600;}
+
+@media (max-width: 1199px){
+
+  .doctorsWrap #staffWrap .staffList li .name{font-size: 32px;}
+  .doctorsWrap #staffWrap .staffList{grid-template-columns: repeat(2, 1fr);}
+  .doctorsWrap #staffWrap .titleBox{margin-bottom: 100px;}
+
+}
+
+@media (max-width: 767px){
+
+  .doctorsWrap #staffWrap{padding: 130px 0 150px;}
+  .doctorsWrap #staffWrap .titleBox .tit::before{width: 45px; height: 64px;}
+  .doctorsWrap #staffWrap .staffList li .name{font-size: 26px;}
+  .doctorsWrap #staffWrap .staffList{grid-template-columns: repeat(2, 1fr); gap: 100px 20px;}
+  .doctorsWrap #staffWrap .staffList li em,
+  .doctorsWrap #staffWrap .titleBox{margin-bottom: 80px!important;}
+  
+}
+
+@media (max-width: 480px){
+
+  .doctorsWrap #staffWrap{padding: 120px 0;}
+  .doctorsWrap #staffWrap .staffList li .name{font-size: 24px;}
+  .doctorsWrap #staffWrap .staffList{grid-template-columns: repeat(1, 1fr); gap: 70px 0;}
+  .doctorsWrap #staffWrap .staffList li em,
+  .doctorsWrap #staffWrap .titleBox{margin-bottom: 70px!important;}
+  
+}
+
+/* 줄기세포센터 - 바이오연구센터 */
+.researchInstituteWrap #researchInfoWrap{padding: 150px 0 0;}
+.researchInstituteWrap #researchInfoWrap .titleBox img{display: block; max-width: 100%; margin: 0 auto;}
+.researchInstituteWrap #researchInfoWrap .titleBox{margin-bottom: 110px;}
+.researchInstituteWrap #researchRoleWrap .tabList{margin-bottom: 80px; display: flex; flex-wrap: wrap;}
+.researchInstituteWrap #researchRoleWrap .tabList li{flex: 1 1 25%; margin: 0 -1px -1px 0; border: 1px solid #ae9574;}
+.researchInstituteWrap #researchRoleWrap .tabList li .tabBtn{width: 100%; display: block; padding: 24px 10px; font-weight: 700; font-size: 22px; color: #ae9574; text-align: center; word-break: keep-all;}
+.researchInstituteWrap #researchRoleWrap .tabList li .tabBtn.active{background-color: #ae9574; color: #fff;}
+.researchInstituteWrap #researchRoleWrap .layoutBox{display: flex; gap: 0 77px;}
+.researchInstituteWrap #researchRoleWrap .layoutBox .imgBox{max-width: 736px; max-height: 477px;}
+.researchInstituteWrap #researchRoleWrap .layoutBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;} 
+.researchInstituteWrap #researchRoleWrap .layoutBox .textBox{padding-top: 85px;}
+.researchInstituteWrap #researchRoleWrap .layoutBox .textBox .number{margin-bottom: 10px; display: block; font-size: 35px; color: #ae9574; font-family: 'Constantia';}
+.researchInstituteWrap #researchRoleWrap .layoutBox .textBox h5{margin-bottom: 30px; font-size: 36px; color: #ae9574; font-family: 'Noto Serif KR', serif;}
+.researchInstituteWrap #researchRoleWrap .layoutBox .textBox p{font-size: 20px; color: #303030; line-height: 1.7;}
+.researchInstituteWrap .marqueeBox{position: relative; height: 550px;}
+.researchInstituteWrap .marqueeTextBox p{font-size: 250px; color: #ae9574; white-space: nowrap;}
+.researchInstituteWrap .marqueeTextBox p::before{display: none;}
+.researchInstituteWrap #researchImgInfoWrap{padding: 0 0 200px;}
+.researchInstituteWrap #researchImgInfoWrap .layoutBox{margin-bottom: 200px; display: flex; justify-content: space-between; align-items: center;}
+.researchInstituteWrap #researchImgInfoWrap .layoutBox .titleBox .tit{text-align: left;}
+.researchInstituteWrap #researchImgInfoWrap .layoutBox .titleBox .text{text-align: left;}
+.researchInstituteWrap #researchImgInfoWrap .layoutBox .imgBox img{display: block; max-width: 100%;}
+.researchInstituteWrap #researchImgInfoWrap .researchImgWrap{padding-bottom: 93px; display: flex; gap: 0 38px; overflow-y: auto;}
+.researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .imgBox{width: 467px; height: 455px; margin-bottom: 20px; border-radius: 15px; overflow: hidden;}
+.researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .textBox h5{margin-bottom: 10px; color: #ae9574; font-size: 28px; font-weight: 600; font-family: 'Noto Serif KR', serif;}
+.researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .textBox p{font-size: 18px; color: #303030; line-height: 1.7; letter-spacing: -1px;}
+.researchInstituteWrap #researchIntroduceWrap{padding: 200px 0 0; background: url(../images/sub/research/introduce_bg.jpg)no-repeat center / cover; }
+.researchInstituteWrap #researchIntroduceWrap .researchIntroduceBox{display: flex; justify-content: center; gap: 0 134px;}
+.researchInstituteWrap #researchIntroduceWrap .introduceTextBox span{display: block; margin-bottom: 100px; font-size: 25px; color: #fff; font-family: 'Constantia';}
+.researchInstituteWrap #researchIntroduceWrap .introduceTextBox .title{margin-bottom: 40px; font-family: 'Noto Serif KR', serif; font-size: 36px; color: #fff; line-height: 1.3;}
+.researchInstituteWrap #researchIntroduceWrap .introduceTextBox .text{font-size: 20px; color: #fff; font-weight: 300; letter-spacing: -1px; line-height: 1.8;}
+.researchInstituteWrap #researchIntroduceWrap .introduceImgBox{display: flex; align-items: center;}
+.researchInstituteWrap #researchIntroduceWrap .introduceImgBox img{display: block; max-width: 100%;}
+.researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox strong{display: block; margin-bottom: 8px; font-size: 18px; color: #fff; font-weight: 400;}
+.researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox .historyList li{margin-bottom: 8px; font-size: 18px; color: #fff;}
+.researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox span{margin-bottom: 25px; display: flex; align-items: flex-end; gap: 0 16px; font-size: 40px; font-weight: 600; font-family: 'Noto Serif KR', serif; color: #ebdac4;} 
+.researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox span em{font-size: 20px; color: #ebdac4; font-family: 'NotoSansKR', sans-serif;}
+
+@media (max-width: 1280px){
+
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox{text-align: center; width: 100%;}
+  .researchInstituteWrap #researchIntroduceWrap .researchIntroduceBox{flex-direction: column; align-items: center; gap: 50px 0;}
+
+}
+
+@media (max-width: 1199px){
+
+  .researchInstituteWrap #imgWrap{padding-bottom: 130px;}
+  .researchInstituteWrap #researchRoleWrap .tabList li .tabBtn{font-size: 18px;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox .number{font-size: 30px;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox h5{font-size: 30px;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox p{font-size: 18px;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox{flex-direction: column; align-items: center; gap: 0;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox{padding-top: 50px; width: 100%; text-align: center;}
+
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap{gap: 0 25px;}
+  .researchInstituteWrap #researchImgInfoWrap{padding: 0 0 160px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .imgBox{width: 400px; height: 370px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .textBox p br{display: none;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .textBox h5{font-size: 24px;}
+
+  .researchInstituteWrap #researchIntroduceWrap{padding: 160px 0 0;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox span{margin-bottom: 80px; font-size: 20px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox .title{font-size: 30px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox .text{font-size: 18px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox span{font-size: 36px;}
+
+  .researchInstituteWrap #researchImgInfoWrap .layoutBox{margin-bottom: 150px; flex-direction: column; align-items: center; gap: 30px 0;}
+  .researchInstituteWrap #researchImgInfoWrap .layoutBox .titleBox{width: 100%;}
+  .researchInstituteWrap #researchImgInfoWrap .layoutBox .titleBox .tit,
+  .researchInstituteWrap #researchImgInfoWrap .layoutBox .titleBox .text{text-align: center;}
+  
+}
+
+
+@media (max-width: 1024px){
+
+  .researchInstituteWrap #researchRoleWrap .tabList li{flex: 1 1 50%;}
+
+}
+
+@media (max-width: 767px){
+
+  .researchInstituteWrap #researchInfoWrap{padding: 130px 0 0;}
+
+  .researchInstituteWrap #imgWrap{padding: 50px 0 100px;}
+
+  .researchInstituteWrap #researchRoleWrap .tabList{margin-bottom: 50px;}
+  .researchInstituteWrap #researchRoleWrap .tabList li .tabBtn{padding: 20px 10px; font-size: 16px;}
+
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox .number{margin: 0;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox p{font-size: 16px;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox h5{font-size: 26px;}
+
+  .researchInstituteWrap #researchImgInfoWrap{padding: 0 0 160px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .imgBox{width: 250px; height: 230px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .textBox h5{font-size: 20px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .textBox p{font-size: 16px;}
+
+  .researchInstituteWrap #researchIntroduceWrap{padding: 130px 0 0;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox span{margin-bottom: 70px; font-size: 18px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox .title{font-size: 24px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox .text{font-size: 16px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox span{font-size: 28px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox span em{font-size: 16px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceImgBox img{width: calc(50% - -52px);}
+
+  .researchInstituteWrap #researchImgInfoWrap .layoutBox{margin-bottom: 80px;}
+  
+
+}
+
+@media (max-width: 480px){
+
+   .researchInstituteWrap #researchInfoWrap{padding: 100px 0 0;}
+
+   .researchInstituteWrap #imgWrap{padding: 50px 0 80px;}
+
+  .researchInstituteWrap #researchRoleWrap .tabList li .tabBtn{font-size: 14px;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox{padding-top: 25px;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox h5{margin-bottom: 20px; font-size: 22px;}
+  .researchInstituteWrap #researchRoleWrap .layoutBox .textBox p br{display: none;}
+
+  .researchInstituteWrap #researchIntroduceWrap{padding: 90px 0 0;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox span{margin-bottom: 60px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox .title{font-size: 22px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox span{font-size: 22px; gap: 0 10px; }
+  .researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox span em{font-size: 16px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceImgBox img{width: calc(50% - -20px);}
+  .researchInstituteWrap #researchIntroduceWrap .introduceImgBox .historyBox .historyList li{font-size: 14px;}
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox .title br,
+  .researchInstituteWrap #researchIntroduceWrap .introduceTextBox .text br{display: none;}
+
+  .researchInstituteWrap #researchImgInfoWrap{padding: 0 0 90px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap{padding-bottom: 60px; gap: 0 15px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .imgBox{width: 200px; height: 180px; border-radius: 10px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .textBox h5{font-size: 16px;}
+  .researchInstituteWrap #researchImgInfoWrap .researchImgWrap .researchImgBox .textBox p{font-size: 14px;}
+
+}
+
+/* 줄기세포센터 - 진단치료장비 */
+.equipmentBox .container{max-width: 1400px;}
+.equipmentBox .tabList{margin-bottom: 70px; display: flex; align-items: center; justify-content: center; gap: 0 32px;}
+.equipmentBox .tabList li:last-child::after{display: none;}
+.equipmentBox .tabList li{position: relative;}
+.equipmentBox .tabList li::after{content: ''; position: absolute; top:5px; right:-15px; width: 1px; height: 20px; background-color: #d0d0d0;}
+.equipmentBox .tabList li .tabBtn{font-size: 20px; color: #bfbfbf; font-weight: 700;}
+.equipmentBox .tabList li .tabBtn.active{color: #131313;}
+.equipmentBox .equipmentSlideList{position: relative; padding-right: 112px; margin-bottom: 95px;}
+.equipmentBox .equipmentSlideList .slide{margin-right: 12px;}
+.equipmentBox .equipmentSlideList .imgBox{width: 168px; height: 168px; border: 1px solid #dcdadd; overflow: hidden;}
+.equipmentBox .equipmentSlideList .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;} 
+.equipmentBox .equipmentSlideList .control{position: absolute; top:50%; right:0; transform: translateY(-50%);}
+.equipmentBox .equipmentSlideList .control .btn{position: relative; margin-bottom: 5px; display: block; width: 78px; height: 78px; border-radius: 50%; background-color: #d1d1d1; transition: all .3s;}
+.equipmentBox .equipmentSlideList .control .btn:hover{background-color: #a38964;}
+.equipmentBox .equipmentSlideList .control .btn::after{width: 18px; height: 9px; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.equipmentBox .equipmentSlideList .control .btn.prev::after{background: url(../images/sub/equipment/arrow_icon01.png)no-repeat center;}
+.equipmentBox .equipmentSlideList .control .btn.next::after{background: url(../images/sub/equipment/arrow_icon01.png)no-repeat center; transform: translate(-50%, -50%) rotate(180deg);}
+ .equipmentBox .equipmentSlideList .control .btn:last-child{margin-bottom: 0;}
+.equipmentBox .equipmentMainSlide .equipmentLayoutBox{display: flex; gap: 0 95px;}
+.equipmentBox .equipmentMainSlide .imgBox{flex-shrink: 0; width: 525px; height: 525px; border: 1px solid #dcdadd; overflow: hidden;}
+.equipmentBox .equipmentMainSlide .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;} 
+.equipmentBox .equipmentMainSlide .textBox{padding-top: 5px;}
+.equipmentBox .equipmentMainSlide .textBox span{display: block; margin-bottom: 35px; font-size: 22px; font-family: 'Noto Serif KR', serif; color: #a38964; font-weight: 600;}
+.equipmentBox .equipmentMainSlide .textBox h3{margin-bottom: 25px; font-size: 35px; font-weight: 600; color: #131313; font-family: 'Noto Serif KR', serif;}
+.equipmentBox .equipmentMainSlide .textBox p{font-weight: 500; color: #636363; line-height: 1.7;}
+
+@media (max-width: 1199px){
+
+  .equipmentBox .equipmentMainSlide .equipmentLayoutBox{gap: 0 70px;}
+  .equipmentBox .equipmentMainSlide .imgBox{width: 500px; height: 500px;}
+  .equipmentBox .equipmentMainSlide .textBox h3{font-size: 30px;}
+  .equipmentBox .equipmentMainSlide .textBox span{margin-bottom: 20px; font-size: 20px;}
+  .equipmentBox .equipmentMainSlide .textBox p br{display: none;}
+  .equipmentBox .equipmentMainSlide .textBox p em{margin-top: 30px; display: block;}
+
+}

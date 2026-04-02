@@ -82,8 +82,41 @@ $(function () {
     ]
   });
 
+  //바이오 연구 센터
+  $('#researchRoleWrap .tabContent').hide();
+  $('#researchRoleWrap .tabContent').first().show();
 
+  $('#researchRoleWrap .tabList li').click(function () {
+    $('#researchRoleWrap .tabList li').children().removeClass('active');
+    $(this).children().addClass('active');
 
+    let idx = $(this).index();
+
+    $('#researchRoleWrap .tabContent').hide();
+    $('#researchRoleWrap .tabContent').eq(idx).show();
+
+  });
+
+  //진단치료장비
+  $('.equipmentBox .equipmentMainSlide .slick').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: true,
+    asNavFor: '.equipmentBox .equipmentSlideList .slick',
+  });
+
+  $('.equipmentBox .equipmentSlideList .slick').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    variableWidth: true,
+    asNavFor: '.equipmentBox .equipmentMainSlide .slick',
+    prevArrow: $('.equipmentBox .equipmentSlideList .prev'),
+    nextArrow: $('.equipmentBox .equipmentSlideList .next'),
+  });
 
 
 });

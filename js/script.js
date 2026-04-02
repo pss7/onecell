@@ -3,6 +3,7 @@ $(function () {
 
   $(window).load(function () {
     $('#headerWrap').addClass('active');
+    $('.subVisualWrap').addClass('active');
   });
 
   gsap.registerPlugin(ScrollTrigger);
