@@ -134,5 +134,19 @@ $(function () {
     nextArrow: $('.equipmentBox .equipmentSlideList .next'),
   });
 
+  //오시는 길
+  $('.locationBox .tabContent').hide();
+  $('.locationBox .tabContent').first().show();
+
+  $('.locationBox .tabList li').click(function () {
+    $('.locationBox .tabList li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    let idx = $(this).index();
+
+    $('.locationBox .tabContent').hide();
+    $('.locationBox .tabContent').eq(idx).show();
+  });
+
 
 });
