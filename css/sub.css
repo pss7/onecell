@@ -870,11 +870,11 @@
 
 /* 줄기세포센터 - 진단치료장비 */
 .equipmentBox .container{max-width: 1400px;}
-.equipmentBox .tabList{margin-bottom: 70px; display: flex; align-items: center; justify-content: center; gap: 0 32px;}
+.equipmentBox .tabList{margin-bottom: 70px; flex-wrap: wrap; display: flex; align-items: center; justify-content: center; gap: 20px 32px;}
 .equipmentBox .tabList li:last-child::after{display: none;}
 .equipmentBox .tabList li{position: relative;}
 .equipmentBox .tabList li::after{content: ''; position: absolute; top:5px; right:-15px; width: 1px; height: 20px; background-color: #d0d0d0;}
-.equipmentBox .tabList li .tabBtn{font-size: 20px; color: #bfbfbf; font-weight: 700;}
+.equipmentBox .tabList li .tabBtn{ font-size: 20px; color: #bfbfbf; font-weight: 700;}
 .equipmentBox .tabList li .tabBtn.active{color: #131313;}
 .equipmentBox .equipmentSlideList{position: relative; padding-right: 112px; margin-bottom: 95px;}
 .equipmentBox .equipmentSlideList .slide{margin-right: 12px;}
@@ -897,11 +897,51 @@
 
 @media (max-width: 1199px){
 
+  .equipmentBox .equipmentSlideList .control{display: none;}
+  .equipmentBox .equipmentSlideList{padding: 0;}
+  
   .equipmentBox .equipmentMainSlide .equipmentLayoutBox{gap: 0 70px;}
   .equipmentBox .equipmentMainSlide .imgBox{width: 500px; height: 500px;}
   .equipmentBox .equipmentMainSlide .textBox h3{font-size: 30px;}
   .equipmentBox .equipmentMainSlide .textBox span{margin-bottom: 20px; font-size: 20px;}
   .equipmentBox .equipmentMainSlide .textBox p br{display: none;}
   .equipmentBox .equipmentMainSlide .textBox p em{margin-top: 30px; display: block;}
+  .equipmentBox .tabList li .tabBtn{font-size: 18px;}
+  .equipmentBox .tabList li::after{top: 6px; height: 16px;}
+
+}
+
+@media (max-width: 1024px){
+
+  .equipmentBox .equipmentSlideList{margin-bottom: 67px;}
+
+  .equipmentBox .equipmentMainSlide .equipmentLayoutBox{flex-direction: column; gap: 30px 0;}
+  .equipmentBox .equipmentMainSlide .imgBox{ width: 100%;}
+
+}
+
+@media (max-width: 767px){
+  
+  .equipmentBox .equipmentSlideList .imgBox{width: 150px; height: 150px;}
+  
+  .equipmentBox .equipmentMainSlide .imgBox{height: 428px;}
+  .equipmentBox .equipmentMainSlide .textBox span{margin-bottom: 5px; font-size: 18px;}
+  .equipmentBox .equipmentMainSlide .textBox h3{margin-bottom: 20px; font-size: 26px;}
+  .equipmentBox .tabList li .tabBtn{font-size: 16px;}
+  .equipmentBox .tabList li::after{top: 6px; height: 14px;}
+
+}
+
+@media (max-width: 480px){
+
+  .equipmentBox .equipmentSlideList .imgBox{width: 130px; height: 130px;}
+  .equipmentBox .equipmentMainSlide .imgBox{height: 350px;}
+  .equipmentBox .equipmentMainSlide .textBox span{font-size: 16px;}
+  .equipmentBox .equipmentMainSlide .textBox h3{margin-bottom: 15px; font-size: 22px;}
+  .equipmentBox .tabList li .tabBtn{font-size: 14px;}
+  .equipmentBox .tabList{gap: 20px 0;}
+  .equipmentBox .tabList li{flex: 1 1 50%; text-align: center;}
+  .equipmentBox .tabList li::after{right: 0;}
+  .equipmentBox .tabList li:nth-child(even)::after{display: none;}
 
 }

@@ -98,6 +98,22 @@ $(function () {
   });
 
   //진단치료장비
+  $('.equipmentBox .tabContent').hide();
+  $('.equipmentBox .tabContent').first().show();
+
+  $('.equipmentBox .tabList li').click(function () {
+    $('.equipmentBox .tabList li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    let idx = $(this).index();
+
+    $('.equipmentBox .tabContent').hide();
+    $('.equipmentBox .tabContent').eq(idx).show();
+
+    $('.equipmentBox .tabContent').eq(idx).find('.slick').slick('setPosition');
+
+  });
+
   $('.equipmentBox .equipmentMainSlide .slick').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
