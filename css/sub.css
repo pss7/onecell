@@ -1058,10 +1058,58 @@
   
   .tabList.tabType02{margin-bottom: 60px;}
 
-  .tabList.tabType01 li .tabBtn{font-size: 14px;}
   .tabList.tabType01{gap: 20px 0;}
   .tabList.tabType01 li{flex: 1 1 50%; text-align: center;}
   .tabList.tabType01 li::after{right: 0;}
   .tabList.tabType01 li:nth-child(even)::after{display: none;}
   
+}
+
+/* 공통 - 게시판목록 */
+.boardTopBox{ margin-bottom: 30px; display: flex; align-items: flex-end; justify-content: space-between;}
+.boardTotal{display: block;font-size: 12px; font-weight: 500; color: #000;}
+.boardTotal strong{color: #d08d32;}
+.boardList li{margin-bottom: -1px;}
+.boardList li a{position: relative; padding: 36px 150px 36px 0; display: flex; align-items: center; border: 1px solid #ddd; border-width: 1px 0;}
+.boardList li a:hover .title{text-decoration: underline;}
+.boardList li a .number{flex-shrink: 0; width: 112px; color: #a6a6a6; font-weight: 700; text-align: center;}
+.boardList li a .categoryBox{width: 120px; flex-shrink: 0;}
+.boardList li a .category{display: inline-block; padding: 12px 14px; border-radius: 50px; color: #fff; font-weight: 700; font-size: 12px;}
+.boardList li a .category.conference{background-color: #b26335;}
+.boardList li a .category.media{background-color: #72953a;}
+.boardList li a .category.newTechnology{background-color: #7b84a5;}
+.boardList li a .category.hospitalNews{background-color: #d49845;}
+.boardList li a .title{font-size: 20px; color: #000; font-weight: 400; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.boardList li a .date{position: absolute; top: 50%; transform: translateY(-50%); right: 26px; font-weight: 700; color: #a4a4a4;}
+
+@media (max-width: 1199px){
+
+  .boardTopBox{margin-bottom: 16px; flex-direction: column-reverse; align-items: flex-start; gap: 20px 0;}
+  .boardList li a {display: block; padding: 20px 150px 20px 0;}
+  .boardList li .number{display: none;}
+  .boardList li a .categoryBox{margin-bottom: 10px; width: auto; }
+  .boardList li a .category{padding: 8px 10px;}
+  .boardList li a .title{font-size: 16px;}
+
+}
+
+@media (max-width: 480px){
+
+  .boardList li a{padding: 20px 0;}
+  .boardList li a .date{margin-top: 10px; display: block; position: static; font-size: 14px; transform: none;}
+
+}
+
+
+/* 공통 - 검색 */
+.searchBox {position: relative; width: 248px;}
+.searchBox input {padding: 0 60px 0 18px; width: 100%; height: 60px; border-radius: 7px;   background-color: #f5f5f5; border: 0;}
+.searchBox input::placeholder {color: #7b7b7b;}
+.searchBox .searchBtn {position: absolute; top: 50%; right: 20px; transform: translateY(-50%);
+    width: 24px; height: 24px; border: 0; background: url('../images/sub/search_icon.jpg') no-repeat center / contain;}
+
+@media (max-width: 1199px){
+
+  .searchBox{width: 100%;}
+
 }

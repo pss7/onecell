@@ -148,5 +148,18 @@ $(function () {
     $('.locationBox .tabContent').eq(idx).show();
   });
 
+  //공지사항
+  $('.newsBox .tabContent').hide();
+  $('.newsBox .tabContent').first().show();
+
+  $('.newsBox .tabList li').click(function () {
+    $('.newsBox .tabList li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    let idx = $(this).index();
+
+    $('.newsBox .tabContent').hide();
+    $('.newsBox .tabContent').eq(idx).show();
+  });
 
 });
