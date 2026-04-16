@@ -149,17 +149,17 @@ $(function () {
   });
 
   //공지사항
-  $('.newsBox .tabContent').hide();
-  $('.newsBox .tabContent').first().show();
+  $('.tabContent').hide();
+  $('.tabContent').first().show();
 
-  $('.newsBox .tabList li').click(function () {
-    $('.newsBox .tabList li').children().removeClass('active');
+  $('.tabList li').click(function () {
+    $('.tabList li').children().removeClass('active');
     $(this).children().addClass('active');
 
     let idx = $(this).index();
 
-    $('.newsBox .tabContent').hide();
-    $('.newsBox .tabContent').eq(idx).show();
+    $('.tabContent').hide();
+    $('.tabContent').eq(idx).show();
   });
 
 });

@@ -2,6 +2,24 @@
 
 .contentBox{padding: 130px 0;}
 
+@media (max-width: 480px){
+
+  .contentBox{padding: 80px 0;}
+
+}
+
+/* 공통 - 여백 */
+.mb50{margin-bottom: 50px!important;}
+
+@media (max-width: 768px) {
+  .mb50 {
+    margin-bottom: 30px !important;
+  }
+}
+
+/* 공통 - 정렬 */
+.textRight{text-align: right!important;}
+
 /* 공통 - 모바일 이미지 크게 보기 */
 .zoomViewBox{position: relative;}
 .zoomViewBox .zoomView{display: none; position: absolute; bottom: 0px; right: 0px; width: 42px; height: 42px; background: url(../images/common/zoomview_icon.png) no-repeat; background-size: 42px 42px;}
@@ -275,7 +293,7 @@
 .subVisualWrap  .subTopTextBox{width: 100%; position: absolute; top: 57%; left: 50%; transform: translate(-50%, -50%); text-align: center;} 
 .subVisualWrap  .subTopTextBox span{display: block; font-size: 22px; color: #fff; font-family: 'Constantia'; opacity: 0; letter-spacing: 15px; filter: blur(5px);}
 .subVisualWrap  .subTopTextBox h2{font-size: 50px; font-weight: 500; color: #fff; font-family: 'Noto Serif KR', serif; opacity: 0; letter-spacing: 15px; filter: blur(5px);} 
-.subVisualWrap.active .subVisualWrap .subTopImgBox img{transform: scale(1); transition: all 5s;}
+.subVisualWrap.active  .subTopImgBox img{transform: scale(1); transition: all 5s;}
 .subVisualWrap.active  .subTopTextBox span,
 .subVisualWrap.active  .subTopTextBox h2{opacity: 1; filter: blur(0); letter-spacing: 0; transition: all 3s;}
  
@@ -1073,8 +1091,8 @@
 .boardList li a{position: relative; padding: 36px 150px 36px 0; display: flex; align-items: center; border: 1px solid #ddd; border-width: 1px 0;}
 .boardList li a:hover .title{text-decoration: underline;}
 .boardList li a .number{flex-shrink: 0; width: 112px; color: #a6a6a6; font-weight: 700; text-align: center;}
-.boardList li a .categoryBox{width: 120px; flex-shrink: 0;}
-.boardList li a .category{display: inline-block; padding: 12px 14px; border-radius: 50px; color: #fff; font-weight: 700; font-size: 12px;}
+.boardList li a .categoryBox{width: 100px; margin-right: 25px; flex-shrink: 0;}
+.boardList li a .category{display: block; padding: 12px 14px; border-radius: 50px; color: #fff; font-weight: 700; font-size: 12px; text-align: center;}
 .boardList li a .category.conference{background-color: #b26335;}
 .boardList li a .category.media{background-color: #72953a;}
 .boardList li a .category.newTechnology{background-color: #7b84a5;}
@@ -1087,15 +1105,15 @@
   .boardTopBox{margin-bottom: 16px; flex-direction: column-reverse; align-items: flex-start; gap: 20px 0;}
   .boardList li a {display: block; padding: 20px 150px 20px 0;}
   .boardList li .number{display: none;}
-  .boardList li a .categoryBox{margin-bottom: 10px; width: auto; }
-  .boardList li a .category{padding: 8px 10px;}
+  .boardList li a .categoryBox{margin:0 0 10px; width: auto; }
+  .boardList li a .category{display: inline-block; padding: 8px 10px;}
   .boardList li a .title{font-size: 16px;}
 
 }
 
 @media (max-width: 480px){
 
-  .boardList li a{padding: 20px 0;}
+  .boardList li a{padding: 20px 0!important;}
   .boardList li a .date{margin-top: 10px; display: block; position: static; font-size: 14px; transform: none;}
 
 }
@@ -1110,5 +1128,90 @@
 @media (max-width: 1199px){
 
   .searchBox{width: 100%;}
+
+}
+
+/* 온라인상담 */
+.onlineConsultBox .boardList li a{padding: 36px 290px 36px 0;}
+.onlineConsultBox .boardList li a .state{position: absolute; top: 50%; transform: translateY(-50%); right:186px; font-size: 20px; font-weight: 700;;}
+.onlineConsultBox .boardList li a .state.waiting{ color: #959595;}
+.onlineConsultBox .boardList li a .state.complete{ color: #ae9373}
+.onlineConsultBox .boardList li a .category.stemCell{background-color: #68567b;}
+.onlineConsultBox .boardList li a .category.skin{background-color: #566b78;}
+/* .boardList li a .boardConsultMetaBox{display: flex; align-items: center; gap: 0 0;} */
+/* .boardList li a .boardConsultMetaBox .date{position: static; transform: none;} */
+
+@media (max-width: 1199px){
+
+  .onlineConsultBox .boardList li a .state{font-size: 18px;}
+
+}
+
+@media (max-width: 768px){
+
+  .onlineConsultBox .boardList li a{padding: 36px 230px 36px 0;}
+  .onlineConsultBox .boardList li a .state{right: 150px; font-size: 16px;}
+  
+}
+
+@media (max-width: 480px){
+
+  .onlineConsultBox .boardList li a .state{display: block; margin-top: 13px; position: static; transform: none;}
+
+}
+
+/* 공통 - 게시판목록 */
+.boardListTable{width: 100%; table-layout: fixed; border-spacing: 0;}
+.boardListTable{border-top: 2px solid #646464;}
+.boardListTable thead tr th{padding: 20px;  font-weight: 700; background-color:#e1e1e1; color: var(--white); border: 1px solid #c8c8c8; border-width: 0 1px 0 0;}
+.boardListTable tbody tr td:last-child{border-right: 0;}
+.boardListTable tbody tr td{padding: 20px; border: 1px solid #c8c8c8; border-width: 1px 1px 1px 0; font-weight: 500; font-size:14px; color:#020202;}
+
+@media (max-width: 768px){
+
+  .scrollTableBox{overflow-x: auto;}
+  .scrollTableBox .boardListTable{width: 768px;}
+  .boardListTable thead tr th{font-size: 14px;}
+  .boardListTable thead tr th,
+  .boardListTable tbody tr td{padding: 10px;}
+
+}
+
+/* 제증명 발급 안내 */
+.certificateGuideBox .certificateDownloadBox{padding-bottom: 90px; display: flex; justify-content: center; align-items: center; gap: 0 50px; border-bottom: 1px solid #d2d2d2;}
+.certificateGuideBox .certificateDownloadBox a{display: block;}
+.certificateGuideBox .certificateDownloadBox a .downloadBox{display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; width: 157px; height: 157px; border-radius: 6px; border: 1px solid #333;}
+.certificateGuideBox .certificateDownloadBox a .downloadBox span{display: flex; align-items: center; flex-direction: column; gap: 14px 0; text-align: center; font-weight: 700; color: #000;}
+.certificateGuideBox .certificateDownloadBox a .downloadBox span::before{content: ''; width: 53px; height: 57px; background: url(../images/sub/download_icon.png)no-repeat center / contain;}
+.certificateGuideBox .certificateDownloadBox a strong{display: block; font-size: 22px; font-weight: 600; font-family: 'Noto Serif KR', serif; color: #000; letter-spacing: -1px;}
+.certificateGuideBox .certificateDownloadBox a strong span{color: #a38964;}
+.certificateGuideBox .certificateInfoBox h3{margin: 90px 0 70px; text-align: center;}
+.certificateGuideBox .certificateInfoBox h3 span{padding:0 20px 10px; position: relative; font-weight: 700; font-size: 30px; color:#131313; letter-spacing: -1px;}
+.certificateGuideBox .certificateInfoBox h3 span::before{content: ''; position: absolute; left:0; right:0; bottom: 0; height: 5px; background-color: #d8cdbd;}
+.certificateGuideBox .certificateInfoBox img{display: block; margin: 0 auto; max-width: 100%;}
+.certificateGuideBox .zoomViewBox .zoomView{bottom: -30px;}
+
+@media (max-width: 1199px){
+
+  .certificateGuideBox .certificateDownloadBox a strong{font-size: 20px;}
+  .certificateGuideBox .certificateInfoBox h3 span{font-size: 26px;}
+
+}
+
+@media (max-width: 768px){
+
+  .certificateGuideBox .certificateDownloadBox a strong{font-size: 18px;}
+  .certificateGuideBox .certificateInfoBox h3 span{padding:0 10px 10px; font-size: 22px;}
+  .certificateGuideBox .certificateInfoBox h3 span::before{height: 3px;}
+
+}
+
+@media (max-width: 480px){
+  
+  .certificateGuideBox .certificateInfoBox h3{margin: 70px 0 50px;}
+  .certificateGuideBox .certificateDownloadBox{padding-bottom: 54px;}
+  .certificateGuideBox .certificateDownloadBox{flex-direction: column; gap:50px 0;}
+  .certificateGuideBox .certificateInfoBox h3 span{padding:0 10px 10px; font-size: 20px;}
+  .certificateGuideBox .certificateDownloadBox a strong{font-size: 18px;}
 
 }
